@@ -1,0 +1,27 @@
+ON PHYSICAL BAXTER:
+
+1. Source setup script
+	$ source ~/robotics_ws/devel/setup.sh
+2. Change into simulation baxter environment within main ~/robotics_ws directory:
+	$ ./baxter.sh
+
+3. Resets reobot: $ rosrun baxter_tools enable_robot.py -r
+4. Enables robot: $ rosrun baxter_tools enable_robot.py -e
+5. Untucks robot arms: $ rosrun baxter_tools tuck_arms.py -u
+6. Now run python command files in ipython, using the "run" command before the file name.
+
+
+ON SIMULATED BAXTER:
+
+1. Source setup script
+	$ source ~/robotics_ws/devel/setup.sh
+2. Change into simulation baxter environment within main ~/robotics_ws directory:
+	$ ./baxter.sh sim
+3. Start up baxter in gazebo:
+	$ roslaunch baxter_gazebo baxter_world.launch
+
+In a new terminal (repeat steps 1 & 2 in new terminal):
+3. Resets reobot: $ rosrun baxter_tools enable_robot.py -r
+4. Enables robot: $ rosrun baxter_tools enable_robot.py -e
+5. Untucks robot arms: $ rosrun baxter_tools tuck_arms.py -u
+6. Now run our own files!

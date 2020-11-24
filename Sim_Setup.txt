@@ -1,0 +1,42 @@
+# Clone baxter simulation
+1. Clone simulator in robotics_ws/src/ run:
+	$ git clone https://github.com/RethinkRobotics/baxter_simulator.git
+2. Change directory into baxter_simulator:
+	$ cd ~/robotics_ws/src/baxter_simulator/
+3. Get pull request to be able to use the simulator in ros-melodic and create your own branch with that corrected pull request in it
+	$ git fetch origin pull/130/head:<name_of_your_branch_here>
+	$ git checkout <name_of_your_branch_here>
+4. You can try caktin_make now in your "root" repository:
+	$ cd ~/robotics_ws/
+	$ caktin_make
+5. It will likely tell you you're missing some stuff. Install the two things you're missing:
+	$ sudo apt install ros-melodic-effort-controllers
+	$ sudo apt install qt4-default
+6. Now run the catkin_make and it should all compile!
+	> you might still be getting errors. I forgot if I just moved on to the next step with or without errors.
+
+# Install simulator now
+1. Change into main directory src folder and run the following commands:
+	$ cd ~/robotics_ws/src/
+	$ wstool . init
+	$ wstool merge https://raw.githubusercontent.com/RethinkRobotics/baxter_simulator/master/baxter_simulator.rosinstall
+	$ wstool update
+2. Build source now by running the following commands:
+	$ source ~/.bashrc
+	$ source ~/robotics_ws/devel/setup.bash
+3. Now do catkin_make
+	$ cd ~/robotics_ws/
+	$ catkin_make
+
+
+# Run a simulation
+1. Source setup script
+	$ source ~/robotics_ws/devel/setup.sh
+2. Change into simulation baxter environment within main ~/robotics_ws directory:
+	$ ./baxter.sh sim
+3. Run simulation example
+	$ roslaunch baxter_sim_examples baxter_pick_and_place_demo.launch
+
+
+#### GOOD TO GO! ####
+	
