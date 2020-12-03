@@ -1,5 +1,4 @@
-#!/usr/bin/python2
-
+#!/usr/bin/env python3
 import rospy
 import tf
 import numpy as np
@@ -46,3 +45,7 @@ r_limb.get_kdl_jacobian_pseudo_inverse()
 r_limb.get_kdl_jacobian_transpose()
 r_limb.kin_kdl.inverse_kinematics(np.array([0.3, 0.3, 0.3])) 
 np.pi
+
+# while not rospy.is_shutdown():
+#     rospy.spin()
+

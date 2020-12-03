@@ -182,27 +182,27 @@ baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp
 
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointState.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointState.h: /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
-/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointState.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointState.h: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointState.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointState.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointState.h: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
+/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointState.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointState.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointState.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointState.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointState.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointState.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointState.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aaron/repos/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating C++ code from baxter_core_msgs/EndpointState.msg"
 	cd /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs && /home/aaron/repos/ME537-Project/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg -Ibaxter_core_msgs:/home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointStates.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointStates.h: /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg
-/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointStates.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointStates.h: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
-/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointStates.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointStates.h: /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
-/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointStates.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointStates.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointStates.h: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
+/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointStates.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointStates.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointStates.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointStates.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointStates.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointStates.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/EndpointStates.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aaron/repos/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating C++ code from baxter_core_msgs/EndpointStates.msg"
 	cd /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs && /home/aaron/repos/ME537-Project/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg -Ibaxter_core_msgs:/home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
@@ -284,10 +284,10 @@ baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/SolvePositionIK.h: /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/SolvePositionIK.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/SolvePositionIK.h: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/SolvePositionIK.h: /opt/ros/noetic/share/sensor_msgs/msg/JointState.msg
+/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/SolvePositionIK.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/SolvePositionIK.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/SolvePositionIK.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/SolvePositionIK.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/SolvePositionIK.h: /opt/ros/noetic/share/sensor_msgs/msg/JointState.msg
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/SolvePositionIK.h: /opt/ros/noetic/share/gencpp/msg.h.template
 /home/aaron/repos/ME537-Project/devel/include/baxter_core_msgs/SolvePositionIK.h: /opt/ros/noetic/share/gencpp/srv.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aaron/repos/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating C++ code from baxter_core_msgs/SolvePositionIK.srv"
