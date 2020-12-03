@@ -105,7 +105,7 @@ roslaunch baxter_gazebo baxter_world.launch
 ```
 
 4. In a new terminal (repeat steps 1 & 2 in new terminal):
-5. Resets reobot: ``` rosrun baxter_tools enable_robot.py -r ```
+5. Resets robot: ``` rosrun baxter_tools enable_robot.py -r ```
 6. Enables robot: ``` rosrun baxter_tools enable_robot.py -e ```
 7. Untucks robot arms: ``` rosrun baxter_tools tuck_arms.py -u ```
 8. Now run our own files!
