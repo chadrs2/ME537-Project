@@ -1,10 +1,10 @@
 # ME537-Project
 
 ## Contents
-* [Set up a base station or personal laptop](#set-up-a-base-station-or-personal-computer)
-* [Set up a Jetson (rover computer)](#set-up-a-jetson)
-* [FAQ](#faq)
-* [Known bugs](#known-bugs)
+* [Set up personal computer](#set-up-personal-computer)
+* [Simulation Installation](#simulation-installation)
+* [Example Physical Baxter Setup](#example-physical-baxter-setup)
+* [Example Simulation Setup](#example-simulation-setup)
 
 ## Requirements
 * [Ubuntu 18.04](https://ubuntu.com/download/desktop) (preferred) or Ubuntu 16.04
@@ -29,8 +29,8 @@ bash -i ~/ME537-Project/devel/setup.sh; source ~/.bashrc;
 
 ------------
 
-## Simulation
-### Clone baxter simulation
+## Simulation Installation
+### Setup baxter simulation
 1. Clone simulator in ME537-Project/src/ run:
 ```
 git clone https://github.com/RethinkRobotics/baxter_simulator.git
@@ -55,7 +55,7 @@ sudo apt install ros-melodic-effort-controllers
 sudo apt install qt4-default
 ```
 
-### Install simulator now
+### Install simulator
 1. Change into main directory src folder and run the following commands:
 ```
 cd ~/ME537-Project/src/
