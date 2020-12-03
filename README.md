@@ -81,19 +81,19 @@ source ~/ME537-Project/devel/setup.sh
 ```
 source ~/ME537-Project/devel/setup.sh
 ```
-2. Change into simulation baxter environment within main ~/ME537-Project directory:
+2. Check that `~/ME537-Project/baxter.sh` file has your own computer's IP address 
+3. Change into simulation baxter environment within main ~/ME537-Project directory:
 ```
 ./baxter.sh sim
 ```
-3. Start up baxter in gazebo:
+4. Start up baxter in gazebo:
 ```
 roslaunch baxter_gazebo baxter_world.launch
 ```
-
-4. In a new terminal (repeat steps 1 & 2 in new terminal):
-5. Resets robot: ``` rosrun baxter_tools enable_robot.py -r ```
-6. Enables robot: ``` rosrun baxter_tools enable_robot.py -e ```
-7. Untucks robot arms: ``` rosrun baxter_tools tuck_arms.py -u ```
-8. Now run our own files!
+5. In a new terminal (repeat steps 1 & 2 in new terminal):
+6. Resets robot: ``` rosrun baxter_tools enable_robot.py -r ```
+7. Enables robot: ``` rosrun baxter_tools enable_robot.py -e ```
+8. Untucks robot arms: ``` rosrun baxter_tools tuck_arms.py -u ```
+9. Now run your own files!
 
 ------------
