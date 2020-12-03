@@ -14,10 +14,11 @@
 
 ## Git Repo Installation
 
-Clone the repository to your Home directory:
+Clone the repository to your Home directory and update the submodules:
 ```
 cd ~
 git clone https://github.com/chadrs2/ME537-Project.git
+git submodule update --init --recursive
 ```
 
 ### Set up personal computer
