@@ -1,8 +1,8 @@
 # ME537-Project
 
 ## Contents
-* [Git Repo Installation](#git-repo-installation)
 * [Installation](#installation)
+* [Simulation Installation](#simulation-installation)
 * [Physical Baxter Example Run](#physical-baxter-example-run)
 * [Simulation Example Run](#simulation-example-run)
 
