@@ -11,15 +11,27 @@
 * [Git](https://git-scm.com/download/linux)
 
 ----------
-
-## Git Repo Installation
-
-Clone the repository to your Home directory and update the submodules:
+## Installation
+### Clone the repository and update the submodules
 ```
 cd ~
 git clone https://github.com/chadrs2/ME537-Project.git
 cd ~/ME537-Project
 git submodule update --init --recursive
+```
+### Build repository 
+1. Remove current `build` and `devel` folders
+```
+sudo rm -rf build devel
+```
+2. Install necessary ROS dependency packages
+```
+sudo apt install ros-<ros_version>-effort-controllers
+sudo apt install qt4-default
+```
+3) Run `catkin_make`
+```
+catkin_make
 ```
 
 ### Set up personal computer
@@ -32,31 +44,6 @@ bash -i ~/ME537-Project/devel/setup.sh; source ~/.bashrc;
 ------------
 
 ## Simulation Installation
-### Setup baxter simulation - This might no longer be needed thanks to submodules
-1. Clone simulator in ME537-Project/src/ run:
-```
-git clone https://github.com/RethinkRobotics/baxter_simulator.git
-```
-2. Change directory into baxter_simulator:
-```
-cd ~/ME537-Project/src/baxter_simulator/
-```
-3. Get pull request to be able to use the simulator in ros-melodic and create your own branch with that corrected pull request in it
-```
-git fetch origin pull/130/head:<name_of_your_branch_here>
-git checkout <name_of_your_branch_here>
-```
-4. You can try catkin_make now in your "root" repository:
-```
-cd ~/ME537-Project/
-catkin_make
-```
-5. It will likely tell you you're missing some stuff. Install the two things you're missing:
-```
-sudo apt install ros-melodic-effort-controllers
-sudo apt install qt4-default
-```
-
 ### Install simulator
 1. Change into main directory src folder and run the following commands:
 ```
