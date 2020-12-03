@@ -1,4 +1,4 @@
-prefix=/home/chadsrover/robotics_ws/devel
+prefix=/home/aaron/repos/ME537-Project/devel
 
 Name: baxter_description
 Description: Description of baxter_description

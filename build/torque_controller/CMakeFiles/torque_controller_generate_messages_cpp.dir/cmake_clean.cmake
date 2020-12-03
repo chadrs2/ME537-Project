@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "/home/aaron/repos/ME537-Project/devel/include/torque_controller/imp_cmd.h"
+  "/home/aaron/repos/ME537-Project/devel/include/torque_controller/k_cmd.h"
+  "/home/aaron/repos/ME537-Project/devel/include/torque_controller/q_cmd.h"
   "CMakeFiles/torque_controller_generate_messages_cpp"
-  "/home/chadsrover/robotics_ws/devel/include/torque_controller/k_cmd.h"
-  "/home/chadsrover/robotics_ws/devel/include/torque_controller/imp_cmd.h"
-  "/home/chadsrover/robotics_ws/devel/include/torque_controller/q_cmd.h"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,4 +1,4 @@
-prefix=/home/chadsrover/robotics_ws/install
+prefix=/home/aaron/repos/ME537-Project/install
 
 Name: torque_controller
 Description: Description of torque_controller

@@ -194,7 +194,7 @@ class SEAJointState {
     let length = 0;
     length += std_msgs.msg.Header.getMessageSize(object.header);
     object.name.forEach((val) => {
-      length += 4 + val.length;
+      length += 4 + _getByteLength(val);
     });
     length += 8 * object.commanded_position.length;
     length += 8 * object.commanded_velocity.length;

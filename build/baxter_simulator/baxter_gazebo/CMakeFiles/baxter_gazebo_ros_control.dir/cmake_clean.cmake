@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "/home/aaron/repos/ME537-Project/devel/lib/libbaxter_gazebo_ros_control.pdb"
+  "/home/aaron/repos/ME537-Project/devel/lib/libbaxter_gazebo_ros_control.so"
   "CMakeFiles/baxter_gazebo_ros_control.dir/src/baxter_gazebo_ros_control_plugin.cpp.o"
-  "/home/chadsrover/robotics_ws/devel/lib/libbaxter_gazebo_ros_control.pdb"
-  "/home/chadsrover/robotics_ws/devel/lib/libbaxter_gazebo_ros_control.so"
 )
 
 # Per-language clean rules from dependency scanning.

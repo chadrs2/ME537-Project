@@ -1,8 +1,8 @@
-# Install script for directory: /home/chadsrover/robotics_ws/src/activerobots
+# Install script for directory: /home/aaron/repos/ME537-Project/src/activerobots
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/chadsrover/robotics_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/aaron/repos/ME537-Project/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/chadsrover/robotics_ws/build/activerobots/catkin_generated/installspace/activerobots.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/aaron/repos/ME537-Project/build/activerobots/catkin_generated/installspace/activerobots.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/activerobots/cmake" TYPE FILE FILES
-    "/home/chadsrover/robotics_ws/build/activerobots/catkin_generated/installspace/activerobotsConfig.cmake"
-    "/home/chadsrover/robotics_ws/build/activerobots/catkin_generated/installspace/activerobotsConfig-version.cmake"
+    "/home/aaron/repos/ME537-Project/build/activerobots/catkin_generated/installspace/activerobotsConfig.cmake"
+    "/home/aaron/repos/ME537-Project/build/activerobots/catkin_generated/installspace/activerobotsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/activerobots" TYPE FILE FILES "/home/chadsrover/robotics_ws/src/activerobots/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/activerobots" TYPE FILE FILES "/home/aaron/repos/ME537-Project/src/activerobots/package.xml")
 endif()
 

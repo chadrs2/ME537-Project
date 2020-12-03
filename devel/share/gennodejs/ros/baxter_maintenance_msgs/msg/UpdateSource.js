@@ -81,10 +81,10 @@ class UpdateSource {
 
   static getMessageSize(object) {
     let length = 0;
-    length += object.devname.length;
-    length += object.filename.length;
-    length += object.version.length;
-    length += object.uuid.length;
+    length += _getByteLength(object.devname);
+    length += _getByteLength(object.filename);
+    length += _getByteLength(object.version);
+    length += _getByteLength(object.uuid);
     return length + 16;
   }
 

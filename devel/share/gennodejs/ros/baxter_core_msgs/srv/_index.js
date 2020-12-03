@@ -1,14 +1,14 @@
 
 "use strict";
 
-let ListCameras = require('./ListCameras.js')
-let SolvePositionIK = require('./SolvePositionIK.js')
 let CloseCamera = require('./CloseCamera.js')
+let SolvePositionIK = require('./SolvePositionIK.js')
 let OpenCamera = require('./OpenCamera.js')
+let ListCameras = require('./ListCameras.js')
 
 module.exports = {
-  ListCameras: ListCameras,
-  SolvePositionIK: SolvePositionIK,
   CloseCamera: CloseCamera,
+  SolvePositionIK: SolvePositionIK,
   OpenCamera: OpenCamera,
+  ListCameras: ListCameras,
 };

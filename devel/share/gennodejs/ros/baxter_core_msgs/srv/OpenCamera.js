@@ -63,7 +63,7 @@ class OpenCameraRequest {
 
   static getMessageSize(object) {
     let length = 0;
-    length += object.name.length;
+    length += _getByteLength(object.name);
     length += CameraSettings.getMessageSize(object.settings);
     return length + 4;
   }

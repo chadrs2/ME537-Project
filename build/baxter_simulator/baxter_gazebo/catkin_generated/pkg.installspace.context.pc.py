@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "baxter_core_msgs;gazebo_ros_control;roscpp;controller_manager_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "baxter_gazebo"
-PROJECT_SPACE_DIR = "/home/chadsrover/robotics_ws/install"
+PROJECT_SPACE_DIR = "/home/aaron/repos/ME537-Project/install"
 PROJECT_VERSION = "1.2.12"

@@ -100,16 +100,6 @@ namespace message_traits
 
 
 template <class ContainerAllocator>
-struct IsFixedSize< ::baxter_core_msgs::CollisionAvoidanceState_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::baxter_core_msgs::CollisionAvoidanceState_<ContainerAllocator> const>
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
 struct IsMessage< ::baxter_core_msgs::CollisionAvoidanceState_<ContainerAllocator> >
   : TrueType
   { };
@@ -117,6 +107,16 @@ struct IsMessage< ::baxter_core_msgs::CollisionAvoidanceState_<ContainerAllocato
 template <class ContainerAllocator>
 struct IsMessage< ::baxter_core_msgs::CollisionAvoidanceState_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::baxter_core_msgs::CollisionAvoidanceState_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::baxter_core_msgs::CollisionAvoidanceState_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>

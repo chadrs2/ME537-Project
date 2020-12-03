@@ -1,8 +1,8 @@
-prefix=/home/chadsrover/robotics_ws/devel
+prefix=/home/aaron/repos/ME537-Project/devel
 
 Name: baxter_interface
 Description: Description of baxter_interface
 Version: 1.2.0
-Cflags: -I/home/chadsrover/robotics_ws/devel/include
+Cflags: -I/home/aaron/repos/ME537-Project/devel/include
 Libs: -L${prefix}/lib 
 Requires: rospy actionlib sensor_msgs std_msgs control_msgs trajectory_msgs dynamic_reconfigure baxter_core_msgs

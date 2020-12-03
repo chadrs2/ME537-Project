@@ -67,14 +67,14 @@ set(rad_baxter_limb_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(rad_baxter_limb_SOURCE_PREFIX /home/chadsrover/robotics_ws/src/rad_baxter_limb)
-  set(rad_baxter_limb_DEVEL_PREFIX /home/chadsrover/robotics_ws/devel)
+  set(rad_baxter_limb_SOURCE_PREFIX /home/aaron/repos/ME537-Project/src/rad_baxter_limb)
+  set(rad_baxter_limb_DEVEL_PREFIX /home/aaron/repos/ME537-Project/devel)
   set(rad_baxter_limb_INSTALL_PREFIX "")
   set(rad_baxter_limb_PREFIX ${rad_baxter_limb_DEVEL_PREFIX})
 else()
   set(rad_baxter_limb_SOURCE_PREFIX "")
   set(rad_baxter_limb_DEVEL_PREFIX "")
-  set(rad_baxter_limb_INSTALL_PREFIX /home/chadsrover/robotics_ws/install)
+  set(rad_baxter_limb_INSTALL_PREFIX /home/aaron/repos/ME537-Project/install)
   set(rad_baxter_limb_PREFIX ${rad_baxter_limb_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/chadsrover/robotics_ws/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/aaron/repos/ME537-Project/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

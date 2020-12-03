@@ -224,13 +224,13 @@ class EndEffectorProperties {
 
   static getMessageSize(object) {
     let length = 0;
-    length += object.manufacturer.length;
-    length += object.product.length;
-    length += object.serial_number.length;
-    length += object.hardware_rev.length;
-    length += object.firmware_rev.length;
-    length += object.firmware_date.length;
-    length += object.properties.length;
+    length += _getByteLength(object.manufacturer);
+    length += _getByteLength(object.product);
+    length += _getByteLength(object.serial_number);
+    length += _getByteLength(object.hardware_rev);
+    length += _getByteLength(object.firmware_rev);
+    length += _getByteLength(object.firmware_date);
+    length += _getByteLength(object.properties);
     return length + 41;
   }
 

@@ -70,7 +70,7 @@ class UpdateStatus {
 
   static getMessageSize(object) {
     let length = 0;
-    length += object.long_description.length;
+    length += _getByteLength(object.long_description);
     return length + 10;
   }
 

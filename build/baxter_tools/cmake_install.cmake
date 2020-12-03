@@ -1,8 +1,8 @@
-# Install script for directory: /home/chadsrover/robotics_ws/src/baxter_tools
+# Install script for directory: /home/aaron/repos/ME537-Project/src/baxter_tools
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/chadsrover/robotics_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/aaron/repos/ME537-Project/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,29 +38,29 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/chadsrover/robotics_ws/build/baxter_tools/catkin_generated/safe_execute_install.cmake")
+  include("/home/aaron/repos/ME537-Project/build/baxter_tools/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/chadsrover/robotics_ws/build/baxter_tools/catkin_generated/installspace/baxter_tools.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/aaron/repos/ME537-Project/build/baxter_tools/catkin_generated/installspace/baxter_tools.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_tools/cmake" TYPE FILE FILES
-    "/home/chadsrover/robotics_ws/build/baxter_tools/catkin_generated/installspace/baxter_toolsConfig.cmake"
-    "/home/chadsrover/robotics_ws/build/baxter_tools/catkin_generated/installspace/baxter_toolsConfig-version.cmake"
+    "/home/aaron/repos/ME537-Project/build/baxter_tools/catkin_generated/installspace/baxter_toolsConfig.cmake"
+    "/home/aaron/repos/ME537-Project/build/baxter_tools/catkin_generated/installspace/baxter_toolsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_tools" TYPE FILE FILES "/home/chadsrover/robotics_ws/src/baxter_tools/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_tools" TYPE FILE FILES "/home/aaron/repos/ME537-Project/src/baxter_tools/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/baxter_tools" TYPE DIRECTORY FILES "/home/chadsrover/robotics_ws/src/baxter_tools/scripts/" USE_SOURCE_PERMISSIONS)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/baxter_tools" TYPE DIRECTORY FILES "/home/aaron/repos/ME537-Project/src/baxter_tools/scripts/" USE_SOURCE_PERMISSIONS)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_tools/share" TYPE DIRECTORY FILES "/home/chadsrover/robotics_ws/src/baxter_tools/share/" USE_SOURCE_PERMISSIONS)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_tools/share" TYPE DIRECTORY FILES "/home/aaron/repos/ME537-Project/src/baxter_tools/share/" USE_SOURCE_PERMISSIONS)
 endif()
 

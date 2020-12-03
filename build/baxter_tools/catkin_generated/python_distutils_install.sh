@@ -13,21 +13,21 @@ fi
 
 echo_and_run() { echo "+ $@" ; "$@" ; }
 
-echo_and_run cd "/home/chadsrover/robotics_ws/src/baxter_tools"
+echo_and_run cd "/home/aaron/repos/ME537-Project/src/baxter_tools"
 
 # ensure that Python install destination exists
-echo_and_run mkdir -p "$DESTDIR/home/chadsrover/robotics_ws/install/lib/python2.7/dist-packages"
+echo_and_run mkdir -p "$DESTDIR/home/aaron/repos/ME537-Project/install/lib/python3/dist-packages"
 
 # Note that PYTHONPATH is pulled from the environment to support installing
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/home/chadsrover/robotics_ws/install/lib/python2.7/dist-packages:/home/chadsrover/robotics_ws/build/lib/python2.7/dist-packages:$PYTHONPATH" \
-    CATKIN_BINARY_DIR="/home/chadsrover/robotics_ws/build" \
-    "/usr/bin/python2" \
-    "/home/chadsrover/robotics_ws/src/baxter_tools/setup.py" \
+    PYTHONPATH="/home/aaron/repos/ME537-Project/install/lib/python3/dist-packages:/home/aaron/repos/ME537-Project/build/lib/python3/dist-packages:$PYTHONPATH" \
+    CATKIN_BINARY_DIR="/home/aaron/repos/ME537-Project/build" \
+    "/usr/bin/python3" \
+    "/home/aaron/repos/ME537-Project/src/baxter_tools/setup.py" \
      \
-    build --build-base "/home/chadsrover/robotics_ws/build/baxter_tools" \
+    build --build-base "/home/aaron/repos/ME537-Project/build/baxter_tools" \
     install \
     --root="${DESTDIR-/}" \
-    --install-layout=deb --prefix="/home/chadsrover/robotics_ws/install" --install-scripts="/home/chadsrover/robotics_ws/install/bin"
+    --install-layout=deb --prefix="/home/aaron/repos/ME537-Project/install" --install-scripts="/home/aaron/repos/ME537-Project/install/bin"

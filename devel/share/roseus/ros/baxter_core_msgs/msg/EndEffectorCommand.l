@@ -48,6 +48,11 @@
 (intern "*CMD_STOP*" (find-package "BAXTER_CORE_MSGS::ENDEFFECTORCOMMAND"))
 (shadow '*CMD_STOP* (find-package "BAXTER_CORE_MSGS::ENDEFFECTORCOMMAND"))
 (defconstant baxter_core_msgs::EndEffectorCommand::*CMD_STOP* "stop")
+
+(defun baxter_core_msgs::EndEffectorCommand-to-symbol (const)
+  (cond
+        (t nil)))
+
 (defclass baxter_core_msgs::EndEffectorCommand
   :super ros::object
   :slots (_id _command _args _sender _sequence ))

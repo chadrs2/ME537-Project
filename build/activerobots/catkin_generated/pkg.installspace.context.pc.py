@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "activerobots"
-PROJECT_SPACE_DIR = "/home/chadsrover/robotics_ws/install"
+PROJECT_SPACE_DIR = "/home/aaron/repos/ME537-Project/install"
 PROJECT_VERSION = "0.0.0"

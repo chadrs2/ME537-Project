@@ -1,4 +1,4 @@
-prefix=/home/chadsrover/robotics_ws/devel
+prefix=/home/aaron/repos/ME537-Project/devel
 
 Name: rad_baxter_limb
 Description: Description of rad_baxter_limb

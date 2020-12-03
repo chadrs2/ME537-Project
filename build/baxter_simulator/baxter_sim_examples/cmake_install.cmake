@@ -1,8 +1,8 @@
-# Install script for directory: /home/chadsrover/robotics_ws/src/baxter_simulator/baxter_sim_examples
+# Install script for directory: /home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/chadsrover/robotics_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/aaron/repos/ME537-Project/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,29 +38,29 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/chadsrover/robotics_ws/build/baxter_simulator/baxter_sim_examples/catkin_generated/installspace/baxter_sim_examples.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/aaron/repos/ME537-Project/build/baxter_simulator/baxter_sim_examples/catkin_generated/installspace/baxter_sim_examples.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_sim_examples/cmake" TYPE FILE FILES
-    "/home/chadsrover/robotics_ws/build/baxter_simulator/baxter_sim_examples/catkin_generated/installspace/baxter_sim_examplesConfig.cmake"
-    "/home/chadsrover/robotics_ws/build/baxter_simulator/baxter_sim_examples/catkin_generated/installspace/baxter_sim_examplesConfig-version.cmake"
+    "/home/aaron/repos/ME537-Project/build/baxter_simulator/baxter_sim_examples/catkin_generated/installspace/baxter_sim_examplesConfig.cmake"
+    "/home/aaron/repos/ME537-Project/build/baxter_simulator/baxter_sim_examples/catkin_generated/installspace/baxter_sim_examplesConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_sim_examples" TYPE FILE FILES "/home/chadsrover/robotics_ws/src/baxter_simulator/baxter_sim_examples/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_sim_examples" TYPE FILE FILES "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_examples/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/baxter_sim_examples" TYPE PROGRAM FILES "/home/chadsrover/robotics_ws/src/baxter_simulator/baxter_sim_examples/scripts/ik_pick_and_place_demo.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/baxter_sim_examples" TYPE PROGRAM FILES "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_examples/scripts/ik_pick_and_place_demo.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_sim_examples/launch" TYPE DIRECTORY FILES "/home/chadsrover/robotics_ws/src/baxter_simulator/baxter_sim_examples/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_sim_examples/launch" TYPE DIRECTORY FILES "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_examples/launch/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_sim_examples/models" TYPE DIRECTORY FILES "/home/chadsrover/robotics_ws/src/baxter_simulator/baxter_sim_examples/models/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_sim_examples/models" TYPE DIRECTORY FILES "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_examples/models/")
 endif()
 

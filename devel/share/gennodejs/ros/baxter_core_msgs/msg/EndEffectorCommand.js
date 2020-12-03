@@ -92,9 +92,9 @@ class EndEffectorCommand {
 
   static getMessageSize(object) {
     let length = 0;
-    length += object.command.length;
-    length += object.args.length;
-    length += object.sender.length;
+    length += _getByteLength(object.command);
+    length += _getByteLength(object.args);
+    length += _getByteLength(object.sender);
     return length + 20;
   }
 
