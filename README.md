@@ -90,7 +90,7 @@ source ~/ME537-Project/devel/setup.sh
 ```
 roslaunch baxter_gazebo baxter_world.launch
 ```
-5. In a new terminal (repeat steps 1 & 2 in new terminal):
+5. In a new terminal (repeat steps 1 & 3 in new terminal):
 6. Resets robot: ``` rosrun baxter_tools enable_robot.py -r ```
 7. Enables robot: ``` rosrun baxter_tools enable_robot.py -e ```
 8. Untucks robot arms: ``` rosrun baxter_tools tuck_arms.py -u ```
