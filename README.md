@@ -4,6 +4,7 @@
 * [Installation](#installation)
 * [Physical Baxter Example Run](#physical-baxter-example-run)
 * [Simulation Example Run](#simulation-example-run)
+* [Known Bugs](#known-bugs)
 
 ## Requirements
 * [Ubuntu 18.04](https://ubuntu.com/download/desktop) (preferred) or Ubuntu 16.04
@@ -75,8 +76,8 @@ roslaunch baxter_gazebo baxter_world.launch
 
 ------------
 
-## Bugs
-### `rospkg` Not Found
+## Known Bugs
+### Not Found `rospkg`. Occurs normally when trying to do a `rosrun` command
 You probably don't have ros setup for python3. Run the following commands
 ```
 sudo apt-get install python3-pip python3-yaml
