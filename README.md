@@ -30,9 +30,6 @@ sudo apt install ros-<ros_version>-effort-controllers
 sudo apt install qt4-default
 ```
 3) Run `catkin_make`
-```
-catkin_make
-```
 
 ### Set up personal computer
 Run the following command:
