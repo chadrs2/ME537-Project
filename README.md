@@ -131,10 +131,14 @@ bash: [: 0: unary operator expected
 ```
 nano ~/ME537-Project/devel/_setup_util.py
 ```
+
 1.1 Change line containing `/home/aaron/repos/ME537-Project/devel` to the proper repository devel path.
+
 2. Edit `setup.sh`:
 ```
 nano ~/ME537-Project/devel/setup.sh
 ```
+
 2.1 Change top line of `${_CATKIN_SETUP_DIR:=/home/aaron/ME537-Project/devel}` to your proper repository devel path.
-3. Now re-do: * [Set up personal computer](#set-up-personal-computer)
+
+3. Now re-do: [Set up personal computer](#set-up-personal-computer)
