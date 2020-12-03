@@ -2,7 +2,7 @@
 
 ## Contents
 * [Git Repo Installation](#git-repo-installation)
-* [Simulation Installation](#simulation-installation)
+* [Installation](#installation)
 * [Physical Baxter Example Run](#physical-baxter-example-run)
 * [Simulation Example Run](#simulation-example-run)
 
@@ -97,32 +97,3 @@ roslaunch baxter_gazebo baxter_world.launch
 8. Now run our own files!
 
 ------------
-## Known bugs
-
-### Bad environment setup fix
-Error shown: 
-``` 
-Missing Python script: /home/aaron/repos/ME537-Project/devel/_setup_util.py
-bash: return: can only `return' from a function or sourced script
-bash: /home/aaron/repos/ME537-Project/devel/_setup_util.py: No such file or directory
-Failed to run '"/home/aaron/repos/ME537-Project/devel/_setup_util.py" ': return code 127
-bash: return: can only `return' from a function or sourced script
-bash: : No such file or directory
-bash: [: 0: unary operator expected
-```
-#### Fix
-1. Edit `_setup_util.py`:
-```
-nano ~/ME537-Project/devel/_setup_util.py
-```
-
-1.1 Change line containing `/home/aaron/repos/ME537-Project/devel` to the proper repository devel path.
-
-2. Edit `setup.sh`:
-```
-nano ~/ME537-Project/devel/setup.sh
-```
-
-2.1 Change top line of `${_CATKIN_SETUP_DIR:=/home/aaron/ME537-Project/devel}` to your proper repository devel path.
-
-3. Now re-do: [Set up personal computer](#set-up-personal-computer)
