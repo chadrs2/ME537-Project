@@ -32,7 +32,7 @@ bash -i ~/ME537-Project/devel/setup.sh; source ~/.bashrc;
 ------------
 
 ## Simulation Installation
-### Setup baxter simulation
+### Setup baxter simulation - This might no longer be needed thanks to submodules
 1. Clone simulator in ME537-Project/src/ run:
 ```
 git clone https://github.com/RethinkRobotics/baxter_simulator.git
