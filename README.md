@@ -2,7 +2,6 @@
 
 ## Contents
 * [Installation](#installation)
-* [Simulation Installation](#simulation-installation)
 * [Physical Baxter Example Run](#physical-baxter-example-run)
 * [Simulation Example Run](#simulation-example-run)
 
@@ -36,28 +35,6 @@ Run the following command:
 
 ```
 bash -i ~/ME537-Project/devel/setup.sh; source ~/.bashrc;
-```
-
-------------
-
-## Simulation Installation
-### Install simulator
-1. Change into main directory src folder and run the following commands:
-```
-cd ~/ME537-Project/src/
-wstool . init
-wstool merge https://raw.githubusercontent.com/RethinkRobotics/baxter_simulator/master/baxter_simulator.rosinstall
-wstool update
-```
-2. Build source now by running the following commands:
-```
-source ~/.bashrc
-source ~/ME537-Project/devel/setup.bash
-```
-3. Now do catkin_make
-```
-cd ~/ME537-Project/
-catkin_make
 ```
 
 ------------
