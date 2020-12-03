@@ -79,9 +79,9 @@ catkin_make
 ## Physical Baxter Example Run
 1. Source setup script
 ```
-source ~/robotics_ws/devel/setup.sh
+source ~/ME537-Project/devel/setup.sh
 ```
-2. Change into simulation baxter environment within main ~/robotics_ws directory:
+2. Change into simulation baxter environment within main ~/ME537-Project directory:
 ```
 ./baxter.sh
 ```
@@ -93,9 +93,9 @@ source ~/robotics_ws/devel/setup.sh
 ## Simulation Example Run
 1. Source setup script
 ```
-source ~/robotics_ws/devel/setup.sh
+source ~/ME537-Project/devel/setup.sh
 ```
-2. Change into simulation baxter environment within main ~/robotics_ws directory:
+2. Change into simulation baxter environment within main ~/ME537-Project directory:
 ```
 ./baxter.sh sim
 ```
