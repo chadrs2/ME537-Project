@@ -67,14 +67,14 @@ set(rethink_ee_description_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(rethink_ee_description_SOURCE_PREFIX /home/chadsrover/robotics_ws/src/baxter_common/rethink_ee_description)
-  set(rethink_ee_description_DEVEL_PREFIX /home/chadsrover/robotics_ws/devel)
+  set(rethink_ee_description_SOURCE_PREFIX /home/aaron/repos/ME537-Project/src/baxter_common/rethink_ee_description)
+  set(rethink_ee_description_DEVEL_PREFIX /home/aaron/repos/ME537-Project/devel)
   set(rethink_ee_description_INSTALL_PREFIX "")
   set(rethink_ee_description_PREFIX ${rethink_ee_description_DEVEL_PREFIX})
 else()
   set(rethink_ee_description_SOURCE_PREFIX "")
   set(rethink_ee_description_DEVEL_PREFIX "")
-  set(rethink_ee_description_INSTALL_PREFIX /home/chadsrover/robotics_ws/install)
+  set(rethink_ee_description_INSTALL_PREFIX /home/aaron/repos/ME537-Project/install)
   set(rethink_ee_description_PREFIX ${rethink_ee_description_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/chadsrover/robotics_ws/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/aaron/repos/ME537-Project/install/lib;/home/aaron/repos/ME537-Project/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

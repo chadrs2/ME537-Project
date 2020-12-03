@@ -71,7 +71,7 @@ class TareEnable {
 
   static getMessageSize(object) {
     let length = 0;
-    length += object.uid.length;
+    length += _getByteLength(object.uid);
     return length + 6;
   }
 

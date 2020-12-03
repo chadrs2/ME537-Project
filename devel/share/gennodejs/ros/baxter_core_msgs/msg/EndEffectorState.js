@@ -213,9 +213,9 @@ class EndEffectorState {
 
   static getMessageSize(object) {
     let length = 0;
-    length += object.state.length;
-    length += object.command.length;
-    length += object.command_sender.length;
+    length += _getByteLength(object.state);
+    length += _getByteLength(object.command);
+    length += _getByteLength(object.command_sender);
     return length + 44;
   }
 

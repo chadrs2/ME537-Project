@@ -67,14 +67,14 @@ set(baxter_sim_controllers_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(baxter_sim_controllers_SOURCE_PREFIX /home/chadsrover/robotics_ws/src/baxter_simulator/baxter_sim_controllers)
-  set(baxter_sim_controllers_DEVEL_PREFIX /home/chadsrover/robotics_ws/devel)
+  set(baxter_sim_controllers_SOURCE_PREFIX /home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_controllers)
+  set(baxter_sim_controllers_DEVEL_PREFIX /home/aaron/repos/ME537-Project/devel)
   set(baxter_sim_controllers_INSTALL_PREFIX "")
   set(baxter_sim_controllers_PREFIX ${baxter_sim_controllers_DEVEL_PREFIX})
 else()
   set(baxter_sim_controllers_SOURCE_PREFIX "")
   set(baxter_sim_controllers_DEVEL_PREFIX "")
-  set(baxter_sim_controllers_INSTALL_PREFIX /home/chadsrover/robotics_ws/install)
+  set(baxter_sim_controllers_INSTALL_PREFIX /home/aaron/repos/ME537-Project/install)
   set(baxter_sim_controllers_PREFIX ${baxter_sim_controllers_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(baxter_sim_controllers_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/chadsrover/robotics_ws/src/baxter_simulator/baxter_sim_controllers/include " STREQUAL " ")
+if(NOT "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_controllers/include " STREQUAL " ")
   set(baxter_sim_controllers_INCLUDE_DIRS "")
-  set(_include_dirs "/home/chadsrover/robotics_ws/src/baxter_simulator/baxter_sim_controllers/include")
+  set(_include_dirs "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_controllers/include")
   if(NOT "https://github.com/RethinkRobotics/baxter_simulator/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/RethinkRobotics/baxter_simulator/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://sdk.rethinkrobotics.com " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/chadsrover/robotics_ws/src/baxter_simulator/baxter_sim_controllers
         message(FATAL_ERROR "Project 'baxter_sim_controllers' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'baxter_sim_controllers' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/chadsrover/robotics_ws/src/baxter_simulator/baxter_sim_controllers/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'baxter_sim_controllers' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_controllers/${idir}'.  ${_report}")
     endif()
     _list_append_unique(baxter_sim_controllers_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/chadsrover/robotics_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/aaron/repos/ME537-Project/devel/lib;/home/aaron/repos/ME537-Project/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

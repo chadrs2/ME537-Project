@@ -67,14 +67,14 @@ set(baxter_pykdl_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(baxter_pykdl_SOURCE_PREFIX /home/chadsrover/robotics_ws/src/baxter_pykdl)
-  set(baxter_pykdl_DEVEL_PREFIX /home/chadsrover/robotics_ws/devel)
+  set(baxter_pykdl_SOURCE_PREFIX /home/aaron/repos/ME537-Project/src/baxter_pykdl)
+  set(baxter_pykdl_DEVEL_PREFIX /home/aaron/repos/ME537-Project/devel)
   set(baxter_pykdl_INSTALL_PREFIX "")
   set(baxter_pykdl_PREFIX ${baxter_pykdl_DEVEL_PREFIX})
 else()
   set(baxter_pykdl_SOURCE_PREFIX "")
   set(baxter_pykdl_DEVEL_PREFIX "")
-  set(baxter_pykdl_INSTALL_PREFIX /home/chadsrover/robotics_ws/install)
+  set(baxter_pykdl_INSTALL_PREFIX /home/aaron/repos/ME537-Project/install)
   set(baxter_pykdl_PREFIX ${baxter_pykdl_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/chadsrover/robotics_ws/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/aaron/repos/ME537-Project/install/lib;/home/aaron/repos/ME537-Project/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

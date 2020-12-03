@@ -24,6 +24,15 @@
 (intern "*RAW_POSITION_MODE*" (find-package "BAXTER_CORE_MSGS::JOINTCOMMAND"))
 (shadow '*RAW_POSITION_MODE* (find-package "BAXTER_CORE_MSGS::JOINTCOMMAND"))
 (defconstant baxter_core_msgs::JointCommand::*RAW_POSITION_MODE* 4)
+
+(defun baxter_core_msgs::JointCommand-to-symbol (const)
+  (cond
+        ((= const 1) 'baxter_core_msgs::JointCommand::*POSITION_MODE*)
+        ((= const 2) 'baxter_core_msgs::JointCommand::*VELOCITY_MODE*)
+        ((= const 3) 'baxter_core_msgs::JointCommand::*TORQUE_MODE*)
+        ((= const 4) 'baxter_core_msgs::JointCommand::*RAW_POSITION_MODE*)
+        (t nil)))
+
 (defclass baxter_core_msgs::JointCommand
   :super ros::object
   :slots (_mode _command _names ))

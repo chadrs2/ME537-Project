@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "std_msgs;baxter_core_msgs;gazebo_msgs;sensor_msgs;kdl_parser".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lbaxter_sim_kinematics".split(';') if "-lbaxter_sim_kinematics" != "" else []
 PROJECT_NAME = "baxter_sim_kinematics"
-PROJECT_SPACE_DIR = "/home/chadsrover/robotics_ws/install"
+PROJECT_SPACE_DIR = "/home/aaron/repos/ME537-Project/install"
 PROJECT_VERSION = "1.2.12"

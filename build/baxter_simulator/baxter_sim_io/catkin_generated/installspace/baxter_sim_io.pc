@@ -1,4 +1,4 @@
-prefix=/home/chadsrover/robotics_ws/install
+prefix=/home/aaron/repos/ME537-Project/install
 
 Name: baxter_sim_io
 Description: Description of baxter_sim_io

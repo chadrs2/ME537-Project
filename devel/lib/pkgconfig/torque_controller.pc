@@ -1,8 +1,8 @@
-prefix=/home/chadsrover/robotics_ws/devel
+prefix=/home/aaron/repos/ME537-Project/devel
 
 Name: torque_controller
 Description: Description of torque_controller
 Version: 0.0.0
-Cflags: -I/home/chadsrover/robotics_ws/devel/include
+Cflags: -I/home/aaron/repos/ME537-Project/devel/include
 Libs: -L${prefix}/lib 
 Requires: rad_baxter_limb baxter_interface

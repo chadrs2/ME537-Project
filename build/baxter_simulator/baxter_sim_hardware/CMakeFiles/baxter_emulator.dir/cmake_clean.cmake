@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "/home/aaron/repos/ME537-Project/devel/lib/baxter_sim_hardware/baxter_emulator"
+  "/home/aaron/repos/ME537-Project/devel/lib/baxter_sim_hardware/baxter_emulator.pdb"
   "CMakeFiles/baxter_emulator.dir/src/baxter_emulator.cpp.o"
-  "/home/chadsrover/robotics_ws/devel/lib/baxter_sim_hardware/baxter_emulator.pdb"
-  "/home/chadsrover/robotics_ws/devel/lib/baxter_sim_hardware/baxter_emulator"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -29,8 +29,8 @@
    (setq _data __data)
    self)
   (:isEnabled
-   (&optional __isEnabled)
-   (if __isEnabled (setq _isEnabled __isEnabled)) _isEnabled)
+   (&optional (__isEnabled :null))
+   (if (not (eq __isEnabled :null)) (setq _isEnabled __isEnabled)) _isEnabled)
   (:uid
    (&optional __uid)
    (if __uid (setq _uid __uid)) _uid)

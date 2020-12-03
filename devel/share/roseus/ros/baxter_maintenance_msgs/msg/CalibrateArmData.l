@@ -25,8 +25,8 @@
    (setq _suppressWriteToFile __suppressWriteToFile)
    self)
   (:suppressWriteToFile
-   (&optional __suppressWriteToFile)
-   (if __suppressWriteToFile (setq _suppressWriteToFile __suppressWriteToFile)) _suppressWriteToFile)
+   (&optional (__suppressWriteToFile :null))
+   (if (not (eq __suppressWriteToFile :null)) (setq _suppressWriteToFile __suppressWriteToFile)) _suppressWriteToFile)
   (:serialization-length
    ()
    (+

@@ -269,16 +269,6 @@ namespace message_traits
 
 
 template <class ContainerAllocator>
-struct IsFixedSize< ::baxter_core_msgs::EndEffectorCommand_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::baxter_core_msgs::EndEffectorCommand_<ContainerAllocator> const>
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
 struct IsMessage< ::baxter_core_msgs::EndEffectorCommand_<ContainerAllocator> >
   : TrueType
   { };
@@ -286,6 +276,16 @@ struct IsMessage< ::baxter_core_msgs::EndEffectorCommand_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsMessage< ::baxter_core_msgs::EndEffectorCommand_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::baxter_core_msgs::EndEffectorCommand_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::baxter_core_msgs::EndEffectorCommand_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>

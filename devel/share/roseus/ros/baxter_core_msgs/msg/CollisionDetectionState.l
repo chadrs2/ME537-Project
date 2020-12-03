@@ -36,8 +36,8 @@
        (if __header (setq _header (car __header)))
        _header)))
   (:collision_state
-   (&optional __collision_state)
-   (if __collision_state (setq _collision_state __collision_state)) _collision_state)
+   (&optional (__collision_state :null))
+   (if (not (eq __collision_state :null)) (setq _collision_state __collision_state)) _collision_state)
   (:serialization-length
    ()
    (+

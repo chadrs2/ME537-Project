@@ -1,8 +1,8 @@
-# Install script for directory: /home/chadsrover/robotics_ws/src/baxter_simulator/baxter_sim_hardware
+# Install script for directory: /home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_hardware
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/chadsrover/robotics_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/aaron/repos/ME537-Project/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/chadsrover/robotics_ws/build/baxter_simulator/baxter_sim_hardware/catkin_generated/installspace/baxter_sim_hardware.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/aaron/repos/ME537-Project/build/baxter_simulator/baxter_sim_hardware/catkin_generated/installspace/baxter_sim_hardware.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_sim_hardware/cmake" TYPE FILE FILES
-    "/home/chadsrover/robotics_ws/build/baxter_simulator/baxter_sim_hardware/catkin_generated/installspace/baxter_sim_hardwareConfig.cmake"
-    "/home/chadsrover/robotics_ws/build/baxter_simulator/baxter_sim_hardware/catkin_generated/installspace/baxter_sim_hardwareConfig-version.cmake"
+    "/home/aaron/repos/ME537-Project/build/baxter_simulator/baxter_sim_hardware/catkin_generated/installspace/baxter_sim_hardwareConfig.cmake"
+    "/home/aaron/repos/ME537-Project/build/baxter_simulator/baxter_sim_hardware/catkin_generated/installspace/baxter_sim_hardwareConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_sim_hardware" TYPE FILE FILES "/home/chadsrover/robotics_ws/src/baxter_simulator/baxter_sim_hardware/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_sim_hardware" TYPE FILE FILES "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_hardware/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,12 +59,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/baxter_sim_hardware/baxter_emulator"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/baxter_sim_hardware" TYPE EXECUTABLE FILES "/home/chadsrover/robotics_ws/devel/lib/baxter_sim_hardware/baxter_emulator")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/baxter_sim_hardware" TYPE EXECUTABLE FILES "/home/aaron/repos/ME537-Project/devel/lib/baxter_sim_hardware/baxter_emulator")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/baxter_sim_hardware/baxter_emulator" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/baxter_sim_hardware/baxter_emulator")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/baxter_sim_hardware/baxter_emulator"
-         OLD_RPATH "/opt/ros/melodic/lib:/home/chadsrover/robotics_ws/devel/lib:"
+         OLD_RPATH "/opt/ros/noetic/lib:/home/aaron/repos/ME537-Project/devel/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/baxter_sim_hardware/baxter_emulator")
@@ -74,10 +74,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_sim_hardware" TYPE DIRECTORY FILES
-    "/home/chadsrover/robotics_ws/src/baxter_simulator/baxter_sim_hardware/config"
-    "/home/chadsrover/robotics_ws/src/baxter_simulator/baxter_sim_hardware/images"
-    "/home/chadsrover/robotics_ws/src/baxter_simulator/baxter_sim_hardware/include"
-    "/home/chadsrover/robotics_ws/src/baxter_simulator/baxter_sim_hardware/launch"
+    "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_hardware/config"
+    "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_hardware/images"
+    "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_hardware/include"
+    "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_hardware/launch"
     )
 endif()
 

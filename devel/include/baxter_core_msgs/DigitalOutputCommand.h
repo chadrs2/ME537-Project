@@ -93,16 +93,6 @@ namespace message_traits
 
 
 template <class ContainerAllocator>
-struct IsFixedSize< ::baxter_core_msgs::DigitalOutputCommand_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::baxter_core_msgs::DigitalOutputCommand_<ContainerAllocator> const>
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
 struct IsMessage< ::baxter_core_msgs::DigitalOutputCommand_<ContainerAllocator> >
   : TrueType
   { };
@@ -110,6 +100,16 @@ struct IsMessage< ::baxter_core_msgs::DigitalOutputCommand_<ContainerAllocator> 
 template <class ContainerAllocator>
 struct IsMessage< ::baxter_core_msgs::DigitalOutputCommand_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::baxter_core_msgs::DigitalOutputCommand_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::baxter_core_msgs::DigitalOutputCommand_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>
