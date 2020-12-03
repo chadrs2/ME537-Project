@@ -1,10 +1,10 @@
 # ME537-Project
 
 ## Contents
-* [Set up personal computer](#set-up-personal-computer)
+* [Git Repo Installation](#git-repo-installation)
 * [Simulation Installation](#simulation-installation)
-* [Example Physical Baxter Setup](#example-physical-baxter-setup)
-* [Example Simulation Setup](#example-simulation-setup)
+* [Physical Baxter Example Run](#physical-baxter-example-run)
+* [Simulation Example Run](#simulation-example-run)
 
 ## Requirements
 * [Ubuntu 18.04](https://ubuntu.com/download/desktop) (preferred) or Ubuntu 16.04
@@ -12,7 +12,7 @@
 
 ----------
 
-## Installation
+## Git Repo Installation
 
 Clone the repository to your Home directory:
 ```
@@ -76,7 +76,7 @@ catkin_make
 
 ------------
 
-## Example Physical Baxter Setup
+## Physical Baxter Example Run
 1. Source setup script
 ```
 source ~/robotics_ws/devel/setup.sh
@@ -90,7 +90,7 @@ source ~/robotics_ws/devel/setup.sh
 5. Untucks robot arms: ``` rosrun baxter_tools tuck_arms.py -u ```
 6. Now run python command files in ipython, using the "run" command before the file name.
 
-## Example Simulation Setup
+## Simulation Example Run
 1. Source setup script
 ```
 source ~/robotics_ws/devel/setup.sh
