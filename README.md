@@ -97,3 +97,11 @@ roslaunch baxter_gazebo baxter_world.launch
 9. Now run your own files!
 
 ------------
+
+## Bugs
+### `rospkg` Not Found
+You probably don't have ros setup for python3. Run the following commands
+```
+sudo apt-get install python3-pip python3-yaml
+sudo pip3 install rospkg catkin_pkg
+```
