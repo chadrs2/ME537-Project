@@ -30,9 +30,9 @@ while step < 2500:
 
 # From My Past Code
 right_gripper = baxter_interface.Gripper('right')
-right_gripper.calibrate()
-right_gripper.close()
-right_gripper.open()
+# right_gripper.calibrate()
+# right_gripper.close()
+# right_gripper.open()
 
 r_limb.get_kdl_jacobian()
 brk.FK[6]([0, 0, 0, 0, 0, 0, 0])

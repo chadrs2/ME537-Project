@@ -71,7 +71,7 @@ joint_commands = []
 # joint_commands.append(np.array([0, -np.pi/4, 0, 0, 0, 0, 0]))
 joint_commands.append(q)
 
-control_rate = rospy.Rate(500)
+control_rate = rospy.Rate(10)
 r_limb.set_joint_position_speed(0.5)
  
 for command in joint_commands:
