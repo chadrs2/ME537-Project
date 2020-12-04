@@ -168,25 +168,25 @@ baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_eus
 
 /home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointState.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointState.l: /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
-/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointState.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointState.l: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
-/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointState.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointState.l: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointState.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointState.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointState.l: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointState.l: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
+/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointState.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointState.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointState.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointState.l: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aaron/repos/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating EusLisp code from baxter_core_msgs/EndpointState.msg"
 	cd /home/aaron/repos/ME537-Project/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg -Ibaxter_core_msgs:/home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg
 
 /home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointStates.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointStates.l: /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg
-/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointStates.l: /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
-/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointStates.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointStates.l: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
-/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointStates.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointStates.l: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointStates.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointStates.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointStates.l: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointStates.l: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
+/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointStates.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointStates.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointStates.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointStates.l: /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
 /home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg/EndpointStates.l: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aaron/repos/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating EusLisp code from baxter_core_msgs/EndpointStates.msg"
 	cd /home/aaron/repos/ME537-Project/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg -Ibaxter_core_msgs:/home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/msg
@@ -252,11 +252,11 @@ baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_eus
 
 /home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/srv/SolvePositionIK.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/srv/SolvePositionIK.l: /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv
-/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/srv/SolvePositionIK.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/srv/SolvePositionIK.l: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/srv/SolvePositionIK.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/srv/SolvePositionIK.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/srv/SolvePositionIK.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/srv/SolvePositionIK.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/srv/SolvePositionIK.l: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/srv/SolvePositionIK.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/srv/SolvePositionIK.l: /opt/ros/noetic/share/sensor_msgs/msg/JointState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aaron/repos/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating EusLisp code from baxter_core_msgs/SolvePositionIK.srv"
 	cd /home/aaron/repos/ME537-Project/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv -Ibaxter_core_msgs:/home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/aaron/repos/ME537-Project/devel/share/roseus/ros/baxter_core_msgs/srv

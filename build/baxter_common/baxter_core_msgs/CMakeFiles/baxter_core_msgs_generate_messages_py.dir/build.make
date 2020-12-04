@@ -169,25 +169,25 @@ baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py:
 
 /home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
-/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
-/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
+/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aaron/repos/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating Python from MSG baxter_core_msgs/EndpointState"
 	cd /home/aaron/repos/ME537-Project/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg -Ibaxter_core_msgs:/home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg
 
 /home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg
-/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
-/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
-/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
+/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
 /home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aaron/repos/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating Python from MSG baxter_core_msgs/EndpointStates"
 	cd /home/aaron/repos/ME537-Project/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg -Ibaxter_core_msgs:/home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/msg
@@ -253,11 +253,11 @@ baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py:
 
 /home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
 /home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv
-/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
-/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/share/sensor_msgs/msg/JointState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aaron/repos/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating Python code from SRV baxter_core_msgs/SolvePositionIK"
 	cd /home/aaron/repos/ME537-Project/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv -Ibaxter_core_msgs:/home/aaron/repos/ME537-Project/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages/baxter_core_msgs/srv
