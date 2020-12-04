@@ -81,9 +81,9 @@ class URDFConfiguration {
 
   static getMessageSize(object) {
     let length = 0;
-    length += _getByteLength(object.link);
-    length += _getByteLength(object.joint);
-    length += _getByteLength(object.urdf);
+    length += object.link.length;
+    length += object.joint.length;
+    length += object.urdf.length;
     return length + 20;
   }
 

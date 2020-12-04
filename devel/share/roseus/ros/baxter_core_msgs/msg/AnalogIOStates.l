@@ -20,7 +20,7 @@
   (:init
    (&key
     ((:names __names) (let (r) (dotimes (i 0) (push "" r)) r))
-    ((:states __states) ())
+    ((:states __states) (let (r) (dotimes (i 0) (push (instance baxter_core_msgs::AnalogIOState :init) r)) r))
     )
    (send-super :init)
    (setq _names __names)

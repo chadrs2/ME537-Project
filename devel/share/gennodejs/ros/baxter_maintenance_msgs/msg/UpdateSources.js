@@ -69,7 +69,7 @@ class UpdateSources {
 
   static getMessageSize(object) {
     let length = 0;
-    length += _getByteLength(object.uuid);
+    length += object.uuid.length;
     object.sources.forEach((val) => {
       length += UpdateSource.getMessageSize(val);
     });

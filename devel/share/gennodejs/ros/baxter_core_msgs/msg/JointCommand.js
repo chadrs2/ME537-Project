@@ -72,7 +72,7 @@ class JointCommand {
     let length = 0;
     length += 8 * object.command.length;
     object.names.forEach((val) => {
-      length += 4 + _getByteLength(val);
+      length += 4 + val.length;
     });
     return length + 12;
   }

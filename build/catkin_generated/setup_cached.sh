@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/aaron/repos/ME537-Project/build'
+export PWD='/home/chad_samuelson/ME537-Project/build'

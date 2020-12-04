@@ -1,4 +1,4 @@
-prefix=/home/aaron/repos/ME537-Project/install
+prefix=/home/chad_samuelson/ME537-Project/install
 
 Name: baxter_examples
 Description: Description of baxter_examples

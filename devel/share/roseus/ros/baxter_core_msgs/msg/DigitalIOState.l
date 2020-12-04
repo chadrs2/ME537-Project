@@ -24,15 +24,6 @@
 (intern "*UNPRESSED*" (find-package "BAXTER_CORE_MSGS::DIGITALIOSTATE"))
 (shadow '*UNPRESSED* (find-package "BAXTER_CORE_MSGS::DIGITALIOSTATE"))
 (defconstant baxter_core_msgs::DigitalIOState::*UNPRESSED* 0)
-
-(defun baxter_core_msgs::DigitalIOState-to-symbol (const)
-  (cond
-        ((= const 0) 'baxter_core_msgs::DigitalIOState::*OFF*)
-        ((= const 1) 'baxter_core_msgs::DigitalIOState::*ON*)
-        ((= const 1) 'baxter_core_msgs::DigitalIOState::*PRESSED*)
-        ((= const 0) 'baxter_core_msgs::DigitalIOState::*UNPRESSED*)
-        (t nil)))
-
 (defclass baxter_core_msgs::DigitalIOState
   :super ros::object
   :slots (_state _isInputOnly ))
@@ -51,8 +42,8 @@
    (&optional __state)
    (if __state (setq _state __state)) _state)
   (:isInputOnly
-   (&optional (__isInputOnly :null))
-   (if (not (eq __isInputOnly :null)) (setq _isInputOnly __isInputOnly)) _isInputOnly)
+   (&optional __isInputOnly)
+   (if __isInputOnly (setq _isInputOnly __isInputOnly)) _isInputOnly)
   (:serialization-length
    ()
    (+

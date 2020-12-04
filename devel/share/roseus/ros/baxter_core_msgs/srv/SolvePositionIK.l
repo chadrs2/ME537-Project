@@ -36,15 +36,6 @@
 (intern "*SEED_NS_MAP*" (find-package "BAXTER_CORE_MSGS::SOLVEPOSITIONIKREQUEST"))
 (shadow '*SEED_NS_MAP* (find-package "BAXTER_CORE_MSGS::SOLVEPOSITIONIKREQUEST"))
 (defconstant baxter_core_msgs::SolvePositionIKRequest::*SEED_NS_MAP* 3)
-
-(defun baxter_core_msgs::SolvePositionIKRequest-to-symbol (const)
-  (cond
-        ((= const 0) 'baxter_core_msgs::SolvePositionIKRequest::*SEED_AUTO*)
-        ((= const 1) 'baxter_core_msgs::SolvePositionIKRequest::*SEED_USER*)
-        ((= const 2) 'baxter_core_msgs::SolvePositionIKRequest::*SEED_CURRENT*)
-        ((= const 3) 'baxter_core_msgs::SolvePositionIKRequest::*SEED_NS_MAP*)
-        (t nil)))
-
 (defclass baxter_core_msgs::SolvePositionIKRequest
   :super ros::object
   :slots (_pose_stamp _seed_angles _seed_mode ))
@@ -52,8 +43,8 @@
 (defmethod baxter_core_msgs::SolvePositionIKRequest
   (:init
    (&key
-    ((:pose_stamp __pose_stamp) ())
-    ((:seed_angles __seed_angles) ())
+    ((:pose_stamp __pose_stamp) (let (r) (dotimes (i 0) (push (instance geometry_msgs::PoseStamped :init) r)) r))
+    ((:seed_angles __seed_angles) (let (r) (dotimes (i 0) (push (instance sensor_msgs::JointState :init) r)) r))
     ((:seed_mode __seed_mode) 0)
     )
    (send-super :init)
@@ -131,12 +122,6 @@
 (intern "*RESULT_INVALID*" (find-package "BAXTER_CORE_MSGS::SOLVEPOSITIONIKRESPONSE"))
 (shadow '*RESULT_INVALID* (find-package "BAXTER_CORE_MSGS::SOLVEPOSITIONIKRESPONSE"))
 (defconstant baxter_core_msgs::SolvePositionIKResponse::*RESULT_INVALID* 0)
-
-(defun baxter_core_msgs::SolvePositionIKResponse-to-symbol (const)
-  (cond
-        ((= const 0) 'baxter_core_msgs::SolvePositionIKResponse::*RESULT_INVALID*)
-        (t nil)))
-
 (defclass baxter_core_msgs::SolvePositionIKResponse
   :super ros::object
   :slots (_joints _isValid _result_type ))
@@ -144,7 +129,7 @@
 (defmethod baxter_core_msgs::SolvePositionIKResponse
   (:init
    (&key
-    ((:joints __joints) ())
+    ((:joints __joints) (let (r) (dotimes (i 0) (push (instance sensor_msgs::JointState :init) r)) r))
     ((:isValid __isValid) (let (r) (dotimes (i 0) (push nil r)) r))
     ((:result_type __result_type) (make-array 0 :initial-element 0 :element-type :char))
     )

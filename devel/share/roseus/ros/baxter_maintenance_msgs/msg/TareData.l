@@ -25,8 +25,8 @@
    (setq _tuneGravitySpring __tuneGravitySpring)
    self)
   (:tuneGravitySpring
-   (&optional (__tuneGravitySpring :null))
-   (if (not (eq __tuneGravitySpring :null)) (setq _tuneGravitySpring __tuneGravitySpring)) _tuneGravitySpring)
+   (&optional __tuneGravitySpring)
+   (if __tuneGravitySpring (setq _tuneGravitySpring __tuneGravitySpring)) _tuneGravitySpring)
   (:serialization-length
    ()
    (+

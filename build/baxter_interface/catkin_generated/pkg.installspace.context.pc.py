@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "rospy;actionlib;sensor_msgs;std_msgs;control_msgs;trajectory_msgs;dynamic_reconfigure;baxter_core_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "baxter_interface"
-PROJECT_SPACE_DIR = "/home/aaron/repos/ME537-Project/install"
+PROJECT_SPACE_DIR = "/home/chad_samuelson/ME537-Project/install"
 PROJECT_VERSION = "1.2.0"

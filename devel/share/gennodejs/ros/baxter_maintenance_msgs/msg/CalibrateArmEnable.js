@@ -71,7 +71,7 @@ class CalibrateArmEnable {
 
   static getMessageSize(object) {
     let length = 0;
-    length += _getByteLength(object.uid);
+    length += object.uid.length;
     return length + 6;
   }
 

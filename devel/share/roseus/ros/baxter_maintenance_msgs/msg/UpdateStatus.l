@@ -45,22 +45,6 @@
 (intern "*STS_LOAD_KEXEC*" (find-package "BAXTER_MAINTENANCE_MSGS::UPDATESTATUS"))
 (shadow '*STS_LOAD_KEXEC* (find-package "BAXTER_MAINTENANCE_MSGS::UPDATESTATUS"))
 (defconstant baxter_maintenance_msgs::UpdateStatus::*STS_LOAD_KEXEC* 10)
-
-(defun baxter_maintenance_msgs::UpdateStatus-to-symbol (const)
-  (cond
-        ((= const 0) 'baxter_maintenance_msgs::UpdateStatus::*STS_IDLE*)
-        ((= const 1) 'baxter_maintenance_msgs::UpdateStatus::*STS_INVALID*)
-        ((= const 2) 'baxter_maintenance_msgs::UpdateStatus::*STS_BUSY*)
-        ((= const 3) 'baxter_maintenance_msgs::UpdateStatus::*STS_CANCELLED*)
-        ((= const 4) 'baxter_maintenance_msgs::UpdateStatus::*STS_ERR*)
-        ((= const 5) 'baxter_maintenance_msgs::UpdateStatus::*STS_MOUNT_UPDATE*)
-        ((= const 6) 'baxter_maintenance_msgs::UpdateStatus::*STS_VERIFY_UPDATE*)
-        ((= const 7) 'baxter_maintenance_msgs::UpdateStatus::*STS_PREP_STAGING*)
-        ((= const 8) 'baxter_maintenance_msgs::UpdateStatus::*STS_MOUNT_STAGING*)
-        ((= const 9) 'baxter_maintenance_msgs::UpdateStatus::*STS_EXTRACT_UPDATE*)
-        ((= const 10) 'baxter_maintenance_msgs::UpdateStatus::*STS_LOAD_KEXEC*)
-        (t nil)))
-
 (defclass baxter_maintenance_msgs::UpdateStatus
   :super ros::object
   :slots (_status _progress _long_description ))

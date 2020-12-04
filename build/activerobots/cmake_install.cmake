@@ -1,8 +1,8 @@
-# Install script for directory: /home/aaron/repos/ME537-Project/src/activerobots
+# Install script for directory: /home/chad_samuelson/ME537-Project/src/activerobots
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/aaron/repos/ME537-Project/install")
+  set(CMAKE_INSTALL_PREFIX "/home/chad_samuelson/ME537-Project/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/aaron/repos/ME537-Project/build/activerobots/catkin_generated/installspace/activerobots.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/chad_samuelson/ME537-Project/build/activerobots/catkin_generated/installspace/activerobots.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/activerobots/cmake" TYPE FILE FILES
-    "/home/aaron/repos/ME537-Project/build/activerobots/catkin_generated/installspace/activerobotsConfig.cmake"
-    "/home/aaron/repos/ME537-Project/build/activerobots/catkin_generated/installspace/activerobotsConfig-version.cmake"
+    "/home/chad_samuelson/ME537-Project/build/activerobots/catkin_generated/installspace/activerobotsConfig.cmake"
+    "/home/chad_samuelson/ME537-Project/build/activerobots/catkin_generated/installspace/activerobotsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/activerobots" TYPE FILE FILES "/home/aaron/repos/ME537-Project/src/activerobots/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/activerobots" TYPE FILE FILES "/home/chad_samuelson/ME537-Project/src/activerobots/package.xml")
 endif()
 

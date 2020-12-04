@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "controller_interface;control_toolbox;effort_controllers;baxter_core_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lbaxter_sim_controllers".split(';') if "-lbaxter_sim_controllers" != "" else []
 PROJECT_NAME = "baxter_sim_controllers"
-PROJECT_SPACE_DIR = "/home/aaron/repos/ME537-Project/install"
+PROJECT_SPACE_DIR = "/home/chad_samuelson/ME537-Project/install"
 PROJECT_VERSION = "1.2.12"

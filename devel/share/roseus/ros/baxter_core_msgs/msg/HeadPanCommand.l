@@ -27,14 +27,6 @@
 (intern "*REQUEST_PAN_VOID*" (find-package "BAXTER_CORE_MSGS::HEADPANCOMMAND"))
 (shadow '*REQUEST_PAN_VOID* (find-package "BAXTER_CORE_MSGS::HEADPANCOMMAND"))
 (defconstant baxter_core_msgs::HeadPanCommand::*REQUEST_PAN_VOID* 2)
-
-(defun baxter_core_msgs::HeadPanCommand-to-symbol (const)
-  (cond
-        ((= const 0) 'baxter_core_msgs::HeadPanCommand::*REQUEST_PAN_DISABLE*)
-        ((= const 1) 'baxter_core_msgs::HeadPanCommand::*REQUEST_PAN_ENABLE*)
-        ((= const 2) 'baxter_core_msgs::HeadPanCommand::*REQUEST_PAN_VOID*)
-        (t nil)))
-
 (defclass baxter_core_msgs::HeadPanCommand
   :super ros::object
   :slots (_target _speed_ratio _enable_pan_request ))

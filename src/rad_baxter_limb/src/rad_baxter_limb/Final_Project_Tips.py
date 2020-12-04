@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 import rospy
 import tf
 import numpy as np
@@ -19,7 +19,7 @@ position = pose[0:3]
 
 #From Lab 1 Part 2
 joint_command_start = np.array([0, 0, 0, 0, 0, 0, 0])
-control_rate = rospy.Rate(500)
+control_rate = rospy.Rate(50)
 r_limb.set_joint_position_speed(0.5)
 joint_command = r_limb.get_joint_angles()
 step = 1
@@ -46,6 +46,6 @@ r_limb.get_kdl_jacobian_transpose()
 r_limb.kin_kdl.inverse_kinematics(np.array([0.3, 0.3, 0.3])) 
 np.pi
 
-# while not rospy.is_shutdown():
-#     rospy.spin()
+#while not rospy.is_shutdown():
+#    rospy.spin()
 

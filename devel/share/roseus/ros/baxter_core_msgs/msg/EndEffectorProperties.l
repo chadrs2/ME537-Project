@@ -24,15 +24,6 @@
 (intern "*PASSIVE_GRIPPER*" (find-package "BAXTER_CORE_MSGS::ENDEFFECTORPROPERTIES"))
 (shadow '*PASSIVE_GRIPPER* (find-package "BAXTER_CORE_MSGS::ENDEFFECTORPROPERTIES"))
 (defconstant baxter_core_msgs::EndEffectorProperties::*PASSIVE_GRIPPER* 3)
-
-(defun baxter_core_msgs::EndEffectorProperties-to-symbol (const)
-  (cond
-        ((= const 0) 'baxter_core_msgs::EndEffectorProperties::*NO_GRIPPER*)
-        ((= const 1) 'baxter_core_msgs::EndEffectorProperties::*SUCTION_CUP_GRIPPER*)
-        ((= const 2) 'baxter_core_msgs::EndEffectorProperties::*ELECTRIC_GRIPPER*)
-        ((= const 3) 'baxter_core_msgs::EndEffectorProperties::*PASSIVE_GRIPPER*)
-        (t nil)))
-
 (defclass baxter_core_msgs::EndEffectorProperties
   :super ros::object
   :slots (_id _ui_type _manufacturer _product _serial_number _hardware_rev _firmware_rev _firmware_date _has_calibration _controls_grip _senses_grip _reverses_grip _controls_force _senses_force _controls_position _senses_position _properties ))
@@ -102,29 +93,29 @@
    (&optional __firmware_date)
    (if __firmware_date (setq _firmware_date __firmware_date)) _firmware_date)
   (:has_calibration
-   (&optional (__has_calibration :null))
-   (if (not (eq __has_calibration :null)) (setq _has_calibration __has_calibration)) _has_calibration)
+   (&optional __has_calibration)
+   (if __has_calibration (setq _has_calibration __has_calibration)) _has_calibration)
   (:controls_grip
-   (&optional (__controls_grip :null))
-   (if (not (eq __controls_grip :null)) (setq _controls_grip __controls_grip)) _controls_grip)
+   (&optional __controls_grip)
+   (if __controls_grip (setq _controls_grip __controls_grip)) _controls_grip)
   (:senses_grip
-   (&optional (__senses_grip :null))
-   (if (not (eq __senses_grip :null)) (setq _senses_grip __senses_grip)) _senses_grip)
+   (&optional __senses_grip)
+   (if __senses_grip (setq _senses_grip __senses_grip)) _senses_grip)
   (:reverses_grip
-   (&optional (__reverses_grip :null))
-   (if (not (eq __reverses_grip :null)) (setq _reverses_grip __reverses_grip)) _reverses_grip)
+   (&optional __reverses_grip)
+   (if __reverses_grip (setq _reverses_grip __reverses_grip)) _reverses_grip)
   (:controls_force
-   (&optional (__controls_force :null))
-   (if (not (eq __controls_force :null)) (setq _controls_force __controls_force)) _controls_force)
+   (&optional __controls_force)
+   (if __controls_force (setq _controls_force __controls_force)) _controls_force)
   (:senses_force
-   (&optional (__senses_force :null))
-   (if (not (eq __senses_force :null)) (setq _senses_force __senses_force)) _senses_force)
+   (&optional __senses_force)
+   (if __senses_force (setq _senses_force __senses_force)) _senses_force)
   (:controls_position
-   (&optional (__controls_position :null))
-   (if (not (eq __controls_position :null)) (setq _controls_position __controls_position)) _controls_position)
+   (&optional __controls_position)
+   (if __controls_position (setq _controls_position __controls_position)) _controls_position)
   (:senses_position
-   (&optional (__senses_position :null))
-   (if (not (eq __senses_position :null)) (setq _senses_position __senses_position)) _senses_position)
+   (&optional __senses_position)
+   (if __senses_position (setq _senses_position __senses_position)) _senses_position)
   (:properties
    (&optional __properties)
    (if __properties (setq _properties __properties)) _properties)

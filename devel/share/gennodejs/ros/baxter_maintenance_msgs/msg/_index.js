@@ -1,20 +1,20 @@
 
 "use strict";
 
-let CalibrateArmData = require('./CalibrateArmData.js');
-let UpdateStatus = require('./UpdateStatus.js');
 let TareData = require('./TareData.js');
+let CalibrateArmData = require('./CalibrateArmData.js');
 let CalibrateArmEnable = require('./CalibrateArmEnable.js');
+let UpdateSources = require('./UpdateSources.js');
 let UpdateSource = require('./UpdateSource.js');
 let TareEnable = require('./TareEnable.js');
-let UpdateSources = require('./UpdateSources.js');
+let UpdateStatus = require('./UpdateStatus.js');
 
 module.exports = {
-  CalibrateArmData: CalibrateArmData,
-  UpdateStatus: UpdateStatus,
   TareData: TareData,
+  CalibrateArmData: CalibrateArmData,
   CalibrateArmEnable: CalibrateArmEnable,
+  UpdateSources: UpdateSources,
   UpdateSource: UpdateSource,
   TareEnable: TareEnable,
-  UpdateSources: UpdateSources,
+  UpdateStatus: UpdateStatus,
 };

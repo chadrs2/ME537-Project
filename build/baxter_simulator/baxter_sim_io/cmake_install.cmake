@@ -1,8 +1,8 @@
-# Install script for directory: /home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_io
+# Install script for directory: /home/chad_samuelson/ME537-Project/src/baxter_simulator/baxter_sim_io
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/aaron/repos/ME537-Project/install")
+  set(CMAKE_INSTALL_PREFIX "/home/chad_samuelson/ME537-Project/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/aaron/repos/ME537-Project/build/baxter_simulator/baxter_sim_io/catkin_generated/installspace/baxter_sim_io.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/chad_samuelson/ME537-Project/build/baxter_simulator/baxter_sim_io/catkin_generated/installspace/baxter_sim_io.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_sim_io/cmake" TYPE FILE FILES
-    "/home/aaron/repos/ME537-Project/build/baxter_simulator/baxter_sim_io/catkin_generated/installspace/baxter_sim_ioConfig.cmake"
-    "/home/aaron/repos/ME537-Project/build/baxter_simulator/baxter_sim_io/catkin_generated/installspace/baxter_sim_ioConfig-version.cmake"
+    "/home/chad_samuelson/ME537-Project/build/baxter_simulator/baxter_sim_io/catkin_generated/installspace/baxter_sim_ioConfig.cmake"
+    "/home/chad_samuelson/ME537-Project/build/baxter_simulator/baxter_sim_io/catkin_generated/installspace/baxter_sim_ioConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_sim_io" TYPE FILE FILES "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_io/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_sim_io" TYPE FILE FILES "/home/chad_samuelson/ME537-Project/src/baxter_simulator/baxter_sim_io/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,12 +59,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/baxter_sim_io/baxter_sim_io"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/baxter_sim_io" TYPE EXECUTABLE FILES "/home/aaron/repos/ME537-Project/devel/lib/baxter_sim_io/baxter_sim_io")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/baxter_sim_io" TYPE EXECUTABLE FILES "/home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_io/baxter_sim_io")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/baxter_sim_io/baxter_sim_io" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/baxter_sim_io/baxter_sim_io")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/baxter_sim_io/baxter_sim_io"
-         OLD_RPATH "/opt/ros/noetic/lib:"
+         OLD_RPATH "/opt/ros/melodic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/baxter_sim_io/baxter_sim_io")
@@ -74,9 +74,9 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_sim_io" TYPE DIRECTORY FILES
-    "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_io/include"
-    "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_io/resources"
-    "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_io/ui"
+    "/home/chad_samuelson/ME537-Project/src/baxter_simulator/baxter_sim_io/include"
+    "/home/chad_samuelson/ME537-Project/src/baxter_simulator/baxter_sim_io/resources"
+    "/home/chad_samuelson/ME537-Project/src/baxter_simulator/baxter_sim_io/ui"
     )
 endif()
 

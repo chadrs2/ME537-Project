@@ -33,14 +33,6 @@
 (intern "*FORCE_MAX*" (find-package "BAXTER_CORE_MSGS::ENDEFFECTORSTATE"))
 (shadow '*FORCE_MAX* (find-package "BAXTER_CORE_MSGS::ENDEFFECTORSTATE"))
 (defconstant baxter_core_msgs::EndEffectorState::*FORCE_MAX* 100.0)
-
-(defun baxter_core_msgs::EndEffectorState-to-symbol (const)
-  (cond
-        ((= const 0) 'baxter_core_msgs::EndEffectorState::*STATE_FALSE*)
-        ((= const 1) 'baxter_core_msgs::EndEffectorState::*STATE_TRUE*)
-        ((= const 2) 'baxter_core_msgs::EndEffectorState::*STATE_UNKNOWN*)
-        (t nil)))
-
 (defclass baxter_core_msgs::EndEffectorState
   :super ros::object
   :slots (_timestamp _id _enabled _calibrated _ready _moving _gripping _missed _error _reverse _position _force _state _command _command_sender _command_sequence ))

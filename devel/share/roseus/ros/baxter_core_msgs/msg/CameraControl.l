@@ -42,21 +42,6 @@
 (intern "*CAMERA_CONTROL_RESOLUTION_HALF*" (find-package "BAXTER_CORE_MSGS::CAMERACONTROL"))
 (shadow '*CAMERA_CONTROL_RESOLUTION_HALF* (find-package "BAXTER_CORE_MSGS::CAMERACONTROL"))
 (defconstant baxter_core_msgs::CameraControl::*CAMERA_CONTROL_RESOLUTION_HALF* 109)
-
-(defun baxter_core_msgs::CameraControl-to-symbol (const)
-  (cond
-        ((= const 100) 'baxter_core_msgs::CameraControl::*CAMERA_CONTROL_EXPOSURE*)
-        ((= const 101) 'baxter_core_msgs::CameraControl::*CAMERA_CONTROL_GAIN*)
-        ((= const 102) 'baxter_core_msgs::CameraControl::*CAMERA_CONTROL_WHITE_BALANCE_R*)
-        ((= const 103) 'baxter_core_msgs::CameraControl::*CAMERA_CONTROL_WHITE_BALANCE_G*)
-        ((= const 104) 'baxter_core_msgs::CameraControl::*CAMERA_CONTROL_WHITE_BALANCE_B*)
-        ((= const 105) 'baxter_core_msgs::CameraControl::*CAMERA_CONTROL_WINDOW_X*)
-        ((= const 106) 'baxter_core_msgs::CameraControl::*CAMERA_CONTROL_WINDOW_Y*)
-        ((= const 107) 'baxter_core_msgs::CameraControl::*CAMERA_CONTROL_FLIP*)
-        ((= const 108) 'baxter_core_msgs::CameraControl::*CAMERA_CONTROL_MIRROR*)
-        ((= const 109) 'baxter_core_msgs::CameraControl::*CAMERA_CONTROL_RESOLUTION_HALF*)
-        (t nil)))
-
 (defclass baxter_core_msgs::CameraControl
   :super ros::object
   :slots (_id _value ))

@@ -1,8 +1,8 @@
-# Install script for directory: /home/aaron/repos/ME537-Project/src/rad_baxter_limb
+# Install script for directory: /home/chad_samuelson/ME537-Project/src/rad_baxter_limb
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/aaron/repos/ME537-Project/install")
+  set(CMAKE_INSTALL_PREFIX "/home/chad_samuelson/ME537-Project/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/aaron/repos/ME537-Project/build/rad_baxter_limb/catkin_generated/safe_execute_install.cmake")
+  include("/home/chad_samuelson/ME537-Project/build/rad_baxter_limb/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/aaron/repos/ME537-Project/build/rad_baxter_limb/catkin_generated/installspace/rad_baxter_limb.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/chad_samuelson/ME537-Project/build/rad_baxter_limb/catkin_generated/installspace/rad_baxter_limb.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rad_baxter_limb/cmake" TYPE FILE FILES
-    "/home/aaron/repos/ME537-Project/build/rad_baxter_limb/catkin_generated/installspace/rad_baxter_limbConfig.cmake"
-    "/home/aaron/repos/ME537-Project/build/rad_baxter_limb/catkin_generated/installspace/rad_baxter_limbConfig-version.cmake"
+    "/home/chad_samuelson/ME537-Project/build/rad_baxter_limb/catkin_generated/installspace/rad_baxter_limbConfig.cmake"
+    "/home/chad_samuelson/ME537-Project/build/rad_baxter_limb/catkin_generated/installspace/rad_baxter_limbConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rad_baxter_limb" TYPE FILE FILES "/home/aaron/repos/ME537-Project/src/rad_baxter_limb/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rad_baxter_limb" TYPE FILE FILES "/home/chad_samuelson/ME537-Project/src/rad_baxter_limb/package.xml")
 endif()
 

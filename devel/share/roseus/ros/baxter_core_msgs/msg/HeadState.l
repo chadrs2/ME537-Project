@@ -34,14 +34,14 @@
    (&optional __pan)
    (if __pan (setq _pan __pan)) _pan)
   (:isTurning
-   (&optional (__isTurning :null))
-   (if (not (eq __isTurning :null)) (setq _isTurning __isTurning)) _isTurning)
+   (&optional __isTurning)
+   (if __isTurning (setq _isTurning __isTurning)) _isTurning)
   (:isNodding
-   (&optional (__isNodding :null))
-   (if (not (eq __isNodding :null)) (setq _isNodding __isNodding)) _isNodding)
+   (&optional __isNodding)
+   (if __isNodding (setq _isNodding __isNodding)) _isNodding)
   (:isPanEnabled
-   (&optional (__isPanEnabled :null))
-   (if (not (eq __isPanEnabled :null)) (setq _isPanEnabled __isPanEnabled)) _isPanEnabled)
+   (&optional __isPanEnabled)
+   (if __isPanEnabled (setq _isPanEnabled __isPanEnabled)) _isPanEnabled)
   (:serialization-length
    ()
    (+

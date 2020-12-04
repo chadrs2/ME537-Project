@@ -21,14 +21,6 @@
 (intern "*COMPLETE_W_SUCCESS*" (find-package "BAXTER_CORE_MSGS::ROBUSTCONTROLLERSTATUS"))
 (shadow '*COMPLETE_W_SUCCESS* (find-package "BAXTER_CORE_MSGS::ROBUSTCONTROLLERSTATUS"))
 (defconstant baxter_core_msgs::RobustControllerStatus::*COMPLETE_W_SUCCESS* 2)
-
-(defun baxter_core_msgs::RobustControllerStatus-to-symbol (const)
-  (cond
-        ((= const 0) 'baxter_core_msgs::RobustControllerStatus::*NOT_COMPLETE*)
-        ((= const 1) 'baxter_core_msgs::RobustControllerStatus::*COMPLETE_W_FAILURE*)
-        ((= const 2) 'baxter_core_msgs::RobustControllerStatus::*COMPLETE_W_SUCCESS*)
-        (t nil)))
-
 (defclass baxter_core_msgs::RobustControllerStatus
   :super ros::object
   :slots (_isEnabled _complete _controlUid _timedOut _errorCodes _labels ))
@@ -52,8 +44,8 @@
    (setq _labels __labels)
    self)
   (:isEnabled
-   (&optional (__isEnabled :null))
-   (if (not (eq __isEnabled :null)) (setq _isEnabled __isEnabled)) _isEnabled)
+   (&optional __isEnabled)
+   (if __isEnabled (setq _isEnabled __isEnabled)) _isEnabled)
   (:complete
    (&optional __complete)
    (if __complete (setq _complete __complete)) _complete)
@@ -61,8 +53,8 @@
    (&optional __controlUid)
    (if __controlUid (setq _controlUid __controlUid)) _controlUid)
   (:timedOut
-   (&optional (__timedOut :null))
-   (if (not (eq __timedOut :null)) (setq _timedOut __timedOut)) _timedOut)
+   (&optional __timedOut)
+   (if __timedOut (setq _timedOut __timedOut)) _timedOut)
   (:errorCodes
    (&optional __errorCodes)
    (if __errorCodes (setq _errorCodes __errorCodes)) _errorCodes)

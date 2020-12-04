@@ -1,4 +1,4 @@
-prefix=/home/aaron/repos/ME537-Project/install
+prefix=/home/chad_samuelson/ME537-Project/install
 
 Name: rethink_ee_description
 Description: Description of rethink_ee_description

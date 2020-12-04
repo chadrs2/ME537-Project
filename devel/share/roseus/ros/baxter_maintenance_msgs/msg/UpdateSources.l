@@ -20,7 +20,7 @@
   (:init
    (&key
     ((:uuid __uuid) "")
-    ((:sources __sources) ())
+    ((:sources __sources) (let (r) (dotimes (i 0) (push (instance baxter_maintenance_msgs::UpdateSource :init) r)) r))
     )
    (send-super :init)
    (setq _uuid (string __uuid))

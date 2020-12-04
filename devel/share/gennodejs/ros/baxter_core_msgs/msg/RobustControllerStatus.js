@@ -103,12 +103,12 @@ class RobustControllerStatus {
 
   static getMessageSize(object) {
     let length = 0;
-    length += _getByteLength(object.controlUid);
+    length += object.controlUid.length;
     object.errorCodes.forEach((val) => {
-      length += 4 + _getByteLength(val);
+      length += 4 + val.length;
     });
     object.labels.forEach((val) => {
-      length += 4 + _getByteLength(val);
+      length += 4 + val.length;
     });
     return length + 18;
   }
