@@ -21,12 +21,12 @@ class WaterBalancer(object):
         
         self.control_rate = rospy.Rate(50)
         self.step_size = 1
-        self.total_steps = 3000
+        self.total_steps = 1000
 
         self.current_configuration = np.array([0,0,0,0,0,0,0])
         self.target_configuration = np.array([0,0,0,0,0,0,0])
-        self.current_pose = np.identity(4,4)
-        self.target_pose = np.identity(4,4)
+        self.current_pose = np.identity(4)
+        self.target_pose = np.identity(4)
 
     def calc_line_const(self, X0, X1):
         [x0, y0, z0] = X0[:]
@@ -44,7 +44,8 @@ class WaterBalancer(object):
         # start_pos = [[R, t][0, 0, 0, 1]]
         X = []
 
-        self.current_pose = r_limb.get_kdl_forward_position_kinematics()
+        self.current_configuration = r_limb.get_kdl_forward_position_kinematics()
+        self.current_pose = brk.FK[6](self.current_configuration)
         start_position = self.current_pose[3,:3]
         consts = calc_line_const(start_position, des_position)
 
@@ -67,9 +68,9 @@ def main():
     rospy.init_node("baxter_butler")
     rospy.loginfo("Activating both right and left arms & grippers... ")
     baxter_butler = WaterBalancer()
-    rospy.loginfo("Moving to starting configuration... ")
-    baxter_butler.base_configuration()
-    
+    #rospy.loginfo("Moving to starting configuration... ")
+    #baxter_butler.base_configuration()
+
     while not rospy.is_shutdown():
         rospy.spin()
 
