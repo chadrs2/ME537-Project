@@ -6,8 +6,8 @@
         "limitSymbolsToIncludedHeaders": true
       },
       "includePath": [
-        "/opt/ros/noetic/include/**",
         "/home/aaron/repos/ME537-Project/devel/include/**",
+        "/opt/ros/noetic/include/**",
         "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_controllers/include/**",
         "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_hardware/include/**",
         "/home/aaron/repos/ME537-Project/src/baxter_simulator/baxter_sim_io/include/**",

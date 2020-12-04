@@ -3,9 +3,5 @@
     "python.autoComplete.extraPaths": [
         "/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages",
         "/opt/ros/noetic/lib/python3/dist-packages"
-    ],
-    "python.analysis.extraPaths": [
-        "/home/aaron/repos/ME537-Project/devel/lib/python3/dist-packages",
-        "/opt/ros/noetic/lib/python3/dist-packages"
     ]
 }
