@@ -71,22 +71,6 @@ def main():
     #rospy.loginfo("Moving to starting configuration... ")
     #baxter_butler.move_to_configuration()
 
-
-    # MY OWN WORK TO DELETE LATER
-    rospy.loginfo("Beginning my own algorithm")
-    baxter_butler.current_pose = brk.FK[6](baxter_butler.r_limb.get_kdl_forward_position_kinematics())
-    curr_position = baxter_butler.current_pose[3,:3]
-    des_position = curr_position
-    des_position[0] = des_position[0] + 1
-    X = baxter_butler.get_trajectory(des_position,baxter_butler.step_size)
-    
-    for row in X:
-        baxter_butler.target_configuration = baxter_butler.r_limb.kin_kdl.inverse_kinematics(row)
-        baxter_butler.move_to_configuration()
-
-    rospy.loginfo("Ending my algorithm")
-    # END MY WORK
-
     while not rospy.is_shutdown():
         rospy.spin()
 
