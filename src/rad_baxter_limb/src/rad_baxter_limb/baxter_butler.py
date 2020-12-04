@@ -58,7 +58,7 @@ class WaterBalancer(object):
         return X
 
 
-    def base_configuration(self):
+    def move_to_configuration(self):
         for i in range(3000):
             self.r_limb.set_joint_positions_mod(self.target_configuration)
             self.control_rate.sleep()
@@ -69,7 +69,7 @@ def main():
     rospy.loginfo("Activating both right and left arms & grippers... ")
     baxter_butler = WaterBalancer()
     #rospy.loginfo("Moving to starting configuration... ")
-    #baxter_butler.base_configuration()
+    #baxter_butler.move_to_configuration()
 
     while not rospy.is_shutdown():
         rospy.spin()
