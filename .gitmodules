@@ -19,3 +19,6 @@
 [submodule "src/baxter_tools"]
 	path = src/baxter_tools
 	url = https://github.com/aarow12/baxter_tools.git
+[submodule "/home/chad_samuelson/ME537-Project/src/aruco_detect"]
+	path = src/aruco_detect
+	url = https://github.com/BYUMarsRover/aruco_detect.git
