@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/chad_samuelson/ME537-Project/build
 include torque_controller/CMakeFiles/_torque_controller_generate_messages_check_deps_imp_cmd.dir/progress.make
 
 torque_controller/CMakeFiles/_torque_controller_generate_messages_check_deps_imp_cmd:
-	cd /home/chad_samuelson/ME537-Project/build/torque_controller && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py torque_controller /home/chad_samuelson/ME537-Project/src/torque_controller/msg/imp_cmd.msg 
+	cd /home/chad_samuelson/ME537-Project/build/torque_controller && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py torque_controller /home/chad_samuelson/ME537-Project/src/torque_controller/msg/imp_cmd.msg 
 
 _torque_controller_generate_messages_check_deps_imp_cmd: torque_controller/CMakeFiles/_torque_controller_generate_messages_check_deps_imp_cmd
 _torque_controller_generate_messages_check_deps_imp_cmd: torque_controller/CMakeFiles/_torque_controller_generate_messages_check_deps_imp_cmd.dir/build.make

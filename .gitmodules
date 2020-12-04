@@ -19,6 +19,15 @@
 [submodule "src/baxter_tools"]
 	path = src/baxter_tools
 	url = https://github.com/aarow12/baxter_tools.git
-[submodule "/home/chad_samuelson/ME537-Project/src/aruco_detect"]
+[submodule "src/aruco_detect"]
 	path = src/aruco_detect
 	url = https://github.com/BYUMarsRover/aruco_detect.git
+[submodule "src/fiducial_msgs"]
+	path = src/fiducial_msgs
+	url = https://github.com/BYUMarsRover/fiducial_msgs
+[submodule "src/fiducial_slam"]
+	path = src/fiducial_slam
+	url = https://github.com/BYUMarsRover/fiducial_slam
+[submodule "src/fiducials"]
+	path = src/fiducials
+	url = https://github.com/BYUMarsRover/fiducials

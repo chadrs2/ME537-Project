@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/chad_samuelson/ME537-Project/build
 include baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_OpenCamera.dir/progress.make
 
 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_OpenCamera:
-	cd /home/chad_samuelson/ME537-Project/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py baxter_core_msgs /home/chad_samuelson/ME537-Project/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv baxter_core_msgs/CameraSettings:baxter_core_msgs/CameraControl
+	cd /home/chad_samuelson/ME537-Project/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py baxter_core_msgs /home/chad_samuelson/ME537-Project/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv baxter_core_msgs/CameraSettings:baxter_core_msgs/CameraControl
 
 _baxter_core_msgs_generate_messages_check_deps_OpenCamera: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_OpenCamera
 _baxter_core_msgs_generate_messages_check_deps_OpenCamera: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_OpenCamera.dir/build.make

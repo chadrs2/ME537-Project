@@ -93,8 +93,10 @@ kinematics_EXTERNAL_OBJECTS =
 /home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/libtf_conversions.so
 /home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/libkdl_conversions.so
 /home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/libtf.so
+/home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/libtf2_ros.so
 /home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/libactionlib.so
 /home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/libmessage_filters.so
+/home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/libtf2.so
 /home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/libkdl_parser.so
 /home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
 /home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/liburdf.so
@@ -134,12 +136,10 @@ kinematics_EXTERNAL_OBJECTS =
 /home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/libtf_conversions.so
 /home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/libkdl_conversions.so
 /home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/libtf.so
-/home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /home/chad_samuelson/ME537-Project/devel/lib/libtf2_ros.so
+/home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/libtf2_ros.so
 /home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/libactionlib.so
 /home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/libmessage_filters.so
-/home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /home/chad_samuelson/ME537-Project/devel/lib/libtf2.so
-/home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/libtf2.so
 /home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/libkdl_parser.so
 /home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
 /home/chad_samuelson/ME537-Project/devel/lib/baxter_sim_kinematics/kinematics: /opt/ros/melodic/lib/liburdf.so

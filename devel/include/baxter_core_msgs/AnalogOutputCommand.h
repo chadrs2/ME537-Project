@@ -93,16 +93,6 @@ namespace message_traits
 
 
 template <class ContainerAllocator>
-struct IsMessage< ::baxter_core_msgs::AnalogOutputCommand_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsMessage< ::baxter_core_msgs::AnalogOutputCommand_<ContainerAllocator> const>
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
 struct IsFixedSize< ::baxter_core_msgs::AnalogOutputCommand_<ContainerAllocator> >
   : FalseType
   { };
@@ -110,6 +100,16 @@ struct IsFixedSize< ::baxter_core_msgs::AnalogOutputCommand_<ContainerAllocator>
 template <class ContainerAllocator>
 struct IsFixedSize< ::baxter_core_msgs::AnalogOutputCommand_<ContainerAllocator> const>
   : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsMessage< ::baxter_core_msgs::AnalogOutputCommand_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsMessage< ::baxter_core_msgs::AnalogOutputCommand_<ContainerAllocator> const>
+  : TrueType
   { };
 
 template <class ContainerAllocator>

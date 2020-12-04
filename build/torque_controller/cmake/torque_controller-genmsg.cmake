@@ -17,11 +17,6 @@ add_custom_target(torque_controller_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg" NAME_WE)
-add_custom_target(_torque_controller_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "torque_controller" "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg" ""
-)
-
 get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/k_cmd.msg" NAME_WE)
 add_custom_target(_torque_controller_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "torque_controller" "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/k_cmd.msg" ""
@@ -32,18 +27,17 @@ add_custom_target(_torque_controller_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "torque_controller" "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/imp_cmd.msg" ""
 )
 
+get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg" NAME_WE)
+add_custom_target(_torque_controller_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "torque_controller" "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg" ""
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
 
 ### Section generating for lang: gencpp
 ### Generating Messages
-_generate_msg_cpp(torque_controller
-  "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/torque_controller
-)
 _generate_msg_cpp(torque_controller
   "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/k_cmd.msg"
   "${MSG_I_FLAGS}"
@@ -52,6 +46,12 @@ _generate_msg_cpp(torque_controller
 )
 _generate_msg_cpp(torque_controller
   "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/imp_cmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/torque_controller
+)
+_generate_msg_cpp(torque_controller
+  "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/torque_controller
@@ -71,11 +71,11 @@ add_custom_target(torque_controller_generate_messages_cpp
 add_dependencies(torque_controller_generate_messages torque_controller_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg" NAME_WE)
-add_dependencies(torque_controller_generate_messages_cpp _torque_controller_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/k_cmd.msg" NAME_WE)
 add_dependencies(torque_controller_generate_messages_cpp _torque_controller_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/imp_cmd.msg" NAME_WE)
+add_dependencies(torque_controller_generate_messages_cpp _torque_controller_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg" NAME_WE)
 add_dependencies(torque_controller_generate_messages_cpp _torque_controller_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -88,12 +88,6 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS torque_controller_generate_messages
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(torque_controller
-  "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/torque_controller
-)
-_generate_msg_eus(torque_controller
   "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/k_cmd.msg"
   "${MSG_I_FLAGS}"
   ""
@@ -101,6 +95,12 @@ _generate_msg_eus(torque_controller
 )
 _generate_msg_eus(torque_controller
   "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/imp_cmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/torque_controller
+)
+_generate_msg_eus(torque_controller
+  "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/torque_controller
@@ -120,11 +120,11 @@ add_custom_target(torque_controller_generate_messages_eus
 add_dependencies(torque_controller_generate_messages torque_controller_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg" NAME_WE)
-add_dependencies(torque_controller_generate_messages_eus _torque_controller_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/k_cmd.msg" NAME_WE)
 add_dependencies(torque_controller_generate_messages_eus _torque_controller_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/imp_cmd.msg" NAME_WE)
+add_dependencies(torque_controller_generate_messages_eus _torque_controller_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg" NAME_WE)
 add_dependencies(torque_controller_generate_messages_eus _torque_controller_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -137,12 +137,6 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS torque_controller_generate_messages
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(torque_controller
-  "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/torque_controller
-)
-_generate_msg_lisp(torque_controller
   "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/k_cmd.msg"
   "${MSG_I_FLAGS}"
   ""
@@ -150,6 +144,12 @@ _generate_msg_lisp(torque_controller
 )
 _generate_msg_lisp(torque_controller
   "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/imp_cmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/torque_controller
+)
+_generate_msg_lisp(torque_controller
+  "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/torque_controller
@@ -169,11 +169,11 @@ add_custom_target(torque_controller_generate_messages_lisp
 add_dependencies(torque_controller_generate_messages torque_controller_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg" NAME_WE)
-add_dependencies(torque_controller_generate_messages_lisp _torque_controller_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/k_cmd.msg" NAME_WE)
 add_dependencies(torque_controller_generate_messages_lisp _torque_controller_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/imp_cmd.msg" NAME_WE)
+add_dependencies(torque_controller_generate_messages_lisp _torque_controller_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg" NAME_WE)
 add_dependencies(torque_controller_generate_messages_lisp _torque_controller_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -186,12 +186,6 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS torque_controller_generate_messages
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(torque_controller
-  "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/torque_controller
-)
-_generate_msg_nodejs(torque_controller
   "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/k_cmd.msg"
   "${MSG_I_FLAGS}"
   ""
@@ -199,6 +193,12 @@ _generate_msg_nodejs(torque_controller
 )
 _generate_msg_nodejs(torque_controller
   "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/imp_cmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/torque_controller
+)
+_generate_msg_nodejs(torque_controller
+  "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/torque_controller
@@ -218,11 +218,11 @@ add_custom_target(torque_controller_generate_messages_nodejs
 add_dependencies(torque_controller_generate_messages torque_controller_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg" NAME_WE)
-add_dependencies(torque_controller_generate_messages_nodejs _torque_controller_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/k_cmd.msg" NAME_WE)
 add_dependencies(torque_controller_generate_messages_nodejs _torque_controller_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/imp_cmd.msg" NAME_WE)
+add_dependencies(torque_controller_generate_messages_nodejs _torque_controller_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg" NAME_WE)
 add_dependencies(torque_controller_generate_messages_nodejs _torque_controller_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -235,12 +235,6 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS torque_controller_generate_messages
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(torque_controller
-  "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/torque_controller
-)
-_generate_msg_py(torque_controller
   "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/k_cmd.msg"
   "${MSG_I_FLAGS}"
   ""
@@ -248,6 +242,12 @@ _generate_msg_py(torque_controller
 )
 _generate_msg_py(torque_controller
   "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/imp_cmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/torque_controller
+)
+_generate_msg_py(torque_controller
+  "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/torque_controller
@@ -267,11 +267,11 @@ add_custom_target(torque_controller_generate_messages_py
 add_dependencies(torque_controller_generate_messages torque_controller_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg" NAME_WE)
-add_dependencies(torque_controller_generate_messages_py _torque_controller_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/k_cmd.msg" NAME_WE)
 add_dependencies(torque_controller_generate_messages_py _torque_controller_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/imp_cmd.msg" NAME_WE)
+add_dependencies(torque_controller_generate_messages_py _torque_controller_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/chad_samuelson/ME537-Project/src/torque_controller/msg/q_cmd.msg" NAME_WE)
 add_dependencies(torque_controller_generate_messages_py _torque_controller_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -328,7 +328,7 @@ if(TARGET torque_controller_generate_messages_nodejs)
 endif()
 
 if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/torque_controller)
-  install(CODE "execute_process(COMMAND \"/usr/bin/python3\" -m compileall \"${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/torque_controller\")")
+  install(CODE "execute_process(COMMAND \"/usr/bin/python2\" -m compileall \"${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/torque_controller\")")
   # install generated code
   install(
     DIRECTORY ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/torque_controller

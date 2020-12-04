@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/chad_samuelson/ME537-Project/build
 include baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties.dir/progress.make
 
 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties:
-	cd /home/chad_samuelson/ME537-Project/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py baxter_core_msgs /home/chad_samuelson/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndEffectorProperties.msg 
+	cd /home/chad_samuelson/ME537-Project/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py baxter_core_msgs /home/chad_samuelson/ME537-Project/src/baxter_common/baxter_core_msgs/msg/EndEffectorProperties.msg 
 
 _baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties
 _baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties.dir/build.make

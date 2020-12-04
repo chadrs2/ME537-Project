@@ -54,14 +54,14 @@ CMAKE_BINARY_DIR = /home/chad_samuelson/ME537-Project/build
 include baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/progress.make
 
 baxter_examples/CMakeFiles/baxter_examples_gencfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_examples/JointSpringsExampleConfig.h
-baxter_examples/CMakeFiles/baxter_examples_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py
+baxter_examples/CMakeFiles/baxter_examples_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py
 
 
 /home/chad_samuelson/ME537-Project/devel/include/baxter_examples/JointSpringsExampleConfig.h: /home/chad_samuelson/ME537-Project/src/baxter_examples/cfg/JointSpringsExample.cfg
 /home/chad_samuelson/ME537-Project/devel/include/baxter_examples/JointSpringsExampleConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.py.template
 /home/chad_samuelson/ME537-Project/devel/include/baxter_examples/JointSpringsExampleConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chad_samuelson/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/JointSpringsExample.cfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_examples/JointSpringsExampleConfig.h /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py"
-	cd /home/chad_samuelson/ME537-Project/build/baxter_examples && ../catkin_generated/env_cached.sh /home/chad_samuelson/ME537-Project/build/baxter_examples/setup_custom_pythonpath.sh /home/chad_samuelson/ME537-Project/src/baxter_examples/cfg/JointSpringsExample.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/chad_samuelson/ME537-Project/devel/share/baxter_examples /home/chad_samuelson/ME537-Project/devel/include/baxter_examples /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_examples
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chad_samuelson/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/JointSpringsExample.cfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_examples/JointSpringsExampleConfig.h /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py"
+	cd /home/chad_samuelson/ME537-Project/build/baxter_examples && ../catkin_generated/env_cached.sh /home/chad_samuelson/ME537-Project/build/baxter_examples/setup_custom_pythonpath.sh /home/chad_samuelson/ME537-Project/src/baxter_examples/cfg/JointSpringsExample.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/chad_samuelson/ME537-Project/devel/share/baxter_examples /home/chad_samuelson/ME537-Project/devel/include/baxter_examples /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_examples
 
 /home/chad_samuelson/ME537-Project/devel/share/baxter_examples/docs/JointSpringsExampleConfig.dox: /home/chad_samuelson/ME537-Project/devel/include/baxter_examples/JointSpringsExampleConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_examples/docs/JointSpringsExampleConfig.dox
@@ -69,8 +69,8 @@ baxter_examples/CMakeFiles/baxter_examples_gencfg: /home/chad_samuelson/ME537-Pr
 /home/chad_samuelson/ME537-Project/devel/share/baxter_examples/docs/JointSpringsExampleConfig-usage.dox: /home/chad_samuelson/ME537-Project/devel/include/baxter_examples/JointSpringsExampleConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_examples/docs/JointSpringsExampleConfig-usage.dox
 
-/home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py: /home/chad_samuelson/ME537-Project/devel/include/baxter_examples/JointSpringsExampleConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py
+/home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py: /home/chad_samuelson/ME537-Project/devel/include/baxter_examples/JointSpringsExampleConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py
 
 /home/chad_samuelson/ME537-Project/devel/share/baxter_examples/docs/JointSpringsExampleConfig.wikidoc: /home/chad_samuelson/ME537-Project/devel/include/baxter_examples/JointSpringsExampleConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_examples/docs/JointSpringsExampleConfig.wikidoc
@@ -79,7 +79,7 @@ baxter_examples_gencfg: baxter_examples/CMakeFiles/baxter_examples_gencfg
 baxter_examples_gencfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_examples/JointSpringsExampleConfig.h
 baxter_examples_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_examples/docs/JointSpringsExampleConfig.dox
 baxter_examples_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_examples/docs/JointSpringsExampleConfig-usage.dox
-baxter_examples_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py
+baxter_examples_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py
 baxter_examples_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_examples/docs/JointSpringsExampleConfig.wikidoc
 baxter_examples_gencfg: baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/build.make
 

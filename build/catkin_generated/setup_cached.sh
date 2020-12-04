@@ -7,4 +7,7 @@
 # new environment variables
 
 # modified environment variables
+export CMAKE_PREFIX_PATH="/home/chad_samuelson/ME537-Project/devel:$CMAKE_PREFIX_PATH"
 export PWD='/home/chad_samuelson/ME537-Project/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/chad_samuelson/ME537-Project/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/chad_samuelson/ME537-Project/src:$ROS_PACKAGE_PATH"

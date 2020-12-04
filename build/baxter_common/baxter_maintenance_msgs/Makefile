@@ -288,36 +288,6 @@ std_msgs_generate_messages_cpp/fast:
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-baxter_common/baxter_maintenance_msgs/CMakeFiles/baxter_maintenance_msgs_generate_messages.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_maintenance_msgs/CMakeFiles/baxter_maintenance_msgs_generate_messages.dir/rule
-.PHONY : baxter_common/baxter_maintenance_msgs/CMakeFiles/baxter_maintenance_msgs_generate_messages.dir/rule
-
-# Convenience name for target.
-baxter_maintenance_msgs_generate_messages: baxter_common/baxter_maintenance_msgs/CMakeFiles/baxter_maintenance_msgs_generate_messages.dir/rule
-
-.PHONY : baxter_maintenance_msgs_generate_messages
-
-# fast build rule for target.
-baxter_maintenance_msgs_generate_messages/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_maintenance_msgs/CMakeFiles/baxter_maintenance_msgs_generate_messages.dir/build.make baxter_common/baxter_maintenance_msgs/CMakeFiles/baxter_maintenance_msgs_generate_messages.dir/build
-.PHONY : baxter_maintenance_msgs_generate_messages/fast
-
-# Convenience name for target.
-baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareData.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareData.dir/rule
-.PHONY : baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareData.dir/rule
-
-# Convenience name for target.
-_baxter_maintenance_msgs_generate_messages_check_deps_TareData: baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareData.dir/rule
-
-.PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_TareData
-
-# fast build rule for target.
-_baxter_maintenance_msgs_generate_messages_check_deps_TareData/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareData.dir/build.make baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareData.dir/build
-.PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_TareData/fast
-
-# Convenience name for target.
 baxter_common/baxter_maintenance_msgs/CMakeFiles/baxter_maintenance_msgs_generate_messages_lisp.dir/rule:
 	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_maintenance_msgs/CMakeFiles/baxter_maintenance_msgs_generate_messages_lisp.dir/rule
 .PHONY : baxter_common/baxter_maintenance_msgs/CMakeFiles/baxter_maintenance_msgs_generate_messages_lisp.dir/rule
@@ -346,6 +316,36 @@ _baxter_maintenance_msgs_generate_messages_check_deps_UpdateSource: baxter_commo
 _baxter_maintenance_msgs_generate_messages_check_deps_UpdateSource/fast:
 	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_UpdateSource.dir/build.make baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_UpdateSource.dir/build
 .PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_UpdateSource/fast
+
+# Convenience name for target.
+baxter_common/baxter_maintenance_msgs/CMakeFiles/baxter_maintenance_msgs_generate_messages.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_maintenance_msgs/CMakeFiles/baxter_maintenance_msgs_generate_messages.dir/rule
+.PHONY : baxter_common/baxter_maintenance_msgs/CMakeFiles/baxter_maintenance_msgs_generate_messages.dir/rule
+
+# Convenience name for target.
+baxter_maintenance_msgs_generate_messages: baxter_common/baxter_maintenance_msgs/CMakeFiles/baxter_maintenance_msgs_generate_messages.dir/rule
+
+.PHONY : baxter_maintenance_msgs_generate_messages
+
+# fast build rule for target.
+baxter_maintenance_msgs_generate_messages/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_maintenance_msgs/CMakeFiles/baxter_maintenance_msgs_generate_messages.dir/build.make baxter_common/baxter_maintenance_msgs/CMakeFiles/baxter_maintenance_msgs_generate_messages.dir/build
+.PHONY : baxter_maintenance_msgs_generate_messages/fast
+
+# Convenience name for target.
+baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareData.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareData.dir/rule
+.PHONY : baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareData.dir/rule
+
+# Convenience name for target.
+_baxter_maintenance_msgs_generate_messages_check_deps_TareData: baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareData.dir/rule
+
+.PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_TareData
+
+# fast build rule for target.
+_baxter_maintenance_msgs_generate_messages_check_deps_TareData/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareData.dir/build.make baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareData.dir/build
+.PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_TareData/fast
 
 # Convenience name for target.
 baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_UpdateSources.dir/rule:
@@ -393,6 +393,66 @@ baxter_maintenance_msgs_gencpp/fast:
 .PHONY : baxter_maintenance_msgs_gencpp/fast
 
 # Convenience name for target.
+baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus.dir/rule
+.PHONY : baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus.dir/rule
+
+# Convenience name for target.
+_baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus: baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus.dir/rule
+
+.PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus
+
+# fast build rule for target.
+_baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus.dir/build.make baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus.dir/build
+.PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus/fast
+
+# Convenience name for target.
+baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+.PHONY : baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_eus: baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareEnable.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareEnable.dir/rule
+.PHONY : baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareEnable.dir/rule
+
+# Convenience name for target.
+_baxter_maintenance_msgs_generate_messages_check_deps_TareEnable: baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareEnable.dir/rule
+
+.PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_TareEnable
+
+# fast build rule for target.
+_baxter_maintenance_msgs_generate_messages_check_deps_TareEnable/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareEnable.dir/build.make baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareEnable.dir/build
+.PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_TareEnable/fast
+
+# Convenience name for target.
+baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData.dir/rule
+.PHONY : baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData.dir/rule
+
+# Convenience name for target.
+_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData: baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData.dir/rule
+
+.PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData
+
+# fast build rule for target.
+_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData.dir/build.make baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData.dir/build
+.PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData/fast
+
+# Convenience name for target.
 baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
 	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
@@ -421,66 +481,6 @@ _baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmEnable: baxter
 _baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmEnable/fast:
 	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmEnable.dir/build.make baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmEnable.dir/build
 .PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmEnable/fast
-
-# Convenience name for target.
-baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make baxter_common/baxter_maintenance_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData.dir/rule
-.PHONY : baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData.dir/rule
-
-# Convenience name for target.
-_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData: baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData.dir/rule
-
-.PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData
-
-# fast build rule for target.
-_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData.dir/build.make baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData.dir/build
-.PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData/fast
-
-# Convenience name for target.
-baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareEnable.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareEnable.dir/rule
-.PHONY : baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareEnable.dir/rule
-
-# Convenience name for target.
-_baxter_maintenance_msgs_generate_messages_check_deps_TareEnable: baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareEnable.dir/rule
-
-.PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_TareEnable
-
-# fast build rule for target.
-_baxter_maintenance_msgs_generate_messages_check_deps_TareEnable/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareEnable.dir/build.make baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_TareEnable.dir/build
-.PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_TareEnable/fast
-
-# Convenience name for target.
-baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus.dir/rule
-.PHONY : baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus.dir/rule
-
-# Convenience name for target.
-_baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus: baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus.dir/rule
-
-.PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus
-
-# fast build rule for target.
-_baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus.dir/build.make baxter_common/baxter_maintenance_msgs/CMakeFiles/_baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus.dir/build
-.PHONY : _baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus/fast
 
 # Convenience name for target.
 baxter_common/baxter_maintenance_msgs/CMakeFiles/baxter_maintenance_msgs_generate_messages_cpp.dir/rule:
@@ -532,19 +532,19 @@ help:
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... baxter_maintenance_msgs_generate_messages"
-	@echo "... _baxter_maintenance_msgs_generate_messages_check_deps_TareData"
 	@echo "... baxter_maintenance_msgs_generate_messages_lisp"
 	@echo "... _baxter_maintenance_msgs_generate_messages_check_deps_UpdateSource"
+	@echo "... baxter_maintenance_msgs_generate_messages"
+	@echo "... _baxter_maintenance_msgs_generate_messages_check_deps_TareData"
 	@echo "... _baxter_maintenance_msgs_generate_messages_check_deps_UpdateSources"
 	@echo "... baxter_maintenance_msgs_geneus"
 	@echo "... baxter_maintenance_msgs_gencpp"
+	@echo "... _baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus"
+	@echo "... std_msgs_generate_messages_eus"
+	@echo "... _baxter_maintenance_msgs_generate_messages_check_deps_TareEnable"
+	@echo "... _baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... _baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmEnable"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... _baxter_maintenance_msgs_generate_messages_check_deps_CalibrateArmData"
-	@echo "... _baxter_maintenance_msgs_generate_messages_check_deps_TareEnable"
-	@echo "... _baxter_maintenance_msgs_generate_messages_check_deps_UpdateStatus"
 	@echo "... test"
 	@echo "... baxter_maintenance_msgs_generate_messages_cpp"
 	@echo "... baxter_maintenance_msgs_generate_messages_eus"

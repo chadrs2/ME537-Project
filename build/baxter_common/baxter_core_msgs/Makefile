@@ -243,126 +243,6 @@ baxter_core_msgs_gencpp/fast:
 .PHONY : baxter_core_msgs_gencpp/fast
 
 # Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState.dir/rule
-
-# Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState.dir/rule
-
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState
-
-# fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState/fast
-
-# Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties.dir/rule
-
-# Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties.dir/rule
-
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties
-
-# fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties/fast
-
-# Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState.dir/rule
-
-# Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState.dir/rule
-
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState
-
-# fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState/fast
-
-# Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_ListCameras.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_ListCameras.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_ListCameras.dir/rule
-
-# Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_ListCameras: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_ListCameras.dir/rule
-
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_ListCameras
-
-# fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_ListCameras/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_ListCameras.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_ListCameras.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_ListCameras/fast
-
-# Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraSettings.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraSettings.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraSettings.dir/rule
-
-# Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_CameraSettings: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraSettings.dir/rule
-
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_CameraSettings
-
-# fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_CameraSettings/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraSettings.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraSettings.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_CameraSettings/fast
-
-# Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyState.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyState.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyState.dir/rule
-
-# Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_AssemblyState: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyState.dir/rule
-
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_AssemblyState
-
-# fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_AssemblyState/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyState.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyState.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_AssemblyState/fast
-
-# Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_NavigatorState.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_NavigatorState.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_NavigatorState.dir/rule
-
-# Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_NavigatorState: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_NavigatorState.dir/rule
-
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_NavigatorState
-
-# fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_NavigatorState/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_NavigatorState.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_NavigatorState.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_NavigatorState/fast
-
-# Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand.dir/rule
-
-# Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand.dir/rule
-
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand
-
-# fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand/fast
-
-# Convenience name for target.
 baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_eus.dir/rule:
 	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_eus.dir/rule
 .PHONY : baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_eus.dir/rule
@@ -391,6 +271,81 @@ _baxter_core_msgs_generate_messages_check_deps_AnalogIOStates: baxter_common/bax
 _baxter_core_msgs_generate_messages_check_deps_AnalogIOStates/fast:
 	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogIOStates.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogIOStates.dir/build
 .PHONY : _baxter_core_msgs_generate_messages_check_deps_AnalogIOStates/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_SolvePositionIK.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_SolvePositionIK.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_SolvePositionIK.dir/rule
+
+# Convenience name for target.
+_baxter_core_msgs_generate_messages_check_deps_SolvePositionIK: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_SolvePositionIK.dir/rule
+
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_SolvePositionIK
+
+# fast build rule for target.
+_baxter_core_msgs_generate_messages_check_deps_SolvePositionIK/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_SolvePositionIK.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_SolvePositionIK.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_SolvePositionIK/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyStates.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyStates.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyStates.dir/rule
+
+# Convenience name for target.
+_baxter_core_msgs_generate_messages_check_deps_AssemblyStates: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyStates.dir/rule
+
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_AssemblyStates
+
+# fast build rule for target.
+_baxter_core_msgs_generate_messages_check_deps_AssemblyStates/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyStates.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyStates.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_AssemblyStates/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties.dir/rule
+
+# Convenience name for target.
+_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties.dir/rule
+
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties
+
+# fast build rule for target.
+_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState.dir/rule
+
+# Convenience name for target.
+_baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState.dir/rule
+
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState
+
+# fast build rule for target.
+_baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
@@ -438,79 +393,34 @@ sensor_msgs_generate_messages_cpp/fast:
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_HeadState.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_HeadState.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_HeadState.dir/rule
+baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_HeadState: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_HeadState.dir/rule
+geometry_msgs_generate_messages_eus: baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_HeadState
+.PHONY : geometry_msgs_generate_messages_eus
 
 # fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_HeadState/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_HeadState.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_HeadState.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_HeadState/fast
+geometry_msgs_generate_messages_eus/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_lisp: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+geometry_msgs_generate_messages_nodejs: baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : sensor_msgs_generate_messages_lisp
+.PHONY : geometry_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyStates.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyStates.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyStates.dir/rule
-
-# Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_AssemblyStates: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyStates.dir/rule
-
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_AssemblyStates
-
-# fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_AssemblyStates/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyStates.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyStates.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_AssemblyStates/fast
-
-# Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogIOState.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogIOState.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogIOState.dir/rule
-
-# Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_AnalogIOState: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogIOState.dir/rule
-
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_AnalogIOState
-
-# fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_AnalogIOState/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogIOState.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogIOState.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_AnalogIOState/fast
-
-# Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_nodejs: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-.PHONY : sensor_msgs_generate_messages_nodejs/fast
+geometry_msgs_generate_messages_nodejs/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalIOState.dir/rule:
@@ -526,6 +436,141 @@ _baxter_core_msgs_generate_messages_check_deps_DigitalIOState: baxter_common/bax
 _baxter_core_msgs_generate_messages_check_deps_DigitalIOState/fast:
 	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalIOState.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalIOState.dir/build
 .PHONY : _baxter_core_msgs_generate_messages_check_deps_DigitalIOState/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+baxter_core_msgs_generate_messages_cpp: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : baxter_core_msgs_generate_messages_cpp
+
+# fast build rule for target.
+baxter_core_msgs_generate_messages_cpp/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/build
+.PHONY : baxter_core_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalIOStates.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalIOStates.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalIOStates.dir/rule
+
+# Convenience name for target.
+_baxter_core_msgs_generate_messages_check_deps_DigitalIOStates: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalIOStates.dir/rule
+
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_DigitalIOStates
+
+# fast build rule for target.
+_baxter_core_msgs_generate_messages_check_deps_DigitalIOStates/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalIOStates.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalIOStates.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_DigitalIOStates/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraControl.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraControl.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraControl.dir/rule
+
+# Convenience name for target.
+_baxter_core_msgs_generate_messages_check_deps_CameraControl: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraControl.dir/rule
+
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_CameraControl
+
+# fast build rule for target.
+_baxter_core_msgs_generate_messages_check_deps_CameraControl/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraControl.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraControl.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_CameraControl/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus.dir/rule
+
+# Convenience name for target.
+_baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus.dir/rule
+
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus
+
+# fast build rule for target.
+_baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages.dir/rule
+
+# Convenience name for target.
+baxter_core_msgs_generate_messages: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages.dir/rule
+
+.PHONY : baxter_core_msgs_generate_messages
+
+# fast build rule for target.
+baxter_core_msgs_generate_messages/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages.dir/build
+.PHONY : baxter_core_msgs_generate_messages/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_HeadState.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_HeadState.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_HeadState.dir/rule
+
+# Convenience name for target.
+_baxter_core_msgs_generate_messages_check_deps_HeadState: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_HeadState.dir/rule
+
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_HeadState
+
+# fast build rule for target.
+_baxter_core_msgs_generate_messages_check_deps_HeadState/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_HeadState.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_HeadState.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_HeadState/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.dir/rule:
@@ -588,6 +633,36 @@ sensor_msgs_generate_messages_py/fast:
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_OpenCamera.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_OpenCamera.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_OpenCamera.dir/rule
+
+# Convenience name for target.
+_baxter_core_msgs_generate_messages_check_deps_OpenCamera: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_OpenCamera.dir/rule
+
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_OpenCamera
+
+# fast build rule for target.
+_baxter_core_msgs_generate_messages_check_deps_OpenCamera/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_OpenCamera.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_OpenCamera.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_OpenCamera/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndpointStates.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndpointStates.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndpointStates.dir/rule
+
+# Convenience name for target.
+_baxter_core_msgs_generate_messages_check_deps_EndpointStates: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndpointStates.dir/rule
+
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_EndpointStates
+
+# fast build rule for target.
+_baxter_core_msgs_generate_messages_check_deps_EndpointStates/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndpointStates.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndpointStates.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_EndpointStates/fast
+
+# Convenience name for target.
 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalOutputCommand.dir/rule:
 	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalOutputCommand.dir/rule
 .PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalOutputCommand.dir/rule
@@ -601,6 +676,111 @@ _baxter_core_msgs_generate_messages_check_deps_DigitalOutputCommand: baxter_comm
 _baxter_core_msgs_generate_messages_check_deps_DigitalOutputCommand/fast:
 	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalOutputCommand.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalOutputCommand.dir/build
 .PHONY : _baxter_core_msgs_generate_messages_check_deps_DigitalOutputCommand/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_URDFConfiguration.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_URDFConfiguration.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_URDFConfiguration.dir/rule
+
+# Convenience name for target.
+_baxter_core_msgs_generate_messages_check_deps_URDFConfiguration: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_URDFConfiguration.dir/rule
+
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_URDFConfiguration
+
+# fast build rule for target.
+_baxter_core_msgs_generate_messages_check_deps_URDFConfiguration/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_URDFConfiguration.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_URDFConfiguration.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_URDFConfiguration/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraSettings.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraSettings.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraSettings.dir/rule
+
+# Convenience name for target.
+_baxter_core_msgs_generate_messages_check_deps_CameraSettings: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraSettings.dir/rule
+
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_CameraSettings
+
+# fast build rule for target.
+_baxter_core_msgs_generate_messages_check_deps_CameraSettings/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraSettings.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraSettings.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_CameraSettings/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand.dir/rule
+
+# Convenience name for target.
+_baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand.dir/rule
+
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand
+
+# fast build rule for target.
+_baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_ListCameras.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_ListCameras.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_ListCameras.dir/rule
+
+# Convenience name for target.
+_baxter_core_msgs_generate_messages_check_deps_ListCameras: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_ListCameras.dir/rule
+
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_ListCameras
+
+# fast build rule for target.
+_baxter_core_msgs_generate_messages_check_deps_ListCameras/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_ListCameras.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_ListCameras.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_ListCameras/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState.dir/rule
+
+# Convenience name for target.
+_baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState.dir/rule
+
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState
+
+# fast build rule for target.
+_baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_NavigatorState.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_NavigatorState.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_NavigatorState.dir/rule
+
+# Convenience name for target.
+_baxter_core_msgs_generate_messages_check_deps_NavigatorState: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_NavigatorState.dir/rule
+
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_NavigatorState
+
+# fast build rule for target.
+_baxter_core_msgs_generate_messages_check_deps_NavigatorState/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_NavigatorState.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_NavigatorState.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_NavigatorState/fast
+
+# Convenience name for target.
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyState.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyState.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyState.dir/rule
+
+# Convenience name for target.
+_baxter_core_msgs_generate_messages_check_deps_AssemblyState: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyState.dir/rule
+
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_AssemblyState
+
+# fast build rule for target.
+_baxter_core_msgs_generate_messages_check_deps_AssemblyState/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyState.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AssemblyState.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_AssemblyState/fast
 
 # Convenience name for target.
 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndEffectorCommand.dir/rule:
@@ -648,49 +828,19 @@ _baxter_core_msgs_generate_messages_check_deps_HeadPanCommand/fast:
 .PHONY : _baxter_core_msgs_generate_messages_check_deps_HeadPanCommand/fast
 
 # Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_OpenCamera.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_OpenCamera.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_OpenCamera.dir/rule
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/rule
 
 # Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_OpenCamera: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_OpenCamera.dir/rule
+_baxter_core_msgs_generate_messages_check_deps_CloseCamera: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/rule
 
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_OpenCamera
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_CloseCamera
 
 # fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_OpenCamera/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_OpenCamera.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_OpenCamera.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_OpenCamera/fast
-
-# Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndpointStates.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndpointStates.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndpointStates.dir/rule
-
-# Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_EndpointStates: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndpointStates.dir/rule
-
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_EndpointStates
-
-# fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_EndpointStates/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndpointStates.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_EndpointStates.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_EndpointStates/fast
-
-# Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_JointCommand.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_JointCommand.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_JointCommand.dir/rule
-
-# Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_JointCommand: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_JointCommand.dir/rule
-
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_JointCommand
-
-# fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_JointCommand/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_JointCommand.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_JointCommand.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_JointCommand/fast
+_baxter_core_msgs_generate_messages_check_deps_CloseCamera/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_CloseCamera/fast
 
 # Convenience name for target.
 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_NavigatorStates.dir/rule:
@@ -708,34 +858,19 @@ _baxter_core_msgs_generate_messages_check_deps_NavigatorStates/fast:
 .PHONY : _baxter_core_msgs_generate_messages_check_deps_NavigatorStates/fast
 
 # Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages.dir/rule
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_JointCommand.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_JointCommand.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_JointCommand.dir/rule
 
 # Convenience name for target.
-baxter_core_msgs_generate_messages: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages.dir/rule
+_baxter_core_msgs_generate_messages_check_deps_JointCommand: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_JointCommand.dir/rule
 
-.PHONY : baxter_core_msgs_generate_messages
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_JointCommand
 
 # fast build rule for target.
-baxter_core_msgs_generate_messages/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages.dir/build
-.PHONY : baxter_core_msgs_generate_messages/fast
-
-# Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus.dir/rule
-
-# Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus.dir/rule
-
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus
-
-# fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus/fast
+_baxter_core_msgs_generate_messages_check_deps_JointCommand/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_JointCommand.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_JointCommand.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_JointCommand/fast
 
 # Convenience name for target.
 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_SEAJointState.dir/rule:
@@ -753,94 +888,34 @@ _baxter_core_msgs_generate_messages_check_deps_SEAJointState/fast:
 .PHONY : _baxter_core_msgs_generate_messages_check_deps_SEAJointState/fast
 
 # Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_URDFConfiguration.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_URDFConfiguration.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_URDFConfiguration.dir/rule
+baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_URDFConfiguration: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_URDFConfiguration.dir/rule
+sensor_msgs_generate_messages_nodejs: baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_URDFConfiguration
+.PHONY : sensor_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_URDFConfiguration/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_URDFConfiguration.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_URDFConfiguration.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_URDFConfiguration/fast
+sensor_msgs_generate_messages_nodejs/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraControl.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraControl.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraControl.dir/rule
+baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogIOState.dir/rule:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogIOState.dir/rule
+.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogIOState.dir/rule
 
 # Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_CameraControl: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraControl.dir/rule
+_baxter_core_msgs_generate_messages_check_deps_AnalogIOState: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogIOState.dir/rule
 
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_CameraControl
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_AnalogIOState
 
 # fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_CameraControl/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraControl.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CameraControl.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_CameraControl/fast
-
-# Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalIOStates.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalIOStates.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalIOStates.dir/rule
-
-# Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_DigitalIOStates: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalIOStates.dir/rule
-
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_DigitalIOStates
-
-# fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_DigitalIOStates/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalIOStates.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_DigitalIOStates.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_DigitalIOStates/fast
-
-# Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-baxter_core_msgs_generate_messages_cpp: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : baxter_core_msgs_generate_messages_cpp
-
-# fast build rule for target.
-baxter_core_msgs_generate_messages_cpp/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_cpp.dir/build
-.PHONY : baxter_core_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/rule
-
-# Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_CloseCamera: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/rule
-
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_CloseCamera
-
-# fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_CloseCamera/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_CloseCamera/fast
-
-# Convenience name for target.
-baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_SolvePositionIK.dir/rule:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_SolvePositionIK.dir/rule
-.PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_SolvePositionIK.dir/rule
-
-# Convenience name for target.
-_baxter_core_msgs_generate_messages_check_deps_SolvePositionIK: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_SolvePositionIK.dir/rule
-
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_SolvePositionIK
-
-# fast build rule for target.
-_baxter_core_msgs_generate_messages_check_deps_SolvePositionIK/fast:
-	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_SolvePositionIK.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_SolvePositionIK.dir/build
-.PHONY : _baxter_core_msgs_generate_messages_check_deps_SolvePositionIK/fast
+_baxter_core_msgs_generate_messages_check_deps_AnalogIOState/fast:
+	cd /home/chad_samuelson/ME537-Project/build && $(MAKE) -f baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogIOState.dir/build.make baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogIOState.dir/build
+.PHONY : _baxter_core_msgs_generate_messages_check_deps_AnalogIOState/fast
 
 # Help Target
 help:
@@ -858,48 +933,53 @@ help:
 	@echo "... baxter_core_msgs_generate_messages_lisp"
 	@echo "... baxter_core_msgs_geneus"
 	@echo "... baxter_core_msgs_gencpp"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_ListCameras"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_CameraSettings"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_AssemblyState"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_NavigatorState"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand"
 	@echo "... baxter_core_msgs_generate_messages_eus"
 	@echo "... _baxter_core_msgs_generate_messages_check_deps_AnalogIOStates"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_SolvePositionIK"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_AssemblyStates"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_EndEffectorProperties"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_CollisionDetectionState"
+	@echo "... install/local"
+	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... baxter_core_msgs_gennodejs"
 	@echo "... sensor_msgs_generate_messages_cpp"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_HeadState"
-	@echo "... install/local"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_AssemblyStates"
-	@echo "... rebuild_cache"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_AnalogIOState"
-	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... _baxter_core_msgs_generate_messages_check_deps_DigitalIOState"
+	@echo "... baxter_core_msgs_generate_messages_cpp"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_DigitalIOStates"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_CameraControl"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus"
+	@echo "... baxter_core_msgs_generate_messages"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_HeadState"
+	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... baxter_core_msgs_generate_messages_py"
 	@echo "... baxter_core_msgs_generate_messages_nodejs"
 	@echo "... _baxter_core_msgs_generate_messages_check_deps_EndEffectorState"
 	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_OpenCamera"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_EndpointStates"
 	@echo "... _baxter_core_msgs_generate_messages_check_deps_DigitalOutputCommand"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_URDFConfiguration"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_CameraSettings"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_AnalogOutputCommand"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_ListCameras"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_CollisionAvoidanceState"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_NavigatorState"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_AssemblyState"
 	@echo "... _baxter_core_msgs_generate_messages_check_deps_EndEffectorCommand"
 	@echo "... _baxter_core_msgs_generate_messages_check_deps_EndpointState"
 	@echo "... _baxter_core_msgs_generate_messages_check_deps_HeadPanCommand"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_OpenCamera"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_EndpointStates"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_JointCommand"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_NavigatorStates"
-	@echo "... baxter_core_msgs_generate_messages"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_RobustControllerStatus"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_SEAJointState"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_URDFConfiguration"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_CameraControl"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_DigitalIOStates"
-	@echo "... baxter_core_msgs_generate_messages_cpp"
 	@echo "... _baxter_core_msgs_generate_messages_check_deps_CloseCamera"
-	@echo "... _baxter_core_msgs_generate_messages_check_deps_SolvePositionIK"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_NavigatorStates"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_JointCommand"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_SEAJointState"
+	@echo "... rebuild_cache"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... _baxter_core_msgs_generate_messages_check_deps_AnalogIOState"
 .PHONY : help
 
 

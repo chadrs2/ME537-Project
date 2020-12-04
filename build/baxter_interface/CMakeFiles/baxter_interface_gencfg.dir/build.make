@@ -54,22 +54,22 @@ CMAKE_BINARY_DIR = /home/chad_samuelson/ME537-Project/build
 include baxter_interface/CMakeFiles/baxter_interface_gencfg.dir/progress.make
 
 baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
-baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py
+baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py
 baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
-baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py
+baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py
 baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
-baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py
+baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py
 baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/GripperActionServerConfig.h
-baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py
+baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py
 baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/HeadActionServerConfig.h
-baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py
+baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py
 
 
 /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h: /home/chad_samuelson/ME537-Project/src/baxter_interface/cfg/PositionJointTrajectoryActionServer.cfg
 /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.py.template
 /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chad_samuelson/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/PositionJointTrajectoryActionServer.cfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py"
-	cd /home/chad_samuelson/ME537-Project/build/baxter_interface && ../catkin_generated/env_cached.sh /home/chad_samuelson/ME537-Project/build/baxter_interface/setup_custom_pythonpath.sh /home/chad_samuelson/ME537-Project/src/baxter_interface/cfg/PositionJointTrajectoryActionServer.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/chad_samuelson/ME537-Project/devel/share/baxter_interface /home/chad_samuelson/ME537-Project/devel/include/baxter_interface /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chad_samuelson/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/PositionJointTrajectoryActionServer.cfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py"
+	cd /home/chad_samuelson/ME537-Project/build/baxter_interface && ../catkin_generated/env_cached.sh /home/chad_samuelson/ME537-Project/build/baxter_interface/setup_custom_pythonpath.sh /home/chad_samuelson/ME537-Project/src/baxter_interface/cfg/PositionJointTrajectoryActionServer.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/chad_samuelson/ME537-Project/devel/share/baxter_interface /home/chad_samuelson/ME537-Project/devel/include/baxter_interface /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface
 
 /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig.dox: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig.dox
@@ -77,8 +77,8 @@ baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-
 /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig-usage.dox: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig-usage.dox
 
-/home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py
+/home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py
 
 /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig.wikidoc: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig.wikidoc
@@ -86,8 +86,8 @@ baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-
 /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h: /home/chad_samuelson/ME537-Project/src/baxter_interface/cfg/VelocityJointTrajectoryActionServer.cfg
 /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.py.template
 /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chad_samuelson/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating dynamic reconfigure files from cfg/VelocityJointTrajectoryActionServer.cfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py"
-	cd /home/chad_samuelson/ME537-Project/build/baxter_interface && ../catkin_generated/env_cached.sh /home/chad_samuelson/ME537-Project/build/baxter_interface/setup_custom_pythonpath.sh /home/chad_samuelson/ME537-Project/src/baxter_interface/cfg/VelocityJointTrajectoryActionServer.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/chad_samuelson/ME537-Project/devel/share/baxter_interface /home/chad_samuelson/ME537-Project/devel/include/baxter_interface /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chad_samuelson/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating dynamic reconfigure files from cfg/VelocityJointTrajectoryActionServer.cfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py"
+	cd /home/chad_samuelson/ME537-Project/build/baxter_interface && ../catkin_generated/env_cached.sh /home/chad_samuelson/ME537-Project/build/baxter_interface/setup_custom_pythonpath.sh /home/chad_samuelson/ME537-Project/src/baxter_interface/cfg/VelocityJointTrajectoryActionServer.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/chad_samuelson/ME537-Project/devel/share/baxter_interface /home/chad_samuelson/ME537-Project/devel/include/baxter_interface /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface
 
 /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig.dox: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig.dox
@@ -95,8 +95,8 @@ baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-
 /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig-usage.dox: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig-usage.dox
 
-/home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py
+/home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py
 
 /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig.wikidoc: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig.wikidoc
@@ -104,8 +104,8 @@ baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-
 /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h: /home/chad_samuelson/ME537-Project/src/baxter_interface/cfg/PositionFFJointTrajectoryActionServer.cfg
 /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.py.template
 /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chad_samuelson/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating dynamic reconfigure files from cfg/PositionFFJointTrajectoryActionServer.cfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py"
-	cd /home/chad_samuelson/ME537-Project/build/baxter_interface && ../catkin_generated/env_cached.sh /home/chad_samuelson/ME537-Project/build/baxter_interface/setup_custom_pythonpath.sh /home/chad_samuelson/ME537-Project/src/baxter_interface/cfg/PositionFFJointTrajectoryActionServer.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/chad_samuelson/ME537-Project/devel/share/baxter_interface /home/chad_samuelson/ME537-Project/devel/include/baxter_interface /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chad_samuelson/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating dynamic reconfigure files from cfg/PositionFFJointTrajectoryActionServer.cfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py"
+	cd /home/chad_samuelson/ME537-Project/build/baxter_interface && ../catkin_generated/env_cached.sh /home/chad_samuelson/ME537-Project/build/baxter_interface/setup_custom_pythonpath.sh /home/chad_samuelson/ME537-Project/src/baxter_interface/cfg/PositionFFJointTrajectoryActionServer.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/chad_samuelson/ME537-Project/devel/share/baxter_interface /home/chad_samuelson/ME537-Project/devel/include/baxter_interface /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface
 
 /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig.dox: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig.dox
@@ -113,8 +113,8 @@ baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-
 /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig-usage.dox: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig-usage.dox
 
-/home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py
+/home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py
 
 /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig.wikidoc: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig.wikidoc
@@ -122,8 +122,8 @@ baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-
 /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/GripperActionServerConfig.h: /home/chad_samuelson/ME537-Project/src/baxter_interface/cfg/GripperActionServer.cfg
 /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/GripperActionServerConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.py.template
 /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/GripperActionServerConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chad_samuelson/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating dynamic reconfigure files from cfg/GripperActionServer.cfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/GripperActionServerConfig.h /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py"
-	cd /home/chad_samuelson/ME537-Project/build/baxter_interface && ../catkin_generated/env_cached.sh /home/chad_samuelson/ME537-Project/build/baxter_interface/setup_custom_pythonpath.sh /home/chad_samuelson/ME537-Project/src/baxter_interface/cfg/GripperActionServer.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/chad_samuelson/ME537-Project/devel/share/baxter_interface /home/chad_samuelson/ME537-Project/devel/include/baxter_interface /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chad_samuelson/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating dynamic reconfigure files from cfg/GripperActionServer.cfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/GripperActionServerConfig.h /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py"
+	cd /home/chad_samuelson/ME537-Project/build/baxter_interface && ../catkin_generated/env_cached.sh /home/chad_samuelson/ME537-Project/build/baxter_interface/setup_custom_pythonpath.sh /home/chad_samuelson/ME537-Project/src/baxter_interface/cfg/GripperActionServer.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/chad_samuelson/ME537-Project/devel/share/baxter_interface /home/chad_samuelson/ME537-Project/devel/include/baxter_interface /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface
 
 /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/GripperActionServerConfig.dox: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/GripperActionServerConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/GripperActionServerConfig.dox
@@ -131,8 +131,8 @@ baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-
 /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/GripperActionServerConfig-usage.dox: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/GripperActionServerConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/GripperActionServerConfig-usage.dox
 
-/home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/GripperActionServerConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py
+/home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/GripperActionServerConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py
 
 /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/GripperActionServerConfig.wikidoc: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/GripperActionServerConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/GripperActionServerConfig.wikidoc
@@ -140,8 +140,8 @@ baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-
 /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/HeadActionServerConfig.h: /home/chad_samuelson/ME537-Project/src/baxter_interface/cfg/HeadActionServer.cfg
 /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/HeadActionServerConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.py.template
 /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/HeadActionServerConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chad_samuelson/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating dynamic reconfigure files from cfg/HeadActionServer.cfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/HeadActionServerConfig.h /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py"
-	cd /home/chad_samuelson/ME537-Project/build/baxter_interface && ../catkin_generated/env_cached.sh /home/chad_samuelson/ME537-Project/build/baxter_interface/setup_custom_pythonpath.sh /home/chad_samuelson/ME537-Project/src/baxter_interface/cfg/HeadActionServer.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/chad_samuelson/ME537-Project/devel/share/baxter_interface /home/chad_samuelson/ME537-Project/devel/include/baxter_interface /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/chad_samuelson/ME537-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating dynamic reconfigure files from cfg/HeadActionServer.cfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/HeadActionServerConfig.h /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py"
+	cd /home/chad_samuelson/ME537-Project/build/baxter_interface && ../catkin_generated/env_cached.sh /home/chad_samuelson/ME537-Project/build/baxter_interface/setup_custom_pythonpath.sh /home/chad_samuelson/ME537-Project/src/baxter_interface/cfg/HeadActionServer.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/chad_samuelson/ME537-Project/devel/share/baxter_interface /home/chad_samuelson/ME537-Project/devel/include/baxter_interface /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface
 
 /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/HeadActionServerConfig.dox: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/HeadActionServerConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/HeadActionServerConfig.dox
@@ -149,8 +149,8 @@ baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/chad_samuelson/ME537-
 /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/HeadActionServerConfig-usage.dox: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/HeadActionServerConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/HeadActionServerConfig-usage.dox
 
-/home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/HeadActionServerConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py
+/home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/HeadActionServerConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py
 
 /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/HeadActionServerConfig.wikidoc: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/HeadActionServerConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/HeadActionServerConfig.wikidoc
@@ -159,27 +159,27 @@ baxter_interface_gencfg: baxter_interface/CMakeFiles/baxter_interface_gencfg
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig.dox
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig-usage.dox
-baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py
+baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig.wikidoc
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig.dox
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig-usage.dox
-baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py
+baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig.wikidoc
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig.dox
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig-usage.dox
-baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py
+baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig.wikidoc
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/GripperActionServerConfig.h
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/GripperActionServerConfig.dox
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/GripperActionServerConfig-usage.dox
-baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py
+baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/GripperActionServerConfig.wikidoc
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/include/baxter_interface/HeadActionServerConfig.h
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/HeadActionServerConfig.dox
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/HeadActionServerConfig-usage.dox
-baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python3/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py
+baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/lib/python2.7/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py
 baxter_interface_gencfg: /home/chad_samuelson/ME537-Project/devel/share/baxter_interface/docs/HeadActionServerConfig.wikidoc
 baxter_interface_gencfg: baxter_interface/CMakeFiles/baxter_interface_gencfg.dir/build.make
 

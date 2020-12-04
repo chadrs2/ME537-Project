@@ -100,16 +100,6 @@ namespace message_traits
 
 
 template <class ContainerAllocator>
-struct IsMessage< ::baxter_maintenance_msgs::TareEnable_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsMessage< ::baxter_maintenance_msgs::TareEnable_<ContainerAllocator> const>
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
 struct IsFixedSize< ::baxter_maintenance_msgs::TareEnable_<ContainerAllocator> >
   : FalseType
   { };
@@ -117,6 +107,16 @@ struct IsFixedSize< ::baxter_maintenance_msgs::TareEnable_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsFixedSize< ::baxter_maintenance_msgs::TareEnable_<ContainerAllocator> const>
   : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsMessage< ::baxter_maintenance_msgs::TareEnable_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsMessage< ::baxter_maintenance_msgs::TareEnable_<ContainerAllocator> const>
+  : TrueType
   { };
 
 template <class ContainerAllocator>

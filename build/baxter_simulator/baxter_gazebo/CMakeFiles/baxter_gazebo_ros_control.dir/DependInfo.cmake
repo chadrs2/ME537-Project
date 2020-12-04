@@ -21,9 +21,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/chad_samuelson/ME537-Project/src/baxter_simulator/baxter_gazebo/include"
   "/home/chad_samuelson/ME537-Project/devel/include"
-  "/home/chad_samuelson/ME537-Project/src/geometry2/tf2_ros/include"
-  "/home/chad_samuelson/ME537-Project/src/geometry2/tf2/include"
-  "/home/chad_samuelson/ME537-Project/src/geometry2/tf2_msgs/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/gazebo-9"
@@ -44,8 +41,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/chad_samuelson/ME537-Project/build/geometry2/tf2_ros/CMakeFiles/tf2_ros.dir/DependInfo.cmake"
-  "/home/chad_samuelson/ME537-Project/build/geometry2/tf2/CMakeFiles/tf2.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
