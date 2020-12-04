@@ -1,7 +1,0 @@
-set(rad_baxter_limb_SETUP_PY_SETUP_MODULE "distutils.core")
-set(rad_baxter_limb_SETUP_PY_VERSION "0.0.1")
-set(rad_baxter_limb_SETUP_PY_SCRIPTS "")
-set(rad_baxter_limb_SETUP_PY_PACKAGES "rad_baxter_limb")
-set(rad_baxter_limb_SETUP_PY_PACKAGE_DIRS "src/rad_baxter_limb")
-set(rad_baxter_limb_SETUP_PY_MODULES "")
-set(rad_baxter_limb_SETUP_PY_MODULE_DIRS "")
