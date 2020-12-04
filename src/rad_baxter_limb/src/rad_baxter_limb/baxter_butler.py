@@ -20,9 +20,42 @@ class WaterBalancer(object):
         self.l_gripper.calibrate()
         
         self.control_rate = rospy.Rate(50)
+        self.step_size = 1
+        self.total_steps = 3000
 
         self.current_configuration = np.array([0,0,0,0,0,0,0])
         self.target_configuration = np.array([0,0,0,0,0,0,0])
+        self.current_pose = np.identity(4,4)
+        self.target_pose = np.identity(4,4)
+
+    def calc_line_const(self, X0, X1):
+        [x0, y0, z0] = X0[:]
+        [x1, y1, z1] = X1[:]
+
+        # Line Equations: x=x0+at; y=y0+bt; z=z0+ct
+        # Solve for a,b,c to know equation of line in 3D space
+        a = (x1 - x0) / self.total_steps
+        b = (y1 - y0) / self.total_steps
+        c = (z1 - z0) / self.total_steps
+        const = [a,b,c]
+        return const
+
+    def get_trajectory(self, des_position, step_size):
+        # start_pos = [[R, t][0, 0, 0, 1]]
+        X = []
+
+        self.current_pose = r_limb.get_kdl_forward_position_kinematics()
+        start_position = self.current_pose[3,:3]
+        consts = calc_line_const(start_position, des_position)
+
+        for i in range(self.total_steps):
+            curr_row = []
+            for j in range(len(consts)):
+                curr_row.append(start_position[j]+consts[j]*i*step_size)
+            X.append(curr_row)
+
+        return X
+
 
     def base_configuration(self):
         for i in range(3000):
