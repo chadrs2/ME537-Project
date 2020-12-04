@@ -44,7 +44,7 @@ class WaterBalancer(object):
         # start_pos = [[R, t][0, 0, 0, 1]]
         X = []
 
-        self.current_configuration = r_limb.get_kdl_forward_position_kinematics()
+        self.current_configuration = self.r_limb.get_kdl_forward_position_kinematics()
         self.current_pose = brk.FK[6](self.current_configuration)
         start_position = self.current_pose[3,:3]
         consts = calc_line_const(start_position, des_position)
