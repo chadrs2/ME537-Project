@@ -23,8 +23,8 @@ class WaterBalancer(object):
         self.step_size = 1
         self.total_steps = 1000
 
-        self.current_configuration = np.array([0,0,0,0,0,0,0])
-        self.target_configuration = np.array([0,0,0,0,0,0,0])
+        self.current_configuration = np.array([0.0,0.0,0.0,0.0,0.0,0.0,0.0])
+        self.target_configuration = np.array([0.0,0.0,0.0,0.0,0.0,0.0,0.0])
         self.current_pose = np.identity(4)
         self.target_pose = np.identity(4)
 
@@ -46,7 +46,7 @@ class WaterBalancer(object):
 
         self.current_configuration = self.r_limb.get_kdl_forward_position_kinematics()
         self.current_pose = brk.FK[6](self.current_configuration)
-        start_position = self.current_pose[3,:3]
+        start_position = self.current_pose[:3,3]
         consts = self.calc_line_const(start_position, des_position)
 
         for i in range(self.total_steps):
@@ -59,7 +59,7 @@ class WaterBalancer(object):
 
 
     def move_to_configuration(self):
-        for i in range(3000):
+        for i in range(100):
             self.r_limb.set_joint_positions_mod(self.target_configuration)
             self.control_rate.sleep()
 
