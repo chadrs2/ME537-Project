@@ -24,7 +24,7 @@ print(brk.joint_fk06([0,0,0,0,0,0,0]))
 joint_command_start = np.zeros(7)
 # joint_command_start = np.array([40*np.pi/180, -70*np.pi/180,0*np.pi/180, 90*np.pi/180,90*np.pi/180 , 100*np.pi/180, -175*np.pi/180])
 control_rate = rospy.Rate(500)
-r_limb.set_joint_position_speed(.75)
+r_limb.set_joint_position_speed(.5)
 joint_command = r_limb.get_joint_angles()
 step = 1
 while step < 2500:

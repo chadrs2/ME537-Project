@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from numpy.core.defchararray import join
 from genpy.message import DeserializationError
 import rospy
 import tf
@@ -158,14 +159,17 @@ def main():
     #     baxter_butler.control_rate.sleep()
     #     step = step + 1
     points = []
-    points.append([1.0, -.6, .3])
+    points.append([1.0, -.6, .8])
     points.append([1.1,0,.3])
     # points.append([1.1,.2,.3])
-    points.append([1.1,.2,-.3])
+    points.append([1.1,.2,-.2])
     # points.append([.9,0,.3])
     # points.append([.7,.1,0])
+    joint_commands = np.array([])
+    first = True
     for des_position in points:
         # des_position = [.5, -.5, 0]
+
         X = baxter_butler.get_trajectory(des_position, baxter_butler.step_size)
         joint_commands = baxter_butler.get_ikine(X)
 
@@ -178,10 +182,12 @@ def main():
             baxter_butler.move_to_configuration()
             print("moving: {} / {}".format(i,len(joint_commands)))
         time.sleep(.5)
-    baxter_butler.r_gripper.open()
+    baxter_butler.r_gripper.close()
 
     points = []
-    points.append([.9,.15,-.3])
+    points.append([1.0,.1,.1])
+    points.append([1.0,.1,.6])
+    points.append([1.0,-.9,.6])
 
     for des_position in points:
         # des_position = [.5, -.5, 0]
