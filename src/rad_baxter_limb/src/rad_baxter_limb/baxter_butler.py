@@ -29,6 +29,9 @@ class WaterBalancer(object):
         self.target_configuration = np.array([0,0,0,0,0,0,0])
         self.current_pose = np.identity(4)
         self.target_pose = np.identity(4)
+        self.obst_loc = [0,0,0]
+        self.obst_rad = 0.0
+        self.safety = self.obst_rad * 1.0
 
     def calc_line_const(self, X0, X1):
         [x0, y0, z0] = X0[:]
@@ -59,19 +62,19 @@ class WaterBalancer(object):
 
         return X
 
-    def find_corrected_position(next_position, obst_loc, obst_rad, safety):
+    def find_corrected_position(self, next_position):
         corrected_position = next_position
         
         x_tmp = next_position[0]
         y_tmp = next_position[1]
         z_tmp = next_position[2]
 
-        while (np.linalg.norm(np.subtract(corrected_position - obst_loc)) < (obst_rad + safety)):
+        while (np.linalg.norm(np.subtract(corrected_position - self.obst_loc)) < (self.obst_rad + self.safety)):
             corrected_position[2] = corrected_position[2] + 0.001
 
         return corrected_position
 
-    def get_trajectory_w_obst_avoidance(self, des_position, step_size, obst_loc, obst_rad):
+    def get_trajectory_w_obst_avoidance(self, des_position, step_size):
         # start_pos = [[R, t][0, 0, 0, 1]]
         X = []
         safety = obst_rad * 1.0
@@ -86,13 +89,13 @@ class WaterBalancer(object):
         
         counter = 1
         while(counter <= self.total_steps):
-            if (np.linalg.norm(np.subtract(next_position - obst_loc)) > (obst_rad + safety)):
+            if (np.linalg.norm(np.subtract(next_position - self.obst_loc)) > (self.obst_rad + self.safety)):
                 curr_row = []
                 for j in range(len(consts)):
                     curr_row.append(start_position[j]+consts[j]*counter*step_size)
                 X.append(curr_row)
             else: # if next position will cause the end effector to intercept with the object
-                corrected_position = self.find_corrected_position(next_position, obst_loc, obst_rad, safety)
+                corrected_position = self.find_corrected_position(next_position)
                 X.append(corrected_position)
                 consts = self.calc_line_const(corrected_position, des_position)
                 start_position = corrected_position
