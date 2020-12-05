@@ -13,15 +13,9 @@
 [submodule "src/baxter_pykdl"]
 	path = src/baxter_pykdl
 	url = https://github.com/aarow12/baxter_pykdl.git
-[submodule "src/baxter_simulator"]
-	path = src/baxter_simulator
-	url = https://github.com/aarow12/baxter_simulator.git
 [submodule "src/baxter_tools"]
 	path = src/baxter_tools
 	url = https://github.com/aarow12/baxter_tools.git
-[submodule "src/aruco_detect"]
-	path = src/aruco_detect
-	url = https://github.com/BYUMarsRover/aruco_detect.git
 [submodule "src/fiducial_msgs"]
 	path = src/fiducial_msgs
 	url = https://github.com/BYUMarsRover/fiducial_msgs
