@@ -45,21 +45,25 @@ class WaterBalancer(object):
         const = [a,b,c]
         return const
 
-    def get_trajectory(self, des_position, step_size):
+    def get_trajectory(self, points, step_size):
         # start_pos = [[R, t][0, 0, 0, 1]]
         X = []
 
         self.current_configuration = self.r_limb.get_joint_angles()
         self.current_pose = brk.FK[6](self.current_configuration)
         start_position = self.current_pose[:3,3]
-        consts = self.calc_line_const(start_position, des_position)
+        
+        for des_position in points:
 
-        for i in range(self.total_steps + 1):
-            curr_row = []
-            for j in range(len(consts)):
-                curr_row.append(start_position[j]+consts[j]*i*step_size)
-            X.append(curr_row)
+            consts = self.calc_line_const(start_position, des_position)
 
+            for i in range(self.total_steps + 1):
+                curr_row = []
+                for j in range(len(consts)):
+                    curr_row.append(start_position[j]+consts[j]*i*step_size)
+                X.append(curr_row)
+
+            start_position = des_position
         return X
 
     def find_corrected_position(self, next_position):
@@ -77,7 +81,7 @@ class WaterBalancer(object):
     def get_trajectory_w_obst_avoidance(self, des_position, step_size):
         # start_pos = [[R, t][0, 0, 0, 1]]
         X = []
-        safety = obst_rad * 1.0
+        safety = self.obst_rad * 1.0
 
         self.current_configuration = self.r_limb.get_joint_angles()
         self.current_pose = brk.FK[6](self.current_configuration)
@@ -123,9 +127,9 @@ class WaterBalancer(object):
 
             curr_pose = self.r_limb.get_joint_angles()
             error = np.abs(np.subtract(self.target_configuration,curr_pose))
-            print(error)
-            print(self.target_configuration)
-            print(curr_pose)
+            # print(error)
+            # print(self.target_configuration)
+            # print(curr_pose)
     
     def vex(self,S):
         if S.shape == (3,3):
@@ -195,55 +199,42 @@ def main():
     rospy.loginfo("Activating both right and left arms & grippers... ")
     baxter_butler = WaterBalancer()
     
+    # rospy.loginfo("Moving to starting configuration... ")
+    # baxter_butler.move_to_configuration()
+    
     points = []
     points.append([1.0, -.6, .8])
     points.append([1.1,0,.3])
-    # points.append([1.1,.2,.3])
     points.append([1.1,.2,-.2])
-    # points.append([.9,0,.3])
-    # points.append([.7,.1,0])
-    joint_commands = np.array([])
-    first = True
-    rospy.loginfo("Moving to desired positions...")
-    for des_position in points:
-        # des_position = [.5, -.5, 0]
-
-        X = baxter_butler.get_trajectory(des_position, baxter_butler.step_size)
-        joint_commands = baxter_butler.get_ikine(X)
-
-        # baxter_butler.target_configuration = joint_commands[-1]
-        # baxter_butler.move_to_configuration()
-        i = 0
-        for config in joint_commands:
-            i += 1
-            baxter_butler.target_configuration = config
-            baxter_butler.move_to_configuration()
-            print("moving: {} / {}".format(i,len(joint_commands)))
-        time.sleep(.5)
-    baxter_butler.r_gripper.close()
+            
+    X = baxter_butler.get_trajectory(points, baxter_butler.step_size)
+    joint_commands = baxter_butler.get_ikine(X)  
+    i = 0
+    for config in joint_commands:
+        i += 1
+        baxter_butler.target_configuration = config
+        baxter_butler.move_to_configuration()
+        print("moving: {} / {}".format(i,len(joint_commands)))
+    
+    # time.sleep(1)
+    baxter_butler.r_gripper.open()
+    # time.sleep(1)
 
     points = []
     points.append([1.0,.1,.1])
     points.append([1.0,.1,.6])
     points.append([1.0,-.9,.6])
-
-    for des_position in points:
-        # des_position = [.5, -.5, 0]
-        X = baxter_butler.get_trajectory(des_position, baxter_butler.step_size)
-        joint_commands = baxter_butler.get_ikine(X)
-
-        # baxter_butler.target_configuration = joint_commands[-1]
-        # baxter_butler.move_to_configuration()
-        i = 0
-        for config in joint_commands:
-            i += 1
-            baxter_butler.target_configuration = config
-            baxter_butler.move_to_configuration()
-            print("moving: {} / {}".format(i,len(joint_commands)))
-        time.sleep(.5)
-
-    while not rospy.is_shutdown():
-        rospy.spin()
+            
+    X = baxter_butler.get_trajectory(points, baxter_butler.step_size)
+    joint_commands = baxter_butler.get_ikine(X)  
+    i = 0
+    for config in joint_commands:
+        i += 1
+        baxter_butler.target_configuration = config
+        baxter_butler.move_to_configuration()
+        print("moving: {} / {}".format(i,len(joint_commands)))
+    
+    time.sleep(1)
 
 if __name__ == "__main__":
     main()
