@@ -1,15 +1,16 @@
-close all
+% close all
 
 mdl_baxter;
 
-K_inv = 0.3*eye(6);
-
+K_inv = 0.5*eye(6);
+K_inv = diag([.5 .5 .5 0 0 0])
 %initializing q
 q = zeros(7,1);
 
 
 % T_des = SE3(transl(.3,.5,.5)).T;
-T_des = [1 0 0 0; 0 1 0 1 ; 0 0 1 1; 0 0 0 1];
+T_des = [0 cos(pi/4) sin(pi/4) .5; 0 sin(pi/4) -cos(pi/4) -.5 ; -1 0 0 .5; 0 0 0 1];
+% T_des = [0 0 -1 -.7; 0 1 0 -.7 ; -1 0 0 .31; 0 0 0 1];
 
 T_curr = right.fkine(q).T;
 
@@ -17,7 +18,10 @@ T_curr = right.fkine(q).T;
 counter = 0;
 % every time through loop, we check position error and if we have run
 % for 1000 iterations yet or not.
-while (norm(T_des(1:3,4)- T_curr(1:3,4)) > 0.0001) && norm(T_des(1:3,3) - T_curr(1:3,3)) > .0001 && (counter < 1000)
+while ((norm(T_des(1:3,4)- T_curr(1:3,4)) > 0.0001) ...
+        && (counter < 1000))
+%         && norm(T_des(1:3,3) - T_curr(1:3,3)) > .0001
+    
     % update pose and jacobian for current q's
     T_curr = right.fkine(q).T;
     J = right.jacob0(q);
@@ -25,7 +29,7 @@ while (norm(T_des(1:3,4)- T_curr(1:3,4)) > 0.0001) && norm(T_des(1:3,3) - T_curr
     %calculate error in pose and transform back to base frame.
 %     delta = tr2delta(T_cur, T_des);
     TD = inv(T_curr) * T_des;
-    delta = [TD(1:3,4); vex(TD(1:3,1:3) - eye(3))];
+    delta = [TD(1:3,4); vex(TD(1:3,1:3) - eye(3)) .* [ 1 1 1]'];
     
     R2base = T_curr(1:3,1:3);
 %     delta_base = [R2base, zeros(3,3); zeros(3,3), R2base]*delta;

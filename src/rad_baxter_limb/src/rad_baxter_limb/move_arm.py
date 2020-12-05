@@ -19,7 +19,8 @@ def vex(S):
         return v
 
 K_inv = .5*np.eye(6)
-des_position = [.9, -1.1, .3]
+# K_inv = np.diag([.5, .5, .5, 0, .1, .1])
+des_position = [1.0, -.6, .3]
 T_des = np.array([[0,np.sin(np.pi/4),np.cos(np.pi/4),des_position[0]],[0,np.cos(np.pi/4),-np.sin(np.pi/4),des_position[1]],[-1,0,0,des_position[2]],[0,0,0,1]]) 
 q = r_limb.get_joint_angles()
 # q = np.zeros(7)
@@ -34,7 +35,7 @@ T_curr = brk.FK[6](q)
 # q = np.zeros(7)
 counter = 0
 while ((np.linalg.norm(T_des[0:3,3]- T_curr[0:3,3]) > 0.0001) 
-    and np.linalg.norm(T_des[0:3,0] - T_curr[0:3,2]) > 0.0001 
+    and np.linalg.norm(T_des[0:3,2] - T_curr[0:3,2]) > 0.0001 
     and (counter < 1000)):
     
     # get current pose
@@ -62,7 +63,13 @@ while ((np.linalg.norm(T_des[0:3,3]- T_curr[0:3,3]) > 0.0001)
     delta_base = together @ delta
 
     q = q + J.transpose() @ np.linalg.inv(J @ J.transpose() + (.07**2)*np.eye(6)) @ K_inv @ delta_base
-    
+    q[0] = np.clip(q[0], -90*np.pi/180, 100*np.pi/180)
+    q[1] = np.clip(q[1], -65*np.pi/180, 60*np.pi/180)
+    q[2] = np.clip(q[2], -170*np.pi/180, 170*np.pi/180)
+    q[3] = np.clip(q[3], -0*np.pi/180, 140*np.pi/180)
+    q[4] = np.clip(q[4], -175*np.pi/180, 175*np.pi/180)
+    q[5] = np.clip(q[5], -90*np.pi/180, 120*np.pi/180)
+    q[6] = np.clip(q[6], -175*np.pi/180, 175*np.pi/180) 
     counter += 1
     print(counter)
 
@@ -72,14 +79,14 @@ joint_commands = []
 joint_commands.append(q)
 
 control_rate = rospy.Rate(10)
-r_limb.set_joint_position_speed(0.5)
+r_limb.set_joint_position_speed(0.75)
  
 for command in joint_commands:
     curr_pose = r_limb.get_joint_angles()
 
     error = np.abs(np.subtract(command,curr_pose))
     counter = 0
-    while np.max(error) > .1:
+    while np.linalg.norm(error) > .1:
         if counter > 3000:
             break
         counter += 1

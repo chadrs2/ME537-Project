@@ -88,7 +88,7 @@ class WaterBalancer(object):
     def get_ikine(self,X):
         
         K_inv = .5*np.eye(6)
-        K_inv = np.diag([.5, .5, .5, .5, .5 ,.5])
+        # K_inv = np.diag([.5, .5, .5, .5, .5 ,.5])
         
         q_prev = self.r_limb.get_joint_angles()
         joint_commands = []
@@ -96,13 +96,13 @@ class WaterBalancer(object):
         for point in X:
             print("calculating: {} / {}".format(i,len(X)))
             i += 1
-            T_des = np.array([[0,np.sin(np.pi/4),np.cos(np.pi/4),point[0]],[0,np.cos(np.pi/4),-np.sin(np.pi/4),point[1]],[-1,0,0,point[2]],[0,0,0,1]])  
+            T_des = np.array([[0,np.sin(np.pi/4),np.cos(np.pi/4),point[0]],[0,np.cos(np.pi/4),np.sin(np.pi/4),point[1]],[-1,0,0,point[2]],[0,0,0,1]])  
             q = q_prev
             T_curr = brk.FK[6](q)
 
             counter = 0
             while ((np.linalg.norm(T_des[0:3,3]- T_curr[0:3,3]) > 0.0001) 
-                # and np.linalg.norm(T_des[0:3,2] - T_curr[0:3,2]) > 0.0001 
+                and np.linalg.norm(T_des[0:3,2] - T_curr[0:3,2]) > 0.0001 
                 and (counter < 1000)):
                 counter += 1  
 
@@ -121,9 +121,6 @@ class WaterBalancer(object):
                 
                 q = q + J.transpose() @ np.linalg.inv(J @ J.transpose() + (.1**2)*np.eye(6)) @ K_inv @ delta_base
                 
-                max1 = np.pi/2
-                max2 = np.pi
-                max3 = np.pi/4
                 # q[0] = np.clip(q[0], -141*np.pi/180, 51*np.pi/180)
                 # q[1] = np.clip(q[1], -123*np.pi/180, 60*np.pi/180)
                 # q[2] = np.clip(q[2], -173*np.pi/180, 173*np.pi/180)
@@ -132,13 +129,13 @@ class WaterBalancer(object):
                 # q[5] = np.clip(q[5], -90*np.pi/180, 120*np.pi/180)
                 # q[6] = np.clip(q[6], -175*np.pi/180, 175*np.pi/180) 
 
-                # q[0] = np.clip(q[0], -120*np.pi/180, 45*np.pi/180)
-                # q[1] = np.clip(q[1], -75*np.pi/180, 120*np.pi/180)
-                # q[2] = np.clip(q[2], -160*np.pi/180, 150*np.pi/180)
-                # q[3] = np.clip(q[3], -0*np.pi/180, 140*np.pi/180)
-                # q[4] = np.clip(q[4], -160*np.pi/180, 160*np.pi/180)
-                # q[5] = np.clip(q[5], -85*np.pi/180, 105*np.pi/180)
-                # q[6] = np.clip(q[6], -160*np.pi/180, 160*np.pi/180) 
+                q[0] = np.clip(q[0], -90*np.pi/180, 100*np.pi/180)
+                q[1] = np.clip(q[1], -65*np.pi/180, 60*np.pi/180)
+                q[2] = np.clip(q[2], -170*np.pi/180, 170*np.pi/180)
+                q[3] = np.clip(q[3], -0*np.pi/180, 140*np.pi/180)
+                q[4] = np.clip(q[4], -175*np.pi/180, 175*np.pi/180)
+                q[5] = np.clip(q[5], -90*np.pi/180, 120*np.pi/180)
+                q[6] = np.clip(q[6], -175*np.pi/180, 175*np.pi/180) 
 
             joint_commands.append(q)
             q_prev = q
@@ -160,37 +157,48 @@ def main():
     #     baxter_butler.r_limb.set_joint_positions_mod(joint_command_start)
     #     baxter_butler.control_rate.sleep()
     #     step = step + 1
+    points = []
+    points.append([1.0, -.6, .3])
+    points.append([1.1,0,.3])
+    # points.append([1.1,.2,.3])
+    points.append([1.1,.2,-.3])
+    # points.append([.9,0,.3])
+    # points.append([.7,.1,0])
+    for des_position in points:
+        # des_position = [.5, -.5, 0]
+        X = baxter_butler.get_trajectory(des_position, baxter_butler.step_size)
+        joint_commands = baxter_butler.get_ikine(X)
 
-    des_position = [1.8, 0, .7]
-    X = baxter_butler.get_trajectory(des_position, baxter_butler.step_size)
-    joint_commands = baxter_butler.get_ikine(X)
+        # baxter_butler.target_configuration = joint_commands[-1]
+        # baxter_butler.move_to_configuration()
+        i = 0
+        for config in joint_commands:
+            i += 1
+            baxter_butler.target_configuration = config
+            baxter_butler.move_to_configuration()
+            print("moving: {} / {}".format(i,len(joint_commands)))
+        time.sleep(.5)
+    baxter_butler.r_gripper.open()
 
-    # baxter_butler.target_configuration = joint_commands[-1]
-    # baxter_butler.move_to_configuration()
-    i = 0
-    for config in joint_commands:
-        i += 1
-        baxter_butler.target_configuration = config
-        baxter_butler.move_to_configuration()
-        print("moving: {} / {}".format(i,len(joint_commands)))
-        # time.sleep(1)
+    points = []
+    points.append([.9,.15,-.3])
+
+    for des_position in points:
+        # des_position = [.5, -.5, 0]
+        X = baxter_butler.get_trajectory(des_position, baxter_butler.step_size)
+        joint_commands = baxter_butler.get_ikine(X)
+
+        # baxter_butler.target_configuration = joint_commands[-1]
+        # baxter_butler.move_to_configuration()
+        i = 0
+        for config in joint_commands:
+            i += 1
+            baxter_butler.target_configuration = config
+            baxter_butler.move_to_configuration()
+            print("moving: {} / {}".format(i,len(joint_commands)))
+        time.sleep(.5)
     
-    # time.sleep(3)
-    
-        
-    # des_position = [.91, -1.1, .31]
-    # X = baxter_butler.get_trajectory(des_position, baxter_butler.step_size)
-    # joint_commands = baxter_butler.get_ikine(X)
 
-    # # baxter_butler.target_configuration = joint_commands[-1]
-    # # baxter_butler.move_to_configuration()
-    # i = 0
-    # for config in joint_commands:
-    #     i += 1
-    #     baxter_butler.target_configuration = config
-    #     baxter_butler.move_to_configuration()
-    #     print("moving: {} / {}".format(i,len(joint_commands)))
-    #     # time.sleep(1)
 
     # # MY OWN WORK TO DELETE LATER
     # rospy.loginfo("Beginning my own algorithm")
