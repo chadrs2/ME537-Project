@@ -55,7 +55,7 @@
 	      -J baxter::left_w1 -0.0610333
 	      -J baxter::left_w2 -0.0124707" />
 
-    <arg name="robot_name" value="ar_tag"/>
+  <arg name="robot_name" value="ar_tag"/>
   <arg name="x" default="1.0"/>
   <arg name="y" default="0.0"/>
   <arg name="z" default="2.0"/>
