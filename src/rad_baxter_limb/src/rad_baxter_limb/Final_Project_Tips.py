@@ -17,11 +17,21 @@ print("made it even further")
 pose = r_limb.get_kdl_forward_position_kinematics()
 R = tf.transformations.quaternion_matrix(pose[3:])[0:3,0:3]
 position = pose[0:3]
+print(brk.joint_fk06([0,0,0,0,0,0,0]))
+# r_limb.get_kdl_inverse_kinematics(brk.joint_fk06([0,0,0,0,0,0,0]))
+
 
 #From Lab 1 Part 2
+<<<<<<< HEAD
+joint_command_start = np.zeros(7)
+# joint_command_start = np.array([40*np.pi/180, -70*np.pi/180,0*np.pi/180, 90*np.pi/180,90*np.pi/180 , 100*np.pi/180, -175*np.pi/180])
+control_rate = rospy.Rate(500)
+r_limb.set_joint_position_speed(.5)
+=======
 joint_command_start = np.array([0, 0, 0, 0, 0, 0, 0])
 control_rate = rospy.Rate(50)
 r_limb.set_joint_position_speed(0.5)
+>>>>>>> c3683c90c5295163bc5513d2e769bd1afa29b23e
 joint_command = r_limb.get_joint_angles()
 step = 1
 while step < 2500:
@@ -31,9 +41,9 @@ while step < 2500:
 
 # From My Past Code
 right_gripper = baxter_interface.Gripper('right')
-right_gripper.calibrate()
-right_gripper.close()
-right_gripper.open()
+# right_gripper.calibrate()
+# right_gripper.close()
+# right_gripper.open()
 
 r_limb.get_kdl_jacobian()
 brk.FK[6]([0, 0, 0, 0, 0, 0, 0])

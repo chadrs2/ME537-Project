@@ -393,6 +393,7 @@ def joint_fk06(q):
     pose[15] = 1
 #
     pose = offset_and_reshape(pose, 0.0635, -0.259, 0.119)
+    # pose = offset_and_reshape(pose, .111, -0.113, -0.0093)
     return pose
 
 
