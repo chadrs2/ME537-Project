@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import rospy
 import tf
 import numpy as np
@@ -9,10 +9,9 @@ import baxter_right_kinematics as brk
 
 #From From Lab 1 Start_robot
 rospy.init_node('Seth_Freeman_Node')
-print("made it!")
 r_limb = RadBaxterLimb('right')
 l_limb = RadBaxterLimb('left')
-print("made it even further")
+
 #From Lab 1 Part 1
 pose = r_limb.get_kdl_forward_position_kinematics()
 R = tf.transformations.quaternion_matrix(pose[3:])[0:3,0:3]
@@ -22,16 +21,10 @@ print(brk.joint_fk06([0,0,0,0,0,0,0]))
 
 
 #From Lab 1 Part 2
-<<<<<<< HEAD
 joint_command_start = np.zeros(7)
 # joint_command_start = np.array([40*np.pi/180, -70*np.pi/180,0*np.pi/180, 90*np.pi/180,90*np.pi/180 , 100*np.pi/180, -175*np.pi/180])
 control_rate = rospy.Rate(500)
 r_limb.set_joint_position_speed(.5)
-=======
-joint_command_start = np.array([0, 0, 0, 0, 0, 0, 0])
-control_rate = rospy.Rate(50)
-r_limb.set_joint_position_speed(0.5)
->>>>>>> c3683c90c5295163bc5513d2e769bd1afa29b23e
 joint_command = r_limb.get_joint_angles()
 step = 1
 while step < 2500:
@@ -54,9 +47,9 @@ brk.J[6]([0, 0, 0, 0, 0, 0, 0])
 r_limb.get_kdl_jacobian_transpose()
 r_limb.get_kdl_jacobian_pseudo_inverse()
 r_limb.get_kdl_jacobian_transpose()
-print(r_limb.kin_kdl.inverse_kinematics(np.array([0.3, 0.3, 0.3])))
+r_limb.kin_kdl.inverse_kinematics(np.array([0.3, 0.3, 0.3])) 
 np.pi
 
-#while not rospy.is_shutdown():
-#    rospy.spin()
+# while not rospy.is_shutdown():
+#     rospy.spin()
 

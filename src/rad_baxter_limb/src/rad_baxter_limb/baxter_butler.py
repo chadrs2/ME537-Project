@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 #!/usr/bin/env python3
 from numpy.core.defchararray import join
 from genpy.message import DeserializationError
-=======
-#!/usr/bin/env python
->>>>>>> c3683c90c5295163bc5513d2e769bd1afa29b23e
 import rospy
 import tf
 import numpy as np
@@ -12,15 +8,11 @@ from rad_baxter_limb import RadBaxterLimb
 import baxter_interface
 import baxter_left_kinematics as blk
 import baxter_right_kinematics as brk
-<<<<<<< HEAD
 import time
-=======
->>>>>>> c3683c90c5295163bc5513d2e769bd1afa29b23e
 
 class WaterBalancer(object):
     def __init__(self):
         self.r_limb = RadBaxterLimb('right')
-<<<<<<< HEAD
         self.r_limb.set_joint_position_speed(.5)
         # self.l_limb = RadBaxterLimb('left')
         # self.l_limb.set_joint_position_speed(0.5)
@@ -35,23 +27,6 @@ class WaterBalancer(object):
         self.total_steps = 50
         self.current_configuration = np.array([0,0,0,0,0,0,0])
         self.target_configuration = np.array([0,0,0,0,0,0,0])
-=======
-        self.r_limb.set_joint_position_speed(0.5)
-        self.l_limb = RadBaxterLimb('left')
-        self.l_limb.set_joint_position_speed(0.5)
-        
-        self.r_gripper = baxter_interface.Gripper('right')
-        self.r_gripper.calibrate()
-        self.l_gripper = baxter_interface.Gripper('left')
-        self.l_gripper.calibrate()
-        
-        self.control_rate = rospy.Rate(50)
-        self.step_size = 1
-        self.total_steps = 1000
-
-        self.current_configuration = np.array([0.0,0.0,0.0,0.0,0.0,0.0,0.0])
-        self.target_configuration = np.array([0.0,0.0,0.0,0.0,0.0,0.0,0.0])
->>>>>>> c3683c90c5295163bc5513d2e769bd1afa29b23e
         self.current_pose = np.identity(4)
         self.target_pose = np.identity(4)
 
@@ -71,21 +46,13 @@ class WaterBalancer(object):
         # start_pos = [[R, t][0, 0, 0, 1]]
         X = []
 
-<<<<<<< HEAD
         # self.current_configuration = self.r_limb.get_kdl_forward_position_kinematics()\
         self.current_configuration = self.r_limb.get_joint_angles()
-=======
-        self.current_configuration = self.r_limb.get_kdl_forward_position_kinematics()
->>>>>>> c3683c90c5295163bc5513d2e769bd1afa29b23e
         self.current_pose = brk.FK[6](self.current_configuration)
         start_position = self.current_pose[:3,3]
         consts = self.calc_line_const(start_position, des_position)
 
-<<<<<<< HEAD
         for i in range(self.total_steps + 1):
-=======
-        for i in range(self.total_steps):
->>>>>>> c3683c90c5295163bc5513d2e769bd1afa29b23e
             curr_row = []
             for j in range(len(consts)):
                 curr_row.append(start_position[j]+consts[j]*i*step_size)
@@ -95,7 +62,6 @@ class WaterBalancer(object):
 
 
     def move_to_configuration(self):
-<<<<<<< HEAD
         # for i in range(3000):
         #     self.r_limb.set_joint_positions_mod(self.target_configuration)
         #     self.control_rate.sleep()
@@ -177,18 +143,11 @@ class WaterBalancer(object):
         return joint_commands
         
 
-=======
-        for i in range(100):
-            self.r_limb.set_joint_positions_mod(self.target_configuration)
-            self.control_rate.sleep()
-
->>>>>>> c3683c90c5295163bc5513d2e769bd1afa29b23e
 def main():
     rospy.loginfo("Initializing node... ")
     rospy.init_node("baxter_butler")
     rospy.loginfo("Activating both right and left arms & grippers... ")
     baxter_butler = WaterBalancer()
-<<<<<<< HEAD
     # time.sleep(2)
     # rospy.loginfo("Moving to starting configuration... ")
     # baxter_butler.move_to_configuration()
@@ -261,10 +220,6 @@ def main():
 
     # rospy.loginfo("Ending my algorithm")
     # # END MY WORK
-=======
-    #rospy.loginfo("Moving to starting configuration... ")
-    #baxter_butler.move_to_configuration()
->>>>>>> c3683c90c5295163bc5513d2e769bd1afa29b23e
 
     while not rospy.is_shutdown():
         rospy.spin()
