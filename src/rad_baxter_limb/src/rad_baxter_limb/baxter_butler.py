@@ -46,7 +46,6 @@ class WaterBalancer(object):
         # start_pos = [[R, t][0, 0, 0, 1]]
         X = []
 
-        # self.current_configuration = self.r_limb.get_kdl_forward_position_kinematics()\
         self.current_configuration = self.r_limb.get_joint_angles()
         self.current_pose = brk.FK[6](self.current_configuration)
         start_position = self.current_pose[:3,3]
@@ -59,7 +58,6 @@ class WaterBalancer(object):
             X.append(curr_row)
 
         return X
-
 
     def move_to_configuration(self):
         # for i in range(3000):
@@ -80,6 +78,7 @@ class WaterBalancer(object):
             print(error)
             print(self.target_configuration)
             print(curr_pose)
+    
     def vex(self,S):
         if S.shape == (3,3):
             v = [S[2,1]-S[1,2], S[0,2]-S[2,0], S[1,0]-S[0,1]]
@@ -148,16 +147,7 @@ def main():
     rospy.init_node("baxter_butler")
     rospy.loginfo("Activating both right and left arms & grippers... ")
     baxter_butler = WaterBalancer()
-    # time.sleep(2)
-    # rospy.loginfo("Moving to starting configuration... ")
-    # baxter_butler.move_to_configuration()
-    # time.sleep(2)
-
-    # joint_command_start = np.array([0, 0, 0, 0, 0, 0, 0])
-    # while step < 2500:
-    #     baxter_butler.r_limb.set_joint_positions_mod(joint_command_start)
-    #     baxter_butler.control_rate.sleep()
-    #     step = step + 1
+    
     points = []
     points.append([1.0, -.6, .8])
     points.append([1.1,0,.3])
@@ -167,6 +157,7 @@ def main():
     # points.append([.7,.1,0])
     joint_commands = np.array([])
     first = True
+    rospy.loginfo("Moving to desired positions...")
     for des_position in points:
         # des_position = [.5, -.5, 0]
 
@@ -203,23 +194,6 @@ def main():
             baxter_butler.move_to_configuration()
             print("moving: {} / {}".format(i,len(joint_commands)))
         time.sleep(.5)
-    
-
-
-    # # MY OWN WORK TO DELETE LATER
-    # rospy.loginfo("Beginning my own algorithm")
-    # baxter_butler.current_pose = brk.FK[6](baxter_butler.r_limb.get_kdl_forward_position_kinematics())
-    # curr_position = baxter_butler.current_pose[3,:3]
-    # des_position = curr_position
-    # des_position[0] = des_position[0] + 1
-    # X = baxter_butler.get_trajectory(des_position,baxter_butler.step_size)
-    
-    # for row in X:
-    #     baxter_butler.target_configuration = baxter_butler.r_limb.kin_kdl.inverse_kinematics(row)
-    #     baxter_butler.move_to_configuration()
-
-    # rospy.loginfo("Ending my algorithm")
-    # # END MY WORK
 
     while not rospy.is_shutdown():
         rospy.spin()
