@@ -1,8 +1,0 @@
-prefix=/home/chad_samuelson/ME537-Project/devel
-
-Name: rad_baxter_limb
-Description: Description of rad_baxter_limb
-Version: 0.0.1
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: baxter_core_msgs baxter_interface baxter_pykdl

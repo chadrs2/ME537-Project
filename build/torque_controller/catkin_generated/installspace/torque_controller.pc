@@ -1,8 +1,0 @@
-prefix=/home/chad_samuelson/ME537-Project/install
-
-Name: torque_controller
-Description: Description of torque_controller
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: rad_baxter_limb baxter_interface
