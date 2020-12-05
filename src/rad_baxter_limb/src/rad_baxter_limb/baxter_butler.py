@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 from numpy.core.defchararray import join
 from genpy.message import DeserializationError
 import rospy
@@ -56,6 +56,51 @@ class WaterBalancer(object):
             for j in range(len(consts)):
                 curr_row.append(start_position[j]+consts[j]*i*step_size)
             X.append(curr_row)
+
+        return X
+
+    def find_corrected_position(next_position, obst_loc, obst_rad, safety):
+        corrected_position = next_position
+        
+        x_tmp = next_position[0]
+        y_tmp = next_position[1]
+        z_tmp = next_position[2]
+
+        while (np.linalg.norm(np.subtract(corrected_position - obst_loc)) < (obst_rad + safety)):
+            corrected_position[2] = corrected_position[2] + 0.001
+
+        return corrected_position
+
+    def get_trajectory_w_obst_avoidance(self, des_position, step_size, obst_loc, obst_rad):
+        # start_pos = [[R, t][0, 0, 0, 1]]
+        X = []
+        safety = obst_rad * 1.0
+
+        self.current_configuration = self.r_limb.get_joint_angles()
+        self.current_pose = brk.FK[6](self.current_configuration)
+        start_position = self.current_pose[:3,3]
+        consts = self.calc_line_const(start_position, des_position)
+        next_position = []
+        for j in range(len(consts)):
+            next_position.append(start_position[j]+consts[j]*1*step_size)
+        
+        counter = 1
+        while(counter <= self.total_steps):
+            if (np.linalg.norm(np.subtract(next_position - obst_loc)) > (obst_rad + safety)):
+                curr_row = []
+                for j in range(len(consts)):
+                    curr_row.append(start_position[j]+consts[j]*counter*step_size)
+                X.append(curr_row)
+            else: # if next position will cause the end effector to intercept with the object
+                corrected_position = self.find_corrected_position(next_position, obst_loc, obst_rad, safety)
+                X.append(corrected_position)
+                consts = self.calc_line_const(corrected_position, des_position)
+                start_position = corrected_position
+
+            counter = counter + 1
+            next_position = []
+            for j in range(len(consts)):
+                next_position.append(start_position[j]+consts[j]*counter*step_size)
 
         return X
 
@@ -140,7 +185,6 @@ class WaterBalancer(object):
             joint_commands.append(q)
             q_prev = q
         return joint_commands
-        
 
 def main():
     rospy.loginfo("Initializing node... ")
