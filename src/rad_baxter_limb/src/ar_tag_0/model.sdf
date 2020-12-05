@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="AR Tag">
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <scale>10 10 10</scale>
+            <uri>model://ar_tag_0/meshes/ar_tag_0.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>10 10 10</scale>
+            <uri>model://ar_tag_0/meshes/ar_tag_0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <gravity>0</gravity>
+    </link>
+    <!-- <gazebo reference="link">
+        <turnGravityOff>true</turnGravityOff>
+    </gazebo> -->
+  </model>
+</sdf>
