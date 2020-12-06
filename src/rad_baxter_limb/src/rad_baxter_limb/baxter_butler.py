@@ -143,6 +143,10 @@ class WaterBalancer(object):
         q_prev = self.r_limb.get_joint_angles()
         joint_commands = []
         i = 0
+
+        for point in X:
+            print(point)
+
         for point in X:
             print("calculating: {} / {}".format(i,len(X)))
             i += 1
@@ -232,6 +236,5 @@ def main():
         baxter_butler.target_configuration = config
         baxter_butler.move_to_configuration()
         print("moving: {} / {}".format(i,len(joint_commands)))
-
 if __name__ == "__main__":
     main()
