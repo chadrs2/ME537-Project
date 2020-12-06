@@ -29,8 +29,8 @@ class WaterBalancer(object):
         self.target_configuration = np.array([0,0,0,0,0,0,0])
         self.current_pose = np.identity(4)
         self.target_pose = np.identity(4)
-        self.obst_loc = np.array([1.1,-.4,.2])
-        self.obst_rad = 0.2
+        self.obst_loc = np.array([1.1,-.5,.25])
+        self.obst_rad = 0.25
         self.safety = self.obst_rad * 1.0
 
     def calc_line_const(self, X0, X1, total_steps):
@@ -54,6 +54,9 @@ class WaterBalancer(object):
         start_position = self.current_pose[:3,3]
         
         for des_position in points:
+            if des_position == 'pause':
+                X.append('pause')
+                continue
 
             consts = self.calc_line_const(start_position, des_position, self.total_steps)
 
@@ -82,6 +85,10 @@ class WaterBalancer(object):
         start_position = self.current_pose[:3,3]
         
         for des_position in points:
+            if des_position == 'pause':
+                X.append('pause')
+                continue
+
             total_steps = self.total_steps
             t = 1            
             for counter in range(self.total_steps + 1):
@@ -113,7 +120,7 @@ class WaterBalancer(object):
 
         error = np.abs(np.subtract(self.target_configuration,curr_pose))
         counter = 0
-        while np.max(error) > .1 and counter < 1000:
+        while np.max(error) > .1 and counter < 200:
             counter += 1
             self.r_limb.set_joint_positions_mod(self.target_configuration)
             self.control_rate.sleep()
@@ -143,6 +150,9 @@ class WaterBalancer(object):
             print(point)
 
         for point in X:
+            if point == 'pause':
+                joint_commands.append('pause')
+                continue
             print("calculating: {} / {}".format(i,len(X)))
             i += 1
             T_des = np.array([[0,np.sin(np.pi/4),np.cos(np.pi/4),point[0]],[0,np.cos(np.pi/4),np.sin(np.pi/4),point[1]],[-1,0,0,point[2]],[0,0,0,1]])  
@@ -203,33 +213,47 @@ def main():
     # points.append([1.0, -.6, .8])
     points.append([1.0, -.6, .3])
     points.append([1.1,0,.3])
-    points.append([1.1,.2,-.2])
+    points.append([1.1,.21,-.2])
+    points.append('pause')
+    points.append([1.0,.15,.3])
+    points.append([1.0,.15,.6])
+    points.append([.9, -.5, .6])
+    points.append([.8,-.8,.3])
             
     X = baxter_butler.get_trajectory_w_obst_avoidance(points, baxter_butler.step_size)
     joint_commands = baxter_butler.get_ikine(X)  
     i = 0
     for config in joint_commands:
+        if config == 'pause':
+            time.sleep(1)
+            baxter_butler.r_gripper.close()
+            time.sleep(1)
+            continue
+
         i += 1
         baxter_butler.target_configuration = config
         baxter_butler.move_to_configuration()
         print("moving: {} / {}".format(i,len(joint_commands)))
     
-    time.sleep(1)
-    baxter_butler.r_gripper.open()
-    time.sleep(1)
+    # time.sleep(1)
+    # baxter_butler.r_gripper.open()
+    # time.sleep(1)
 
-    points = []
-    points.append([1.0,.1,.1])
-    points.append([1.0,.1,.3])
-    points.append([1.0,-.9,.3])
+    # points = []
+    # points.append([1.0,.1,.1])
+    # points.append([1.0,.1,.3])
+    # points.append([1.0,-.9,.3])
             
-    X = baxter_butler.get_trajectory_w_obst_avoidance(points, baxter_butler.step_size)
-    joint_commands = baxter_butler.get_ikine(X)  
-    i = 0
-    for config in joint_commands:
-        i += 1
-        baxter_butler.target_configuration = config
-        baxter_butler.move_to_configuration()
-        print("moving: {} / {}".format(i,len(joint_commands)))
+    # X = baxter_butler.get_trajectory_w_obst_avoidance(points, baxter_butler.step_size)
+    # joint_commands = baxter_butler.get_ikine(X)  
+    # i = 0
+    # for config in joint_commands:
+    #     i += 1
+    #     baxter_butler.target_configuration = config
+    #     baxter_butler.move_to_configuration()
+    #     print("moving: {} / {}".format(i,len(joint_commands)))
+    
+    # while not rospy.is_shutdown():
+    #     rospy.spin()
 if __name__ == "__main__":
     main()
