@@ -33,15 +33,15 @@ class WaterBalancer(object):
         self.obst_rad = 0.2
         self.safety = self.obst_rad * 1.0
 
-    def calc_line_const(self, X0, X1):
+    def calc_line_const(self, X0, X1, total_steps):
         [x0, y0, z0] = X0[:]
         [x1, y1, z1] = X1[:]
 
         # Line Equations: x=x0+at; y=y0+bt; z=z0+ct
         # Solve for a,b,c to know equation of line in 3D space
-        a = (x1 - x0) / self.total_steps
-        b = (y1 - y0) / self.total_steps
-        c = (z1 - z0) / self.total_steps
+        a = (x1 - x0) / total_steps
+        b = (y1 - y0) / total_steps
+        c = (z1 - z0) / total_steps
         const = [a,b,c]
         return const
 
@@ -55,7 +55,7 @@ class WaterBalancer(object):
         
         for des_position in points:
 
-            consts = self.calc_line_const(start_position, des_position)
+            consts = self.calc_line_const(start_position, des_position, self.total_steps)
 
             for i in range(self.total_steps + 1):
                 curr_row = []
