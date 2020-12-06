@@ -25,3 +25,6 @@
 [submodule "src/fiducials"]
 	path = src/fiducials
 	url = https://github.com/BYUMarsRover/fiducials
+[submodule "src/aruco_detect"]
+	path = src/aruco_detect
+	url = https://github.com/BYUMarsRover/aruco_detect
