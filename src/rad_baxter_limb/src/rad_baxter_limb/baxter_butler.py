@@ -68,12 +68,7 @@ class WaterBalancer(object):
 
     def find_corrected_position(self, next_position):
         corrected_position = next_position
-        
-        x_tmp = next_position[0]
-        y_tmp = next_position[1]
-        z_tmp = next_position[2]
-
-        while (np.linalg.norm(np.subtract(corrected_position, self.obst_loc)) < (self.obst_rad + self.safety)):
+        while (np.linalg.norm(np.subtract(corrected_position, self.obst_loc)) <= (self.obst_rad + self.safety)):
             corrected_position[2] = corrected_position[2] + 0.001
 
         return corrected_position
@@ -103,7 +98,7 @@ class WaterBalancer(object):
                     # Reset parameters
                     start_position = corrected_position
                     total_steps = self.total_steps - t
-                    t = 0
+                    t = 1
                 t = t +1
             
             start_position = des_position
