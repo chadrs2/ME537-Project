@@ -221,8 +221,8 @@ def main():
 
     points = []
     points.append([1.0,.1,.1])
-    points.append([1.0,.1,.6])
-    points.append([1.0,-.9,.6])
+    points.append([1.0,.1,.3])
+    points.append([1.0,-.9,.3])
             
     X = baxter_butler.get_trajectory_w_obst_avoidance(points, baxter_butler.step_size)
     joint_commands = baxter_butler.get_ikine(X)  
