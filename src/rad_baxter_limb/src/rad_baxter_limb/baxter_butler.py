@@ -29,8 +29,8 @@ class WaterBalancer(object):
         self.target_configuration = np.array([0,0,0,0,0,0,0])
         self.current_pose = np.identity(4)
         self.target_pose = np.identity(4)
-        self.obst_loc = [0,0,0]
-        self.obst_rad = 0.0
+        self.obst_loc = np.array([1.1,-.4,.2])
+        self.obst_rad = 0.2
         self.safety = self.obst_rad * 1.0
 
     def calc_line_const(self, X0, X1):
@@ -73,7 +73,7 @@ class WaterBalancer(object):
         y_tmp = next_position[1]
         z_tmp = next_position[2]
 
-        while (np.linalg.norm(np.subtract(corrected_position - self.obst_loc)) < (self.obst_rad + self.safety)):
+        while (np.linalg.norm(np.subtract(corrected_position, self.obst_loc)) < (self.obst_rad + self.safety)):
             corrected_position[2] = corrected_position[2] + 0.001
 
         return corrected_position
@@ -94,15 +94,19 @@ class WaterBalancer(object):
             next_position = []
             for j in range(len(consts)):
                 next_position.append(start_position[j]+consts[j]*1*step_size)
+            X.append(start_position)
             
             counter = 1
-            while(counter <= self.total_steps):
-                if (np.linalg.norm(np.subtract(next_position - self.obst_loc)) > (self.obst_rad + self.safety)):
+            while(counter <= self.total_steps + 1):
+                if (np.linalg.norm(np.subtract(next_position, self.obst_loc)) > (self.obst_rad + self.safety)):
                     curr_row = []
                     for j in range(len(consts)):
                         curr_row.append(start_position[j]+consts[j]*counter*step_size)
                     X.append(curr_row)
                 else: # if next position will cause the end effector to intercept with the object
+                    print("----------------------------")
+                    print("----------------------------")
+                    print("----------------------------")
                     corrected_position = self.find_corrected_position(next_position)
                     X.append(corrected_position)
                     consts = self.calc_line_const(corrected_position, des_position)
@@ -204,15 +208,16 @@ def main():
     rospy.loginfo("Activating both right and left arms & grippers... ")
     baxter_butler = WaterBalancer()
     
-    # rospy.loginfo("Moving to starting configuration... ")
-    # baxter_butler.move_to_configuration()
+    rospy.loginfo("Moving to starting configuration... ")
+    baxter_butler.move_to_configuration()
     
     points = []
-    points.append([1.0, -.6, .8])
+    # points.append([1.0, -.6, .8])
+    points.append([1.0, -.6, .3])
     points.append([1.1,0,.3])
     points.append([1.1,.2,-.2])
             
-    X = baxter_butler.get_trajectory(points, baxter_butler.step_size)
+    X = baxter_butler.get_trajectory_w_obst_avoidance(points, baxter_butler.step_size)
     joint_commands = baxter_butler.get_ikine(X)  
     i = 0
     for config in joint_commands:
@@ -221,16 +226,16 @@ def main():
         baxter_butler.move_to_configuration()
         print("moving: {} / {}".format(i,len(joint_commands)))
     
-    # time.sleep(1)
+    time.sleep(1)
     baxter_butler.r_gripper.open()
-    # time.sleep(1)
+    time.sleep(1)
 
     points = []
     points.append([1.0,.1,.1])
     points.append([1.0,.1,.6])
     points.append([1.0,-.9,.6])
             
-    X = baxter_butler.get_trajectory(points, baxter_butler.step_size)
+    X = baxter_butler.get_trajectory_w_obst_avoidance(points, baxter_butler.step_size)
     joint_commands = baxter_butler.get_ikine(X)  
     i = 0
     for config in joint_commands:
