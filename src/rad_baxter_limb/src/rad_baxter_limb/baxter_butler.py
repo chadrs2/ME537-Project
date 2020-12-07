@@ -18,7 +18,7 @@ class WaterBalancer(object):
         # self.l_limb.set_joint_position_speed(0.5)
         
         self.r_gripper = baxter_interface.Gripper('right')
-        # self.r_gripper.calibrate()
+        self.r_gripper.calibrate()
         # self.l_gripper = baxter_interface.Gripper('left')
         # self.l_gripper.calibrate()
         
@@ -112,10 +112,6 @@ class WaterBalancer(object):
         return X
 
     def move_to_configuration(self):
-        # for i in range(3000):
-        #     self.r_limb.set_joint_positions_mod(self.target_configuration)
-        #     self.control_rate.sleep()
-
         curr_pose = self.r_limb.get_joint_angles()
 
         error = np.abs(np.subtract(self.target_configuration,curr_pose))
@@ -140,14 +136,13 @@ class WaterBalancer(object):
     def get_ikine(self,X):
         
         K_inv = .5*np.eye(6)
-        # K_inv = np.diag([.5, .5, .5, .5, .5 ,.5])
         
         q_prev = self.r_limb.get_joint_angles()
         joint_commands = []
         i = 0
 
-        for point in X:
-            print(point)
+        #for point in X:
+        #    print(point)
 
         for point in X:
             if point == 'pause':
@@ -168,7 +163,7 @@ class WaterBalancer(object):
                 T_curr = brk.FK[6](q)
                 J = brk.J[6](q)
 
-                TD = np.linalg.inv(T_curr) @ T_des
+                TD = np.matmul(np.linalg.inv(T_curr), T_des)
     
                 delta = np.append(TD[0:3,3],self.vex(TD[0:3,0:3] - np.eye(3)) * np.array([0, 1, 1]))
                 R2base = T_curr[0:3,0:3]
@@ -176,9 +171,9 @@ class WaterBalancer(object):
                 top = np.append(R2base, np.zeros((3,3)),axis=1)
                 bottom = np.append(np.zeros((3,3)), R2base,axis=1)
                 together = np.append(top,bottom,axis=0)
-                delta_base = together @ delta
+                delta_base = np.matmul(together, delta)
                 
-                q = q + J.transpose() @ np.linalg.inv(J @ J.transpose() + (.1**2)*np.eye(6)) @ K_inv @ delta_base
+                q = q + np.matmul(J.transpose(), np.matmul(np.linalg.inv(np.matmul(J, J.transpose()) + (.1**2)*np.eye(6)), np.matmul(K_inv, delta_base)))
                 
                 # q[0] = np.clip(q[0], -141*np.pi/180, 51*np.pi/180)
                 # q[1] = np.clip(q[1], -123*np.pi/180, 60*np.pi/180)
@@ -210,19 +205,31 @@ def main():
     baxter_butler.move_to_configuration()
     
     points = []
+    ## On Physical System
     # points.append([1.0, -.6, .8])
+    #points.append([1.0, -.6, .3])
+    #points.append([1.1,0,.3])
+    #points.append([1.1,.21,-.2])
+    #points.append('pause')
+    #points.append([1.0,.15,.3])
+    #points.append([1.0,.15,.6])
+    #points.append([.9, -.5, .6])
+    #points.append([.8,-.8,.3])
+
+    ## On Simulation
     points.append([1.0, -.6, .3])
-    points.append([1.1,0,.3])
-    points.append([1.1,.21,-.2])
-    points.append('pause')
-    points.append([1.0,.15,.3])
-    points.append([1.0,.15,.6])
-    points.append([.9, -.5, .6])
-    points.append([.8,-.8,.3])
+    points.append([1.0,0,.3])
+    points.append([1.0,0,-.30]) # was -0.2; this is the location of the block in baxter's frame
+    #points.append('pause')
+    points.append([1.0,0,.3])
+    #points.append([1.0,.15,.6])
+    #points.append([.9, -.5, .6])
+    #points.append([.8,-.8,.3])
             
     X = baxter_butler.get_trajectory_w_obst_avoidance(points, baxter_butler.step_size)
     joint_commands = baxter_butler.get_ikine(X)  
     i = 0
+    baxter_butler.r_gripper.open()
     for config in joint_commands:
         if config == 'pause':
             time.sleep(1)
@@ -235,6 +242,11 @@ def main():
         baxter_butler.move_to_configuration()
         print("moving: {} / {}".format(i,len(joint_commands)))
     
+    # Save X position matrix to later post-process a graph
+    X = np.array(X)
+    np.savetxt('baxter_position_data.txt',X, fmt='%s')
+    np.save('baxter_position_data', X)
+
     # time.sleep(1)
     # baxter_butler.r_gripper.open()
     # time.sleep(1)
