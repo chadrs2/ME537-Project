@@ -31,7 +31,7 @@ class WaterBalancer(object):
         self.target_pose = np.identity(4)
         self.obst_loc = np.array([1.1, -.5, .05])
         self.obst_rad = 0.25
-        self.safety = self.obst_rad * 0.0 #1.0
+        self.safety = self.obst_rad * 0.3 #1.0
 
     def calc_line_const(self, X0, X1, total_steps):
         [x0, y0, z0] = X0[:]
@@ -230,6 +230,7 @@ def main():
     X = baxter_butler.get_trajectory_w_obst_avoidance(points, baxter_butler.step_size)
     joint_commands = baxter_butler.get_ikine(X)  
     i = 0
+    real_robot_pos = []
     baxter_butler.r_gripper.open()
     for config in joint_commands:
         if config == 'pause':
@@ -240,11 +241,12 @@ def main():
         i += 1
         baxter_butler.target_configuration = config
         baxter_butler.move_to_configuration()
+        real_robot_pos.append(baxter_butler.r_limb.get_kdl_forward_position_kinematics()[1:4])
         print("moving: {} / {}".format(i,len(joint_commands)))
     
     # Save X position matrix to later post-process a graph
     robot_pos = []
-    real_robot_pos = []
+  
     for configuration in joint_commands:
         if (configuration != 'pause'):
             robot_pos.append(brk.FK[6](configuration)[:3,3])
@@ -256,6 +258,8 @@ def main():
     robot_pos = np.array(robot_pos)
     np.save('baxter_fk_position_data_w_object', robot_pos)
     #np.save('baxter_fk_position_data_no_object', robot_pos)
+    real_robot_pos = np.array(real_robot_pos)
+    np.save('baxter_real_fk_position_data_w_object', real_robot_pos)
 
 if __name__ == "__main__":
     main()
