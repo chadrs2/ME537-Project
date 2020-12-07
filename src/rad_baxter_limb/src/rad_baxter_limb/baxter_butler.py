@@ -30,7 +30,7 @@ class WaterBalancer(object):
         self.current_pose = np.identity(4)
         self.target_pose = np.identity(4)
         self.obst_loc = np.array([1.1, -.5, .05])
-        self.obst_rad = 0.25
+        self.obst_rad = 0
         self.safety = self.obst_rad * 0.3 #1.0
 
     def calc_line_const(self, X0, X1, total_steps):
@@ -47,6 +47,7 @@ class WaterBalancer(object):
 
     def get_trajectory(self, points, step_size):
         # start_pos = [[R, t][0, 0, 0, 1]]
+        self.obst_rad = 0
         X = []
 
         self.current_configuration = self.r_limb.get_joint_angles()
@@ -227,7 +228,7 @@ def main():
     #points.append([.9, -.5, .6])
     #points.append([.8,-.8,.3])
             
-    X = baxter_butler.get_trajectory_w_obst_avoidance(points, baxter_butler.step_size)
+    X = baxter_butler.get_trajectory(points, baxter_butler.step_size)
     joint_commands = baxter_butler.get_ikine(X)  
     i = 0
     real_robot_pos = []
