@@ -220,11 +220,11 @@ def main():
     points.append([1.0, -.6, .3])
     points.append([1.0,0,.3])
     points.append([1.0,0,-.30]) # was -0.2; this is the location of the block in baxter's frame
-    #points.append('pause')
+    points.append('pause')
     points.append([1.0,0,.3])
-    #points.append([1.0,.15,.6])
-    #points.append([.9, -.5, .6])
-    #points.append([.8,-.8,.3])
+    points.append([1.0,.15,.6])
+    points.append([.9, -.5, .6])
+    points.append([.8,-.8,.3])
             
     X = baxter_butler.get_trajectory_w_obst_avoidance(points, baxter_butler.step_size)
     joint_commands = baxter_butler.get_ikine(X)  

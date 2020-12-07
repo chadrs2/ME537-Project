@@ -76,7 +76,7 @@
   
   <arg name="cup_name" value="block"/>
   <arg name="x1" default="1.0"/>
-  <arg name="y1" default="0.0"/>
+  <arg name="y1" default="0.1"/>
   <arg name="z1" default="0.775"/>
   <arg name="roll1" default="0.0"/>
   <arg name="pitch1" default="0.0"/>
