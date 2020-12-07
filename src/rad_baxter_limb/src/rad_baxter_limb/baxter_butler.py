@@ -104,8 +104,8 @@ class WaterBalancer(object):
                     X.append(corrected_position)
                     # Reset parameters
                     start_position = corrected_position
-                    total_steps = self.total_steps - t
-                    t = 0
+                    total_steps = self.total_steps - (t - 1)
+                    t = 1
                 t = t +1
             
             start_position = des_position
@@ -231,17 +231,16 @@ def main():
     joint_commands = baxter_butler.get_ikine(X)  
     i = 0
     baxter_butler.r_gripper.open()
-    #for config in joint_commands:
-    #    if config == 'pause':
-    #        time.sleep(1)
-    #        baxter_butler.r_gripper.close()
-    #        time.sleep(1)
-    #        continue
-
-    #    i += 1
-    #    baxter_butler.target_configuration = config
-    #    baxter_butler.move_to_configuration()
-    #    print("moving: {} / {}".format(i,len(joint_commands)))
+    for config in joint_commands:
+        if config == 'pause':
+            time.sleep(1)
+            baxter_butler.r_gripper.close()
+            time.sleep(1)
+            continue
+        i += 1
+        baxter_butler.target_configuration = config
+        baxter_butler.move_to_configuration()
+        print("moving: {} / {}".format(i,len(joint_commands)))
     
     # Save X position matrix to later post-process a graph
     robot_pos = []
@@ -253,8 +252,10 @@ def main():
         
     X = np.array(X)
     np.save('baxter_position_data_w_object', X)
+    #np.save('baxter_position_data_no_object', X)
     robot_pos = np.array(robot_pos)
     np.save('baxter_fk_position_data_w_object', robot_pos)
+    #np.save('baxter_fk_position_data_no_object', robot_pos)
 
 if __name__ == "__main__":
     main()
