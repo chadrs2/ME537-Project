@@ -191,6 +191,8 @@ class WaterBalancer(object):
                 q[4] = np.clip(q[4], -175*np.pi/180, 175*np.pi/180)
                 q[5] = np.clip(q[5], -90*np.pi/180, 120*np.pi/180)
                 q[6] = np.clip(q[6], -175*np.pi/180, 175*np.pi/180) 
+                if (q[0] > 60*np.pi/180):
+                    q[1] = np.clip(q[1], -35*np.pi/180, 60*np.pi/180)
 
             joint_commands.append(q)
             q_prev = q
@@ -209,9 +211,9 @@ def main():
     ## On Physical System
     # points.append([1.0, -.6, .8])
     #points.append([1.0, -.6, .3])
-    points.append([1.0, -0.2, .2])
+    points.append([1.0, -0.7, .3])
     points.append([1.1,0,.3])
-    points.append([1.1,.21,-.2])
+    points.append([1.1,.2,-.2])
     points.append('pause')
     points.append([1.0,.15,.3])
     points.append([1.0,.15,.6])
@@ -219,16 +221,16 @@ def main():
     points.append([.8,-.8,.3])
 
     ## On Simulation
-    #points.append([1.0, -.6, .3])
-    #points.append([1.0,0,.3])
-    #points.append([1.0,0,-.30]) # was -0.2; this is the location of the block in baxter's frame
-    #points.append('pause')
-    #points.append([1.0,0,.3])
-    #points.append([1.0,.15,.6])
-    #points.append([.9, -.5, .6])
-    #points.append([.8,-.8,.3])
+    # points.append([1.0, -.6, .3])
+    # points.append([1.0,0,.3])
+    # points.append([1.0,0,-.30]) # was -0.2; this is the location of the block in baxter's frame
+    # points.append('pause')
+    # points.append([1.0,0,.3])
+    # points.append([1.0,.15,.6])
+    # points.append([.9, -.5, .6])
+    # points.append([.8,-.8,.3])
             
-    X = baxter_butler.get_trajectory(points, baxter_butler.step_size)
+    X = baxter_butler.get_trajectory_w_obst_avoidance(points, baxter_butler.step_size)
     joint_commands = baxter_butler.get_ikine(X)  
     i = 0
     real_robot_pos = []
