@@ -4,7 +4,7 @@
 .ipynb_checkpoints/
 __pycache__/
 .mypy_cache/
-*.npy
+#*.npy
 # Byte-compiled / optimized / DLL files
 *.py[cod]
 *$py.class
