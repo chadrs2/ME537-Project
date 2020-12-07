@@ -13,9 +13,10 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D  # noqa: F401 unused import
 
 def main():
-    #X_list = np.load('baxter_position_data.npy')
     X_list = np.load('baxter_position_data_w_object.npy')
     X_real = np.load('baxter_fk_position_data_w_object.npy')
+    #X_list = np.load('baxter_position_data_no_object.npy')
+    #X_real = np.load('baxter_fk_position_data_no_object.npy')
     
     for i in range(len(X_list)):
         if (X_list[i] == 'pause'):
@@ -67,7 +68,7 @@ def main():
     v = np.linspace(0, np.pi, 100)
 
     rad = 0.25
-    safety = 1 * rad
+    safety = 0.3 * rad
     obst_loc = [1.1, -.5, .05]
     x = rad * np.outer(np.cos(u), np.sin(v)) + obst_loc[0]
     y = rad * np.outer(np.sin(u), np.sin(v)) + obst_loc[1]

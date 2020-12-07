@@ -31,7 +31,7 @@ class WaterBalancer(object):
         self.target_pose = np.identity(4)
         self.obst_loc = np.array([1.1, -.5, .05])
         self.obst_rad = 0.25
-        self.safety = self.obst_rad * 0.0 #1.0
+        self.safety = self.obst_rad * 0.3 #1.0
 
     def calc_line_const(self, X0, X1, total_steps):
         [x0, y0, z0] = X0[:]
