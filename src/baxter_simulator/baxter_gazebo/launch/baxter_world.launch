@@ -57,21 +57,21 @@
 
 
   <arg name="table_name" value="cafe_table"/>
-  <arg name="x" default="1.0"/>
-  <arg name="y" default="0.0"/>
-  <arg name="z" default="0.0"/>
-  <arg name="roll" default="0.0"/>
-  <arg name="pitch" default="0.0"/>
-  <arg name="yaw" default="0.0"/>
+  <arg name="xt" default="1.0"/>
+  <arg name="yt" default="0.0"/>
+  <arg name="zt" default="0.0"/>
+  <arg name="rollt" default="0.0"/>
+  <arg name="pitcht" default="0.0"/>
+  <arg name="yawt" default="0.0"/>
   <arg name="sdf_table_file" default="$(find baxter_sim_examples)/models/cafe_table/model.sdf"/>
   <node name="$(arg table_name)_spawn_urdf" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" 
   args="-file $(arg sdf_table_file) -sdf 
-        -x $(arg x) 
-        -y $(arg y) 
-        -z $(arg z) 
-        -R $(arg roll) 
-        -P $(arg pitch) 
-        -Y $(arg yaw) 
+        -x $(arg xt) 
+        -y $(arg yt) 
+        -z $(arg zt) 
+        -R $(arg rollt) 
+        -P $(arg pitcht) 
+        -Y $(arg yawt) 
         -model $(arg table_name)"/>
   
   <arg name="cup_name" value="block"/>
@@ -92,7 +92,7 @@
         -Y $(arg yaw1) 
         -model $(arg cup_name)"/>
 
-  <!-- <arg name="robot_name" value="ar_tag"/>
+  <arg name="robot_name" value="ar_tag"/>
   <arg name="x" default="0.5"/>
   <arg name="y" default="0.0"/>
   <arg name="z" default="1.0"/>
@@ -108,7 +108,7 @@
         -R $(arg roll) 
         -P $(arg pitch) 
         -Y $(arg yaw) 
-        -model $(arg robot_name)"/> -->
+        -model $(arg robot_name)"/>
 
   <!-- ros_control baxter launch file -->
   <include file="$(find baxter_sim_hardware)/launch/baxter_sdk_control.launch">

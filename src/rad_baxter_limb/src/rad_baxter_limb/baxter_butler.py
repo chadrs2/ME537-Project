@@ -241,7 +241,7 @@ def main():
         i += 1
         baxter_butler.target_configuration = config
         baxter_butler.move_to_configuration()
-        real_robot_pos.append(baxter_butler.r_limb.get_kdl_forward_position_kinematics()[1:4])
+        real_robot_pos.append(baxter_butler.r_limb.get_kdl_forward_position_kinematics()[:3])
         print("moving: {} / {}".format(i,len(joint_commands)))
     
     # Save X position matrix to later post-process a graph

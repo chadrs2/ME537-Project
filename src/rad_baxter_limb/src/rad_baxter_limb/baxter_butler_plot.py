@@ -15,6 +15,7 @@ from mpl_toolkits.mplot3d import Axes3D  # noqa: F401 unused import
 def main():
     X_list = np.load('baxter_position_data_w_object.npy')
     X_real = np.load('baxter_fk_position_data_w_object.npy')
+    X_physical = np.load('baxter_real_fk_position_data_w_object.npy')
     #X_list = np.load('baxter_position_data_no_object.npy')
     #X_real = np.load('baxter_fk_position_data_no_object.npy')
     
@@ -30,16 +31,20 @@ def main():
     x = X[:,0]
     y = X[:,1]
     z = X[:,2]
-    x_real = X[:,0]
-    y_real = X[:,1]
-    z_real = X[:,2]
+    x_real = X_real[:,0]
+    y_real = X_real[:,1]
+    z_real = X_real[:,2]
+    x_phys = X_physical[:,0]
+    y_phys = X_physical[:,1]
+    z_phys = X_physical[:,2]
 
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
     #ax.set_aspect('equal')
 
     ax.scatter(x, y, z, marker='*', color='black')
-    ax.scatter(x_real, y_real, z_real, marker='*', color='red')
+    ax.scatter(x_real, y_real, z_real, marker='*', color='blue')
+    ax.scatter(x_phys, y_phys, z_phys, marker='o', color='red')
     ax.scatter(1.0, -0.2, .2, marker='^')
     ax.scatter(1.1, 0, .3, marker='^')
     ax.scatter(1.1,0.21,-.2, marker='^')
