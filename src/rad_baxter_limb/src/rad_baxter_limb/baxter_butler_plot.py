@@ -13,7 +13,9 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D  # noqa: F401 unused import
 
 def main():
-    X_list = np.load('baxter_position_data.npy')
+    #X_list = np.load('baxter_position_data.npy')
+    X_list = np.load('baxter_position_data_w_object.npy')
+    X_real = np.load('baxter_fk_position_data_w_object.npy')
     
     for i in range(len(X_list)):
         if (X_list[i] == 'pause'):
@@ -27,20 +29,24 @@ def main():
     x = X[:,0]
     y = X[:,1]
     z = X[:,2]
+    x_real = X[:,0]
+    y_real = X[:,1]
+    z_real = X[:,2]
 
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
     #ax.set_aspect('equal')
 
     ax.scatter(x, y, z, marker='*', color='black')
-    ax.scatter(1.0, -.6, .3, marker='^')
-    ax.scatter(1.0,0,.3, marker='^')
-    ax.scatter(1.0,0,-.30, marker='^')
-    ax.scatter(1.0,0,.3, marker='^')
-    ax.scatter(1.0,.15,.6, marker='^')
-    ax.scatter(.9, -.5, .6, marker='^')
+    ax.scatter(x_real, y_real, z_real, marker='*', color='red')
+    ax.scatter(1.0, -0.2, .2, marker='^')
+    ax.scatter(1.1, 0, .3, marker='^')
+    ax.scatter(1.1,0.21,-.2, marker='^')
+    ax.scatter(1.0,0.15,.30, marker='^')
+    ax.scatter(1.0,0.15,.6, marker='^')
+    ax.scatter(0.9,-.5,.6, marker='^')
     ax.scatter(.8,-.8,.3, marker='^')
-    
+
     ax.set_xlabel('X Label')
     ax.set_ylabel('Y Label')
     ax.set_zlabel('Z Label')
@@ -48,13 +54,13 @@ def main():
 
     ax.text(x[0], y[0], z[0], 'Starting Position', color='black')
     ax.text(x[-1], y[-1], z[-1], 'Ending Position', color='black')
-    ax.text(1.0, -.6, .3, 'Commanded Position: 1')
-    ax.text(1.0,0,.3, 'Commanded Position: 2')
-    ax.text(1.0,0,-.30, 'Commanded Position: 3')
-    ax.text(1.0,0,.3, 'Commanded Position: 4')
-    ax.text(1.0,.15,.6, 'Commanded Position: 5')
-    ax.text(.9, -.5, .6, 'Commanded Position: 6')
-    ax.text(.8,-.8,.3, 'Commanded Position: 7')
+    ax.text(1.0, -0.2, .2, 'Commanded Position: 0')
+    ax.text(1.1, 0, .3, 'Commanded Position: 1')
+    ax.text(1.1,0.21,-.20, 'Commanded Position: 2')
+    ax.text(1.0,.15,.3, 'Commanded Position: 3')
+    ax.text(1.0,.15,.6, 'Commanded Position: 4')
+    ax.text(.9, -.5, .6, 'Commanded Position: 5')
+    ax.text(.8,-.8,.3, 'Commanded Position: 6')
 
     # Plot object
     u = np.linspace(0, 2 * np.pi, 100)
@@ -62,7 +68,7 @@ def main():
 
     rad = 0.25
     safety = 1 * rad
-    obst_loc = [1.1, -.5, .25]
+    obst_loc = [1.1, -.5, .05]
     x = rad * np.outer(np.cos(u), np.sin(v)) + obst_loc[0]
     y = rad * np.outer(np.sin(u), np.sin(v)) + obst_loc[1]
     z = rad * np.outer(np.ones(np.size(u)), np.cos(v)) + obst_loc[2]

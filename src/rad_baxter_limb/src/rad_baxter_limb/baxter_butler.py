@@ -29,9 +29,9 @@ class WaterBalancer(object):
         self.target_configuration = np.array([0,0,0,0,0,0,0])
         self.current_pose = np.identity(4)
         self.target_pose = np.identity(4)
-        self.obst_loc = np.array([1.1,-.5,.25])
+        self.obst_loc = np.array([1.1, -.5, .05])
         self.obst_rad = 0.25
-        self.safety = self.obst_rad * 1.0
+        self.safety = self.obst_rad * 0.0 #1.0
 
     def calc_line_const(self, X0, X1, total_steps):
         [x0, y0, z0] = X0[:]
@@ -105,7 +105,7 @@ class WaterBalancer(object):
                     # Reset parameters
                     start_position = corrected_position
                     total_steps = self.total_steps - t
-                    t = 1
+                    t = 0
                 t = t +1
             
             start_position = des_position
@@ -208,64 +208,53 @@ def main():
     ## On Physical System
     # points.append([1.0, -.6, .8])
     #points.append([1.0, -.6, .3])
-    #points.append([1.1,0,.3])
-    #points.append([1.1,.21,-.2])
-    #points.append('pause')
-    #points.append([1.0,.15,.3])
-    #points.append([1.0,.15,.6])
-    #points.append([.9, -.5, .6])
-    #points.append([.8,-.8,.3])
-
-    ## On Simulation
-    points.append([1.0, -.6, .3])
-    points.append([1.0,0,.3])
-    points.append([1.0,0,-.30]) # was -0.2; this is the location of the block in baxter's frame
+    points.append([1.0, -0.2, .2])
+    points.append([1.1,0,.3])
+    points.append([1.1,.21,-.2])
     points.append('pause')
-    points.append([1.0,0,.3])
+    points.append([1.0,.15,.3])
     points.append([1.0,.15,.6])
     points.append([.9, -.5, .6])
     points.append([.8,-.8,.3])
+
+    ## On Simulation
+    #points.append([1.0, -.6, .3])
+    #points.append([1.0,0,.3])
+    #points.append([1.0,0,-.30]) # was -0.2; this is the location of the block in baxter's frame
+    #points.append('pause')
+    #points.append([1.0,0,.3])
+    #points.append([1.0,.15,.6])
+    #points.append([.9, -.5, .6])
+    #points.append([.8,-.8,.3])
             
     X = baxter_butler.get_trajectory_w_obst_avoidance(points, baxter_butler.step_size)
     joint_commands = baxter_butler.get_ikine(X)  
     i = 0
     baxter_butler.r_gripper.open()
-    for config in joint_commands:
-        if config == 'pause':
-            time.sleep(1)
-            baxter_butler.r_gripper.close()
-            time.sleep(1)
-            continue
+    #for config in joint_commands:
+    #    if config == 'pause':
+    #        time.sleep(1)
+    #        baxter_butler.r_gripper.close()
+    #        time.sleep(1)
+    #        continue
 
-        i += 1
-        baxter_butler.target_configuration = config
-        baxter_butler.move_to_configuration()
-        print("moving: {} / {}".format(i,len(joint_commands)))
+    #    i += 1
+    #    baxter_butler.target_configuration = config
+    #    baxter_butler.move_to_configuration()
+    #    print("moving: {} / {}".format(i,len(joint_commands)))
     
     # Save X position matrix to later post-process a graph
+    robot_pos = []
+    real_robot_pos = []
+    for configuration in joint_commands:
+        if (configuration != 'pause'):
+            robot_pos.append(brk.FK[6](configuration)[:3,3])
+            #real_robot_pos.append(r_limb.get_kdl_forward_kinematics())
+        
     X = np.array(X)
-    np.savetxt('baxter_position_data.txt',X, fmt='%s')
-    np.save('baxter_position_data', X)
+    np.save('baxter_position_data_w_object', X)
+    robot_pos = np.array(robot_pos)
+    np.save('baxter_fk_position_data_w_object', robot_pos)
 
-    # time.sleep(1)
-    # baxter_butler.r_gripper.open()
-    # time.sleep(1)
-
-    # points = []
-    # points.append([1.0,.1,.1])
-    # points.append([1.0,.1,.3])
-    # points.append([1.0,-.9,.3])
-            
-    # X = baxter_butler.get_trajectory_w_obst_avoidance(points, baxter_butler.step_size)
-    # joint_commands = baxter_butler.get_ikine(X)  
-    # i = 0
-    # for config in joint_commands:
-    #     i += 1
-    #     baxter_butler.target_configuration = config
-    #     baxter_butler.move_to_configuration()
-    #     print("moving: {} / {}".format(i,len(joint_commands)))
-    
-    # while not rospy.is_shutdown():
-    #     rospy.spin()
 if __name__ == "__main__":
     main()
