@@ -253,13 +253,16 @@ def main():
             #real_robot_pos.append(r_limb.get_kdl_forward_kinematics())
         
     X = np.array(X)
-    np.save('baxter_position_data_w_object', X)
-    #np.save('baxter_position_data_no_object', X)
     robot_pos = np.array(robot_pos)
-    np.save('baxter_fk_position_data_w_object', robot_pos)
-    #np.save('baxter_fk_position_data_no_object', robot_pos)
     real_robot_pos = np.array(real_robot_pos)
-    np.save('baxter_real_fk_position_data_w_object', real_robot_pos)
+    if (baxter_butler.obst_rad == 0.0):
+        np.save('baxter_position_data_no_object', X)
+        np.save('baxter_fk_position_data_no_object', robot_pos)
+        np.save('baxter_real_fk_position_data_no_object', real_robot_pos)
+    else:
+        np.save('baxter_position_data_w_object', X)
+        np.save('baxter_fk_position_data_w_object', robot_pos)
+        np.save('baxter_real_fk_position_data_w_object', real_robot_pos)
 
 if __name__ == "__main__":
     main()
