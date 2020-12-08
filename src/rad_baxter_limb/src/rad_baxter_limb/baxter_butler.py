@@ -30,7 +30,7 @@ class WaterBalancer(object):
         self.current_pose = np.identity(4)
         self.target_pose = np.identity(4)
         self.obst_loc = np.array([1.1, -.5, .05])
-        self.obst_rad = 0
+        self.obst_rad = .3
         self.safety = self.obst_rad * 0.3 #1.0
 
     def calc_line_const(self, X0, X1, total_steps):
@@ -209,15 +209,23 @@ def main():
     
     points = []
     ## On Physical System
-    # points.append([1.0, -.6, .8])
-    #points.append([1.0, -.6, .3])
+    # points.append([1.0, -0.7, .3])
+    # points.append([1.1,0,.3])
+    # points.append([1.1,.2,-.2])
+    # points.append('pause')
+    # points.append([1.0,.15,.3])
+    # points.append([1.0,.15,.6])
+    # points.append([.9, -.5, .6])
+    # points.append([.8,-.8,.3])
+
+    ## just for video
     points.append([1.0, -0.7, .3])
     points.append([1.1,0,.3])
-    points.append([1.1,.2,-.2])
+    points.append([1.1,.2,-.3])
     points.append('pause')
-    points.append([1.0,.15,.3])
-    points.append([1.0,.15,.6])
-    points.append([.9, -.5, .6])
+    points.append([1.1, .15,.4])
+    points.append([1.1,.15,.6])
+    points.append([1.0, -.5, .6])
     points.append([.8,-.8,.3])
 
     ## On Simulation
@@ -230,10 +238,12 @@ def main():
     # points.append([.9, -.5, .6])
     # points.append([.8,-.8,.3])
             
-    X = baxter_butler.get_trajectory_w_obst_avoidance(points, baxter_butler.step_size)
+    X = baxter_butler.get_trajectory(points, baxter_butler.step_size)
     joint_commands = baxter_butler.get_ikine(X)  
     i = 0
     real_robot_pos = []
+    robot_pos = []
+
     baxter_butler.r_gripper.open()
     for config in joint_commands:
         if config == 'pause':
@@ -245,15 +255,15 @@ def main():
         baxter_butler.target_configuration = config
         baxter_butler.move_to_configuration()
         real_robot_pos.append(baxter_butler.r_limb.get_kdl_forward_position_kinematics()[:3])
+        robot_pos.append(brk.FK[6](config)[:3,3])
         print("moving: {} / {}".format(i,len(joint_commands)))
     
     # Save X position matrix to later post-process a graph
-    robot_pos = []
-  
-    for configuration in joint_commands:
-        if (configuration != 'pause'):
-            robot_pos.append(brk.FK[6](configuration)[:3,3])
-            #real_robot_pos.append(r_limb.get_kdl_forward_kinematics())
+    # robot_pos = []
+    # for configuration in joint_commands:
+    #     if (configuration != 'pause'):
+    #         robot_pos.append(brk.FK[6](configuration)[:3,3])
+    #         #real_robot_pos.append(r_limb.get_kdl_forward_kinematics())
         
     X = np.array(X)
     robot_pos = np.array(robot_pos)
